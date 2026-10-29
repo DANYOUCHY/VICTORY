@@ -6,7 +6,7 @@
 4. points absolute www.victory.org.il links to the local copy (root-relative),
    keeping canonical / og tags absolute for search engines and sharing
 5. removes WordPress-only head tags (REST API, XML-RPC, feeds, oEmbed, short links)
-6. removes comment forms, which need WordPress to work
+6. keeps comment forms; they post to WordPress, which still runs behind the site
 7. deletes the duplicate short-link pages
 Safe to run more than once.
 """
@@ -56,7 +56,6 @@ HEAD_JUNK = re.compile(
     r')[^>]*/?>\s*',
     re.I)
 ABS = re.compile(r'(?<=["\'(\s,=])(?:https?:)?(\\?/)\1(?:www\.)?victory\.org\.il(?=\\?/|["\'])')
-COMMENT_FORM = re.compile(r'<div id="respond".*?</form>\s*</div>', re.S)
 # local file reference followed by a query string, as plain "?" or saved as "%3F"
 LOCAL_QUERY = re.compile(
     r'(?<![\w.:/-])((?:/|\.\./|\./|wp-content/|wp-includes/)[^"\'\s()<>]*?'
@@ -84,7 +83,6 @@ for f in files(('.html', '.css', '.js')):
         og = re.search(r'<meta[^>]+property=["\']og:url["\'][^>]+content=["\'](https?://[^"\']+)', t)
         if og:
             t = re.sub(r'<link rel="canonical" href="[^"]*"', '<link rel="canonical" href="%s"' % og.group(1), t)
-        t = COMMENT_FORM.sub('', t)
         # Elementor buttons (popups, lightboxes) need a bare #elementor-action link
         t = re.sub(r'href="[^"#]*(#elementor-action)', r'href="\1', t)
         t = re.sub(r'<(?:link[^>]+rel=["\']canonical["\']|meta[^>]+(?:og:url|og:image|twitter:image))[^>]*>', stash, t)

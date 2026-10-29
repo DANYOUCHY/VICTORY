@@ -1,0 +1,31 @@
+name: Compare with WordPress
+
+# Loads every page on phone and desktop width, both from WordPress and from the
+# static copy, and writes the differences to reports/compare.md.
+on:
+  workflow_dispatch:
+    inputs:
+      candidate:
+        description: Address of the static copy to check
+        default: https://danyouchy.github.io
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install browser
+        run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - name: Compare
+        run: python3 tools/compare.py site "${{ github.event.inputs.candidate }}"
+      - name: Save report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports
+          git commit -m "Comparison report" || true
+          git pull --rebase -q origin main && git push
