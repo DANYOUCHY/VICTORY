@@ -18,10 +18,13 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Install browser
-        run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+        run: pip install playwright && python -m playwright install --with-deps chromium
       - name: Compare
-        run: python3 tools/compare.py site "${{ github.event.inputs.candidate }}"
+        run: python tools/compare.py site "${{ github.event.inputs.candidate }}"
       - name: Save report
         run: |
           git config user.name "github-actions[bot]"
