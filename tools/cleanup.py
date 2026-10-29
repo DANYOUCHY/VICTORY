@@ -55,7 +55,7 @@ HEAD_JUNK = re.compile(
     r'|rel=["\']https://api\.w\.org/["\']'
     r')[^>]*/?>\s*',
     re.I)
-ABS = re.compile(r'(?<=["\'(\s,=])https?:(\\?/)\1(?:www\.)?victory\.org\.il(?=\\?/|["\'])')
+ABS = re.compile(r'(?<=["\'(\s,=])(?:https?:)?(\\?/)\1(?:www\.)?victory\.org\.il(?=\\?/|["\'])')
 COMMENT_FORM = re.compile(r'<div id="respond".*?</form>\s*</div>', re.S)
 # local file reference followed by a query string, as plain "?" or saved as "%3F"
 LOCAL_QUERY = re.compile(

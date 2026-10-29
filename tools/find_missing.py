@@ -1,7 +1,7 @@
 """List victory.org.il URLs referenced by files in site/ that are not saved locally yet."""
 import re, os, sys, glob, urllib.parse
 root = sys.argv[1] if len(sys.argv) > 1 else 'site'
-pat = re.compile(r'https?:(?:\\?/){2}(?:www\.)?victory\.org\.il((?:\\?/)[^\s"\'()<>,]*)')
+pat = re.compile(r'(?:https?:)?(?<![\w/])(?:\\?/){2}(?:www\.)?victory\.org\.il((?:\\?/)[^\s"\'()<>,]*)')
 skip = re.compile(r'(wp-json|xmlrpc|/feed/?|comments-post|\?p=|wp-admin|wp-login|/embed/?$|oembed|admin-ajax)')
 need = set()
 for f in glob.glob(os.path.join(root, '**', '*'), recursive=True):
@@ -9,7 +9,7 @@ for f in glob.glob(os.path.join(root, '**', '*'), recursive=True):
         continue
     t = open(f, encoding='utf-8', errors='ignore').read()
     for m in pat.finditer(t):
-        p = m.group(1).replace('\\/', '/').replace('&#038;', '&').replace('&amp;', '&').rstrip('\\')
+        p = m.group(1).split('&quot;')[0].replace('\\/', '/').replace('&#038;', '&').replace('&amp;', '&').rstrip('\\')
         p = p.split('#')[0].split('?')[0]
         if not p or skip.search(p):
             continue
