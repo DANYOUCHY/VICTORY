@@ -362,6 +362,7 @@ def cmd_add(spec_file):
     seg = re.sub(r'<ol class="ast-comment-list">.*?</ol>|<ol class="comment-list">.*?</ol>', '', seg, flags=re.S)
     seg = re.sub(r"(name=['\"]comment_post_ID['\"] value=['\"])\d+", lambda m: m.group(1) + str(new_id), seg)
     seg = seg.replace(newest['url'] + '#respond', url + '#respond')
+    seg = re.sub(r'(name="page" value=")[^"]*', lambda m: m.group(1) + url, seg)
     t = t[:span[0]] + seg + t[span[1]:]
 
     out = page_file(url)
