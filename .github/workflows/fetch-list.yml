@@ -1,0 +1,31 @@
+name: Fetch listed files
+
+# Downloads the files listed in tools/extra-urls.txt into site/,
+# for files the site loads on demand that a normal copy cannot find.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/extra-urls.txt
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+          cd site
+          wget --force-directories --no-host-directories -e robots=off --user-agent="$UA" \
+               --tries=2 --timeout=30 -i ../tools/extra-urls.txt 2>&1 | grep -E "^--|ERROR" > ../fetch-list-log.txt || true
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site fetch-list-log.txt
+          git commit -m "Fetch files Elementor loads on demand" || echo "Nothing to commit"
+          git push

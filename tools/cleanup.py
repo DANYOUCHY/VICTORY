@@ -61,7 +61,7 @@ COMMENT_FORM = re.compile(r'<div id="respond".*?</form>\s*</div>', re.S)
 LOCAL_QUERY = re.compile(
     r'(?<![\w.:/-])((?:/|\.\./|\./|wp-content/|wp-includes/)[^"\'\s()<>]*?'
     r'\.(?:css|js|png|jpe?g|webp|gif|svg|ico|woff2?|ttf|eot|otf|html))'
-    r'(?:%3F|\?)[^"\'\s()<>]*', re.I)
+    r'(?:%3F|\?)[^"\'\s()<>`;{}]*', re.I)
 SHORT = re.compile(r'(?:(?:\.\./)*|/)?index\.html%3Fp=(\d+)\.html|(?<=["\'])/?\?p=(\d+)')
 
 def short(m):
@@ -88,8 +88,9 @@ for f in files(('.html', '.css', '.js')):
         t = re.sub(r'<(?:link[^>]+rel=["\']canonical["\']|meta[^>]+(?:og:url|og:image|twitter:image))[^>]*>', stash, t)
         t = re.sub(r'<script type="application/ld\+json".*?</script>', stash, t, flags=re.S)
     t = ABS.sub('', t)
-    t = SHORT.sub(short, t)
-    t = LOCAL_QUERY.sub(lambda m: m.group(1), t)
+    if not f.endswith('.js'):  # scripts build URLs in code; leave them alone
+        t = SHORT.sub(short, t)
+        t = LOCAL_QUERY.sub(lambda m: m.group(1), t)
     t = re.sub(r'\0(\d+)\0', lambda m: keep[int(m.group(1))], t)
     if t != o:
         open(f, 'w', encoding='utf-8').write(t)
