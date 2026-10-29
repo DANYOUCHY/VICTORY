@@ -4,9 +4,6 @@ name: Mirror victory.org.il
 # Runs on GitHub's servers, which can reach the site directly.
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - .github/workflows/mirror.yml
 
 permissions:
   contents: write

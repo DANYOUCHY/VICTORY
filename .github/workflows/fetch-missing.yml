@@ -4,9 +4,6 @@ name: Fetch missing files
 # Repeats a few rounds, because new files can refer to more files.
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - .github/workflows/fetch-missing.yml
 
 permissions:
   contents: write
