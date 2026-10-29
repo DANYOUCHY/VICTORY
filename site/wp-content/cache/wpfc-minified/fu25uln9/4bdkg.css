@@ -1,0 +1,205 @@
+.scb-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(var(--scb-overlay-rgb, 0, 0, 0), var(--scb-overlay-opacity, 0.5));
+z-index: calc(var(--scb-z-index, 9999) - 1);
+opacity: 0;
+visibility: hidden;
+transition:
+opacity 0.3s ease,
+visibility 0.3s ease;
+pointer-events: none;
+}
+.scb-overlay.visible {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+} .scb-overlay.visible.privacy-page {
+background: rgba(0, 0, 0, 0.15);
+}
+.scb-overlay.visible.privacy-page + .scb-banner {
+pointer-events: auto; }
+.scb-banner {
+position: fixed;
+right: 20px;
+bottom: 20px;
+max-width: var(--scb-modal-max, 420px);
+background: var(--scb-bg, #fff);
+border-radius: var(--scb-radius, 8px);
+box-shadow: var(--scb-shadow, 0 8px 24px rgba(0, 0, 0, 0.15));
+} .scb-banner.scb-banner-bottom {
+right: 20px;
+bottom: 20px;
+top: auto;
+left: auto;
+}
+.scb-banner.scb-banner-top {
+right: 20px;
+top: 20px;
+bottom: auto;
+left: auto;
+}
+.scb-banner.scb-banner-bottom.scb-side-left,
+.scb-banner.scb-banner-top.scb-side-left {
+left: 20px;
+right: auto;
+}
+.scb-banner.scb-banner-overlay {
+right: 50%;
+top: 50%;
+bottom: auto;
+left: auto;
+transform: translate(50%, -50%);
+max-width: 500px;
+width: 90%;
+}
+.scb-banner {
+z-index: var(--scb-z-index, 9999);
+font-family: var(--scb-font-family, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
+font-size: var(--scb-font-size, 14px);
+font-weight: var(--scb-font-weight, 400);
+padding: var(--scb-pad-y, 16px) var(--scb-pad-x, 20px);
+color: var(--scb-text, #222);
+opacity: 0;
+visibility: hidden;
+transform: translateY(20px);
+transition:
+opacity 0.3s ease,
+visibility 0.3s ease,
+transform 0.3s ease;
+}
+.scb-banner.visible {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+} .scb-banner .scb-drag-handle {
+all: unset;
+position: absolute;
+top: 2px;
+inset-inline-end: 6px;
+width: 44px;
+height: 14px;
+cursor: grab;
+touch-action: none;
+}
+.scb-banner .scb-drag-handle::before {
+content: "";
+position: absolute;
+top: 2px;
+left: 13px;
+width: 18px;
+height: 10px;
+background-image: radial-gradient(circle, currentColor 1.6px, transparent 1.9px);
+background-size: 6px 5px;
+opacity: 0.45;
+}
+.scb-banner .scb-drag-handle:hover::before,
+.scb-banner.scb-dragging .scb-drag-handle::before {
+opacity: 0.8;
+}
+.scb-banner .scb-drag-handle:focus-visible {
+outline: 2px solid var(--scb-primary, #0b74de);
+outline-offset: 2px;
+border-radius: 4px;
+}
+.scb-banner.scb-dragging {
+transition: none;
+user-select: none;
+}
+.scb-banner.scb-dragging .scb-drag-handle {
+cursor: grabbing;
+}
+.scb-content {
+display: flex;
+flex-direction: var(--scb-direction, column);
+gap: var(--scb-gap, 12px);
+}
+.scb-text {
+font-size: var(--scb-font-size, 14px);
+line-height: 1.4;
+color: var(--scb-text, #222);
+} .scb-privacy-note {
+background: #e8f4fd;
+border: 1px solid #bee5eb;
+border-radius: 6px;
+padding: 8px 12px;
+text-align: center;
+color: #0c5460;
+font-size: 12px;
+}
+.scb-controls {
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
+.scb-btn {
+padding: var(--scb-btn-pad-y, 8px) var(--scb-btn-pad-x, 12px);
+border-radius: var(--scb-btn-radius, var(--scb-radius, 8px));
+border: 1px solid #ccc;
+background: #f7f7f7;
+cursor: pointer;
+transition: all 0.2s ease;
+font-weight: var(--scb-btn-weight, 600);
+text-transform: var(--scb-btn-transform, none);
+}
+.scb-btn:hover {
+background: #e9e9e9;
+border-color: #999;
+}
+.scb-btn-primary {
+background: var(--scb-primary-btn-bg, var(--scb-primary, #0b74de));
+color: var(--scb-primary-btn-text, #fff);
+border-color: transparent;
+}
+.scb-btn-primary:hover {
+background: #0956a8;
+}
+.scb-settings {
+border-top: 1px solid #eee;
+padding-top: 10px;
+margin-top: 6px;
+display: none; }
+.scb-settings.visible {
+display: block; }
+.scb-more {
+font-size: 12px;
+color: var(--scb-secondary, #666);
+}
+.scb-actions {
+margin-top: 10px;
+display: flex;
+gap: 8px;
+} @media (max-width: 480px) {
+.scb-banner {
+left: 12px;
+right: 12px;
+max-width: unset;
+bottom: 12px;
+padding: 20px;
+}
+.scb-content {
+gap: 4px;
+}
+.scb-actions {
+flex-direction: column;
+}
+.scb-controls {
+flex-direction: column;
+}
+.scb-btn {
+width: 100%;
+padding: 4px;
+font-size: 16px;
+}
+} body.scb-open {
+overflow: hidden;
+} .scb-banner.loading {
+pointer-events: none;
+}
+.scb-banner.loading .scb-btn {
+opacity: 0.6;
+cursor: not-allowed;
+}
