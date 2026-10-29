@@ -12,5 +12,6 @@ else
   "$GIT" fetch -q --depth 1 origin main >>"$LOG" 2>&1 && "$GIT" reset -q --hard FETCH_HEAD >>"$LOG" 2>&1
   [ "$(ls .git/objects/pack 2>/dev/null | wc -l)" -gt 20 ] && "$GIT" gc -q --prune=now >>"$LOG" 2>&1
 fi
+chmod 755 "$REPO"   # the web server must be able to read the site
 echo "$(date '+%F %T') $("$GIT" -C "$REPO" rev-parse --short HEAD 2>/dev/null)" >> "$LOG"
 tail -n 300 "$LOG" > "$LOG.t" && mv "$LOG.t" "$LOG"
