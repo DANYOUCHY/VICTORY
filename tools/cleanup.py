@@ -85,6 +85,8 @@ for f in files(('.html', '.css', '.js')):
         if og:
             t = re.sub(r'<link rel="canonical" href="[^"]*"', '<link rel="canonical" href="%s"' % og.group(1), t)
         t = COMMENT_FORM.sub('', t)
+        # Elementor buttons (popups, lightboxes) need a bare #elementor-action link
+        t = re.sub(r'href="[^"#]*(#elementor-action)', r'href="\1', t)
         t = re.sub(r'<(?:link[^>]+rel=["\']canonical["\']|meta[^>]+(?:og:url|og:image|twitter:image))[^>]*>', stash, t)
         t = re.sub(r'<script type="application/ld\+json".*?</script>', stash, t, flags=re.S)
     t = ABS.sub('', t)
