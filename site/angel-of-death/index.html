@@ -468,7 +468,33 @@ document.addEventListener("keydown",function(e){var t=e.target;if((e.key==="Ente
 <div class="elementor-element elementor-element-cd0068d elementor-widget elementor-widget-post-comments" data-id="cd0068d" data-element_type="widget" data-e-type="widget" data-widget_type="post-comments.theme_comments">
 <div class="elementor-widget-container">
 <div id="comments" class="comments-area comment-form-position-below">
-<!-- #respond -->
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">כתיבת תגובה <small><a rel="nofollow" id="cancel-comment-reply-link" href="/angel-of-death/#respond" style="display:none;">ביטול התגובה</a></small></h3><form action="/wp-comments-post.php" method="post" id="ast-commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">האימייל לא יוצג באתר.</span> <span class="required-field-message">שדות החובה מסומנים <span class="required">*</span></span></p><div class="ast-row comment-textarea"><fieldset class="comment-form-comment"><legend class ="comment-form-legend"></legend><div class="comment-form-textarea ast-col-lg-12"><label for="comment" class="screen-reader-text">להקליד כאן...</label><textarea id="comment" name="comment" placeholder="להקליד כאן..." cols="45" rows="8" aria-required="true"></textarea></div></fieldset></div><div class="ast-comment-formwrap ast-row">
+<p class="comment-form-author ast-col-xs-12 ast-col-sm-12 ast-col-md-4 ast-col-lg-4">
+<label for="author" class="screen-reader-text">Name*</label>
+<input id="author" name="author" type="text"
+value=""
+placeholder="Name*"
+size="30" aria-required='true' autocomplete="name" />
+</p>
+<p class="comment-form-email ast-col-xs-12 ast-col-sm-12 ast-col-md-4 ast-col-lg-4">
+<label for="email" class="screen-reader-text">Email*</label>
+<input id="email" name="email" type="text"
+value=""
+placeholder="Email*"
+size="30" aria-required='true' autocomplete="email" />
+</p>
+<p class="comment-form-url ast-col-xs-12 ast-col-sm-12 ast-col-md-4 ast-col-lg-4">
+<label for="url" class="screen-reader-text">אתר</label>
+<input id="url" name="url" type="text"
+value=""
+placeholder="אתר"
+size="30" autocomplete="url" />
+</p>
+</div>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="הוספת תגובה &laquo;" /> <input type='hidden' name='comment_post_ID' value='4060' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
 </div><!-- #comments -->
 </div>
 </div>
@@ -946,7 +972,7 @@ window.addEventListener('hashchange', goToHash);
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-0e3fdf0 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="0e3fdf0" data-element_type="widget" data-e-type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.static">
 <div class="elementor-widget-container">
-<form class="elementor-form" method="post" action="https://formsubmit.co/youchy0@gmail.com" accept-charset="UTF-8" name="New Form" aria-label="New Form"><input type="hidden" name="_subject" value="פנייה חדשה מהאתר victory.org.il"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="/thanks/">
+<form class="elementor-form" method="post" action="https://formsubmit.co/youchy0@gmail.com" accept-charset="UTF-8" name="New Form" aria-label="New Form"><input type="hidden" name="_subject" value="פנייה חדשה מהאתר victory.org.il"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://www.victory.org.il/thanks/">
 <div class="elementor-form-fields-wrapper elementor-labels-above">
 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required elementor-mark-required">
 <input size="1" type="text" name="שם" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder=" שם ומשפחה" required="required">
