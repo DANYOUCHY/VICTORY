@@ -20,6 +20,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 import posts as P  # noqa: E402
 
 ROOT = P.ROOT
+if len(sys.argv) > 2 and sys.argv[1] == 'form':
+    ROOT = P.ROOT = sys.argv[2]
 
 FORM_EXTRA = ('<input type="hidden" name="page" value="%s" />'
               '<input type="hidden" name="ts" value="" class="cmt-ts" />'

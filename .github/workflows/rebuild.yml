@@ -65,7 +65,9 @@ jobs:
         run: |
           python3 tools/cleanup.py build
           python3 tools/forms.py build
+          python3 tools/comments.py form build
           python3 tools/thanks.py build
+          python3 tools/sitemap.py build
           curl -sSfL "https://www.youtube.com/feeds/videos.xml?channel_id=UCcszsZ1SGDe5uRXQoooU8vQ" -o feed.xml \
             && python3 tools/youtube_feed.py build feed.xml || echo "YouTube feed skipped"
           rm -f feed.xml
@@ -80,9 +82,11 @@ jobs:
 
       - name: Replace site and commit
         run: |
+          cp -a site/comments-api build/ 2>/dev/null || true
           rm -rf site && mv build site && rm -f urls.txt
+          python3 tools/posts.py index
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A site
+          git add -A site data
           git commit -m "Rebuild static site from WordPress" || echo "No changes"
           git pull --rebase -q origin main && git push
