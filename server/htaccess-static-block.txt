@@ -15,26 +15,27 @@ RewriteRule ^(.*)$ https://www.victory.org.il/$1 [R=301,L]
 # the repository folder is not public, except the site itself
 RewriteRule ^static-repo/(?!site/) - [F,L]
 
-# comments go to the static site's own handler
+# comments and the contact form go to the site's own handlers on this server
 RewriteRule ^comments-api/submit\.php$ /static-repo/site/comments-api/submit.php [L]
+RewriteRule ^contact-api/send\.php$ /static-repo/site/contact-api/send.php [L]
 
 # an address without its final slash, like /blog -> /blog/
-RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/)
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/|contact-api/)
 RewriteCond /home/dhdanchi/victory.org.il/static-repo/site/$1/index.html -f
 RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
 
 # pages
-RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/)
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/|contact-api/)
 RewriteCond /home/dhdanchi/victory.org.il/static-repo/site/$1index.html -f
 RewriteRule ^(.*/)?$ /static-repo/site/$1index.html [L]
 
 # files (images, styles, scripts, sitemaps, robots.txt)
-RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/)
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/|contact-api/)
 RewriteCond /home/dhdanchi/victory.org.il/static-repo/site/$1 -f
 RewriteRule ^(.+)$ /static-repo/site/$1 [L]
 
 # anything else that is not WordPress admin and not a real file: not found
-RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/|wp-content/|wp-includes/|\.well-known/)
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/|contact-api/|wp-content/|wp-includes/|\.well-known/)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ - [R=404,L]
 </IfModule>

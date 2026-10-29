@@ -82,7 +82,7 @@ jobs:
 
       - name: Replace site and commit
         run: |
-          cp -a site/comments-api build/ 2>/dev/null || true
+          cp -a site/comments-api site/contact-api build/ 2>/dev/null || true
           rm -rf site && mv build site && rm -f urls.txt
           python3 tools/posts.py index
           git config user.name "github-actions[bot]"

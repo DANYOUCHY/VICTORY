@@ -997,8 +997,7 @@ window.addEventListener('hashchange', goToHash);
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-0e3fdf0 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="0e3fdf0" data-element_type="widget" data-e-type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.static">
 <div class="elementor-widget-container">
-<form class="elementor-form" method="post" action="https://formsubmit.co/youchy0@gmail.com" accept-charset="UTF-8" name="New Form" aria-label="New Form"><input type="hidden" name="_subject" value="פנייה חדשה מהאתר victory.org.il"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://www.victory.org.il/thanks/">
-<div class="elementor-form-fields-wrapper elementor-labels-above">
+<form class="elementor-form" method="post" action="/contact-api/send.php" accept-charset="UTF-8" name="New Form" aria-label="New Form"><input type="hidden" name="page" value="/%D7%94%D7%9B%D7%9C-%D7%9E%D7%A9%D7%9E%D7%99%D7%99%D7%9D/"><input type="hidden" name="ts" value="" class="ct-ts"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap" aria-hidden="true"><input type="text" name="website2" value="" tabindex="-1" autocomplete="off"></span><div class="elementor-form-fields-wrapper elementor-labels-above">
 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required elementor-mark-required">
 <input size="1" type="text" name="שם" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder=" שם ומשפחה" required="required">
 </div>
@@ -1187,5 +1186,6 @@ var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce"
 </div>
 </nav>
 <script id="cmt-static">(function(){var f=document.getElementById("ast-commentform");if(!f)return;var t=f.querySelector(".cmt-ts");if(t)t.value=Date.now();var s=(location.search.match(/[?&]comment=(\w+)/)||[])[1];if(!s)return;var m={pending:"תודה! התגובה התקבלה ותפורסם לאחר אישור.",missing:"נא למלא שם, אימייל ותגובה."};if(!m[s])return;var p=document.createElement("p");p.className="comment-notes";p.style.cssText="font-weight:600;padding:10px 14px;border-radius:6px;background:#e8f6f8;color:#0b5560";p.textContent=m[s];f.insertBefore(p,f.firstChild);var r=document.getElementById("respond");if(r)r.scrollIntoView();})();</script>
+<script id="ct-static">(function(){var n=Date.now();document.querySelectorAll("form.elementor-form .ct-ts").forEach(function(i){i.value=n;});if(/[?&]contact=missing/.test(location.search))alert("נא למלא שם ואימייל תקין.");})();</script>
 </body>
 </html><!-- WP Fastest Cache file was created in 1.650 seconds, on 29/10/2026 @ 08:59 -->
