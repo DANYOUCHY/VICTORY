@@ -1,0 +1,7 @@
+# cPanel cron jobs for the static site (Cron Jobs in cPanel)
+
+# every 10 minutes: pull the latest site from GitHub
+*/10 * * * *  /bin/bash /home/dhdanchi/victory-static-sync.sh >/dev/null 2>&1
+
+# Thursdays 07:00 Israel time: monthly comments digest (acts only on the first Thursday)
+0 7 * * 4  /usr/local/bin/php /home/dhdanchi/victory.org.il/static-repo/server/comments-digest.php >/dev/null 2>&1

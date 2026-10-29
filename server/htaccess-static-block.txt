@@ -1,0 +1,42 @@
+# BEGIN StaticSite
+# The site is served from the static copy in static-repo/site (GitHub DANYOUCHY/VICTORY).
+# WordPress stays installed as a backup; only its admin and connection remain reachable.
+# TO GO BACK TO WORDPRESS: delete everything from "BEGIN StaticSite" to "END StaticSite".
+ErrorDocument 404 /static-repo/site/404.html
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# one address for the site: https://www.victory.org.il
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^victory\.org\.il$ [NC]
+RewriteRule ^(.*)$ https://www.victory.org.il/$1 [R=301,L]
+
+# the repository folder is not public, except the site itself
+RewriteRule ^static-repo/(?!site/) - [F,L]
+
+# comments go to the static site's own handler
+RewriteRule ^comments-api/submit\.php$ /static-repo/site/comments-api/submit.php [L]
+
+# an address without its final slash, like /blog -> /blog/
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/)
+RewriteCond /home/dhdanchi/victory.org.il/static-repo/site/$1/index.html -f
+RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
+
+# pages
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/)
+RewriteCond /home/dhdanchi/victory.org.il/static-repo/site/$1index.html -f
+RewriteRule ^(.*/)?$ /static-repo/site/$1index.html [L]
+
+# files (images, styles, scripts, sitemaps, robots.txt)
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/)
+RewriteCond /home/dhdanchi/victory.org.il/static-repo/site/$1 -f
+RewriteRule ^(.+)$ /static-repo/site/$1 [L]
+
+# anything else that is not WordPress admin and not a real file: not found
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-cron\.php|static-repo/|comments-api/|wp-content/|wp-includes/|\.well-known/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ - [R=404,L]
+</IfModule>
+# END StaticSite
+
