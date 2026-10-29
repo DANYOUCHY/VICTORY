@@ -1,0 +1,48 @@
+name: Fetch missing files
+
+# Downloads pages, images, styles and scripts that site/ refers to but does not have yet.
+# Repeats a few rounds, because new files can refer to more files.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/fetch-missing.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download missing files
+        run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+          : > fetch-log.txt
+          for round in 1 2 3 4; do
+            python3 tools/find_missing.py site > missing.txt
+            n=$(wc -l < missing.txt)
+            echo "Round $round: $n missing" | tee -a fetch-log.txt
+            [ "$n" -eq 0 ] && break
+            cd site
+            wget --force-directories --no-host-directories --page-requisites \
+                 --adjust-extension -e robots=off --user-agent="$UA" \
+                 --wait=0.2 --tries=2 --timeout=30 \
+                 --domains=victory.org.il,www.victory.org.il \
+                 -i ../missing.txt 2>&1 | grep -E "ERROR|failed" | head -50 >> ../fetch-log.txt || true
+            cd ..
+          done
+          python3 tools/find_missing.py site > still-missing.txt
+          echo "Still missing: $(wc -l < still-missing.txt)" | tee -a fetch-log.txt
+          rm -f missing.txt
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site fetch-log.txt still-missing.txt
+          git commit -m "Fetch missing site files" || echo "Nothing to commit"
+          git push
