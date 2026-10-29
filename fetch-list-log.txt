@@ -1,0 +1,35 @@
+--2026-10-29 07:34:24--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/accordion.min.js
+--2026-10-29 07:34:25--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/alert.min.js
+--2026-10-29 07:34:25--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/background-slideshow.min.js
+--2026-10-29 07:34:25--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/background-video.min.js
+--2026-10-29 07:34:26--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/contact-buttons.min.js
+--2026-10-29 07:34:26--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/container-grid-container.min.js
+--2026-10-29 07:34:26--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/container-shapes.min.js
+--2026-10-29 07:34:26--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/counter.min.js
+--2026-10-29 07:34:27--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/floating-bars.min.js
+--2026-10-29 07:34:27--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/handles-position.min.js
+--2026-10-29 07:34:27--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/image-carousel.min.js
+--2026-10-29 07:34:27--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/lightbox-lightbox.min.js
+--2026-10-29 07:34:27--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/nested-accordion.min.js
+--2026-10-29 07:34:27--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/nested-tabs.min.js
+--2026-10-29 07:34:28--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/progress.min.js
+--2026-10-29 07:34:28--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/section-shapes.min.js
+--2026-10-29 07:34:28--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/section-stretched-section.min.js
+--2026-10-29 07:34:28--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/tabs.min.js
+--2026-10-29 07:34:28--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/text-editor.min.js
+--2026-10-29 07:34:29--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/text-path.min.js
+--2026-10-29 07:34:29--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/toggle.min.js
+--2026-10-29 07:34:29--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/video.min.js
+--2026-10-29 07:34:29--  https://www.victory.org.il/wp-content/plugins/elementor/assets/js/chunks/wp-audio.min.js
+--2026-10-29 07:34:29--  https://www.victory.org.il/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css
+--2026-10-29 07:34:30--  https://www.victory.org.il/wp-content/plugins/elementor/assets/css/conditionals/dialog-rtl.min.css
+2026-10-29 07:34:32 ERROR 404: Not Found.
+--2026-10-29 07:34:32--  https://www.victory.org.il/wp-content/plugins/elementor/assets/css/conditionals/lightbox.min.css
+--2026-10-29 07:34:33--  https://www.victory.org.il/wp-content/plugins/elementor/assets/css/conditionals/lightbox-rtl.min.css
+2026-10-29 07:34:35 ERROR 404: Not Found.
+--2026-10-29 07:34:35--  https://www.victory.org.il/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js
+--2026-10-29 07:34:36--  https://www.victory.org.il/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js
+--2026-10-29 07:34:36--  https://www.victory.org.il/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css
+--2026-10-29 07:34:36--  https://www.victory.org.il/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js
+--2026-10-29 07:34:36--  https://www.victory.org.il/wp-content/uploads/elementor/css/custom-lightbox.min.css
+2026-10-29 07:34:39 ERROR 404: Not Found.
