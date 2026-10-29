@@ -48,7 +48,14 @@ def item(e):
     ) % (CHANNEL, vid, ts, vid, vid, img, srcset, vid, title, img, title, title, YT_SVG, vid)
 
 items = ''.join(item(e) for e in entries)
-footer = ('<div class="sby_footer"><span class="sby_follow_btn">'
+# Same footer as the plugin. "Load More" is handled by the plugin's script through WordPress,
+# which keeps running behind the static site.
+footer = ('<div class="sby_footer">'
+          '<div class="sby-screenreader" role="status" aria-live="polite" aria-atomic="true" data-sby-feed-status=""></div>'
+          '<button type="button" aria-label="Load more content" class="sby_load_btn">'
+          '<span class="sby_btn_text">Load More...</span>'
+          '<span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span></button>'
+          '<span class="sby_follow_btn">'
           '<a href="https://www.youtube.com/channel/%s/" target="_blank" rel="noopener">%s<span>Subscribe</span></a>'
           '</span></div>') % (CHANNEL, YT_SVG)
 block = '<div class="sby_items_wrap" role="list">%s</div>%s' % (items, footer)
