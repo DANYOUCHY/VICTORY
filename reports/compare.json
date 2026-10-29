@@ -1,0 +1,1938 @@
+[
+ [
+  "/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"שיטת מנצחים הרב יוחי דנחי | להשתנות בקלות\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'call-to-action.default', 'heading.default', 'html.default', 'image.default', 'media-carousel.default', 'nav-menu.default', 'spacer.default', 'testimonial-carousel.default', 'text-editor.default', 'theme-site-logo.default', 'video.default']"
+  ]
+ ],
+ [
+  "/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"שיטת מנצחים הרב יוחי דנחי | להשתנות בקלות\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'call-to-action.default', 'heading.default', 'html.default', 'image.default', 'media-carousel.default', 'nav-menu.default', 'spacer.default', 'testimonial-carousel.default', 'text-editor.default', 'theme-site-logo.default', 'video.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%91%D7%99%D7%93%D7%94-%D7%A9%D7%9C-%D7%A7%D7%9E%D7%A6%D7%95%D7%A5-%D7%9E%D7%95%D7%A8%D7%9C-%D7%95%D7%9E%D7%A8%D7%A5-%D7%94%D7%99%D7%90-%D7%90%D7%91%D7%99%D7%93%D7%AA-%D7%97%D7%99%D7%99%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"\"אבידה של קמצוץ מורל ומרץ היא אבידת חיים!\"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%91%D7%99%D7%93%D7%94-%D7%A9%D7%9C-%D7%A7%D7%9E%D7%A6%D7%95%D7%A5-%D7%9E%D7%95%D7%A8%D7%9C-%D7%95%D7%9E%D7%A8%D7%A5-%D7%94%D7%99%D7%90-%D7%90%D7%91%D7%99%D7%93%D7%AA-%D7%97%D7%99%D7%99%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"\"אבידה של קמצוץ מורל ומרץ היא אבידת חיים!\"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%96%D7%94-%D7%98%D7%99%D7%9E%D7%98%D7%95%D7%9D-%D7%96%D7%94-%D7%9C%D7%A7%D7%91%D7%9C-%D7%A2%D7%A8%D7%9A-%D7%9E%D7%A9%D7%91%D7%99%D7%A8%D7%AA-%D7%92%D7%91%D7%95%D7%9C-%D7%A9%D7%9E%D7%99/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"\"איזה טימטום זה לקבל ערך משבירת גבול שמישהו אחר שם... \"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%96%D7%94-%D7%98%D7%99%D7%9E%D7%98%D7%95%D7%9D-%D7%96%D7%94-%D7%9C%D7%A7%D7%91%D7%9C-%D7%A2%D7%A8%D7%9A-%D7%9E%D7%A9%D7%91%D7%99%D7%A8%D7%AA-%D7%92%D7%91%D7%95%D7%9C-%D7%A9%D7%9E%D7%99/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"\"איזה טימטום זה לקבל ערך משבירת גבול שמישהו אחר שם... \"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%96%D7%94-%D7%99%D7%AA%D7%9B%D7%9F-%D7%A9%D7%9B%D7%A9%D7%90%D7%AA%D7%94-%D7%9E%D7%A8%D7%92%D7%99%D7%A9-%D7%90%D7%94%D7%95%D7%91-%D7%95%D7%A8%D7%A6%D7%95%D7%99-%D7%90%D7%A0%D7%A9/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך זה יתכן שכשאתה מרגיש אהוב ורצוי אנשים באמת אוהבים אותך וחושקים בך?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%96%D7%94-%D7%99%D7%AA%D7%9B%D7%9F-%D7%A9%D7%9B%D7%A9%D7%90%D7%AA%D7%94-%D7%9E%D7%A8%D7%92%D7%99%D7%A9-%D7%90%D7%94%D7%95%D7%91-%D7%95%D7%A8%D7%A6%D7%95%D7%99-%D7%90%D7%A0%D7%A9/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך זה יתכן שכשאתה מרגיש אהוב ורצוי אנשים באמת אוהבים אותך וחושקים בך?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%99%D7%9B%D7%95%D7%9C-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%A9%D7%94%D7%90%D7%9E%D7%95%D7%A0%D7%94-%D7%A9%D7%9C-%D7%90%D7%9C%D7%95%D7%94%D7%99%D7%9D-%D7%91%D7%99-%D7%9C%D7%90-%D7%9E/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך יכול להיות שהאמונה של אלוהים בי לא מתגשמת?הרי הוא מקור כל האנרגיה של יצירת מציאות באמצעות אמונה???\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%99%D7%9B%D7%95%D7%9C-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%A9%D7%94%D7%90%D7%9E%D7%95%D7%A0%D7%94-%D7%A9%D7%9C-%D7%90%D7%9C%D7%95%D7%94%D7%99%D7%9D-%D7%91%D7%99-%D7%9C%D7%90-%D7%9E/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך יכול להיות שהאמונה של אלוהים בי לא מתגשמת?הרי הוא מקור כל האנרגיה של יצירת מציאות באמצעות אמונה???\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%9E%D7%92%D7%99%D7%A2%D7%99%D7%9D-%D7%9C%D7%9E%D7%A6%D7%91-%D7%A9%D7%90%D7%A0%D7%99-%D7%92%D7%9D-%D7%91%D7%AA%D7%95%D7%9A-%D7%92%D7%91%D7%95%D7%9C%D7%95%D7%AA-%D7%90%D7%95%D7%98/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך מגיעים למצב שאני גם בתוך גבולות אוטומאטיים וגם מלא ברצון ורגש? הסתירה בין ההרגל להרגש.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%9E%D7%92%D7%99%D7%A2%D7%99%D7%9D-%D7%9C%D7%9E%D7%A6%D7%91-%D7%A9%D7%90%D7%A0%D7%99-%D7%92%D7%9D-%D7%91%D7%AA%D7%95%D7%9A-%D7%92%D7%91%D7%95%D7%9C%D7%95%D7%AA-%D7%90%D7%95%D7%98/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך מגיעים למצב שאני גם בתוך גבולות אוטומאטיים וגם מלא ברצון ורגש? הסתירה בין ההרגל להרגש.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%A0%D7%99%D7%A6%D7%95%D7%A8-%D7%A9%D7%99%D7%97-%D7%A4%D7%A0%D7%99%D7%9E%D7%99-%D7%90%D7%99%D7%9A-%D7%A0%D7%92%D7%9C%D7%94-%D7%90%D7%AA-%D7%A2%D7%A6%D7%9E%D7%A0%D7%95/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך ניצור שיח פנימי? איך נגלה את עצמנו?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9A-%D7%A0%D7%99%D7%A6%D7%95%D7%A8-%D7%A9%D7%99%D7%97-%D7%A4%D7%A0%D7%99%D7%9E%D7%99-%D7%90%D7%99%D7%9A-%D7%A0%D7%92%D7%9C%D7%94-%D7%90%D7%AA-%D7%A2%D7%A6%D7%9E%D7%A0%D7%95/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך ניצור שיח פנימי? איך נגלה את עצמנו?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9F-%D7%9B%D7%A0%D7%99%D7%A1%D7%94-%D7%9C%D7%9B%D7%90%D7%91-%D7%91%D7%9C%D7%99-%D7%99%D7%99%D7%A9%D7%95%D7%91-%D7%93%D7%A2%D7%AA-%D7%97%D7%96%D7%A7/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כרטיס כניסה לכאב? יישוב דעת חזק!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9F-%D7%9B%D7%A0%D7%99%D7%A1%D7%94-%D7%9C%D7%9B%D7%90%D7%91-%D7%91%D7%9C%D7%99-%D7%99%D7%99%D7%A9%D7%95%D7%91-%D7%93%D7%A2%D7%AA-%D7%97%D7%96%D7%A7/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כרטיס כניסה לכאב? יישוב דעת חזק!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9F-%D7%9C%D7%99-%D7%9B%D7%97-%D7%9C%D7%99%D7%99%D7%A1%D7%95%D7%A8%D7%99%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אין לי כח לייסורים- רק רוצה להיות מאושר\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%99%D7%9F-%D7%9C%D7%99-%D7%9B%D7%97-%D7%9C%D7%99%D7%99%D7%A1%D7%95%D7%A8%D7%99%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אין לי כח לייסורים- רק רוצה להיות מאושר\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%9E%D7%AA-%D7%9C%D7%90%D7%9E%D7%99%D7%AA%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הדרך לקבל תשובות פנימיות לכל בעיה וקושי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%9E%D7%AA-%D7%9C%D7%90%D7%9E%D7%99%D7%AA%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הדרך לקבל תשובות פנימיות לכל בעיה וקושי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A0%D7%99-%D7%9C%D7%90-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%AA%D7%95%D7%A6%D7%90%D7%94-%D7%90%D7%A0%D7%99-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%9B%D7%99-2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אני לא אחראי על התוצאה. אני אחראי על הכיוון.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A0%D7%99-%D7%9C%D7%90-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%AA%D7%95%D7%A6%D7%90%D7%94-%D7%90%D7%A0%D7%99-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%9B%D7%99-2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אני לא אחראי על התוצאה. אני אחראי על הכיוון.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A0%D7%99-%D7%9C%D7%90-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%AA%D7%95%D7%A6%D7%90%D7%94-%D7%90%D7%A0%D7%99-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%9B%D7%99/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כשאתה עוזר למישהו – תזכור שלא באת להחליף את אלוהים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A0%D7%99-%D7%9C%D7%90-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%AA%D7%95%D7%A6%D7%90%D7%94-%D7%90%D7%A0%D7%99-%D7%90%D7%97%D7%A8%D7%90%D7%99-%D7%A2%D7%9C-%D7%94%D7%9B%D7%99/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כשאתה עוזר למישהו – תזכור שלא באת להחליף את אלוהים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A0%D7%A9%D7%99%D7%9D-%D7%9E%D7%A2%D7%A6%D7%91%D7%A0%D7%99%D7%9D-%D7%90%D7%95%D7%AA%D7%99-%D7%A4%D7%A2%D7%9D-%D7%94%D7%99%D7%99%D7%AA-%D7%9E%D7%9B%D7%97%D7%99%D7%A9-%D7%95%D7%9B%D7%9B%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אנשים מעצבנים אותי, פעם הייתי פשוט מכחיש את מה שעשו כנגדי וככה לא כועס... היום אני מבין שזו טעות והפסקתי להכחיש אבל...\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A0%D7%A9%D7%99%D7%9D-%D7%9E%D7%A2%D7%A6%D7%91%D7%A0%D7%99%D7%9D-%D7%90%D7%95%D7%AA%D7%99-%D7%A4%D7%A2%D7%9D-%D7%94%D7%99%D7%99%D7%AA-%D7%9E%D7%9B%D7%97%D7%99%D7%A9-%D7%95%D7%9B%D7%9B%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אנשים מעצבנים אותי, פעם הייתי פשוט מכחיש את מה שעשו כנגדי וככה לא כועס... היום אני מבין שזו טעות והפסקתי להכחיש אבל...\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A1%D7%95%D7%A8-%D7%95%D7%9E%D7%95%D7%AA%D7%A8-%D7%91%D7%A8%D7%9B%D7%94-%D7%95%D7%A7%D7%9C%D7%9C%D7%94-%D7%95%D7%9C%D7%90-%D7%A2%D7%95%D7%A0%D7%A9-%D7%A8%D7%90%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אסור ומותר ברכה וקללה ולא עונש (ראה)\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%90%D7%A1%D7%95%D7%A8-%D7%95%D7%9E%D7%95%D7%AA%D7%A8-%D7%91%D7%A8%D7%9B%D7%94-%D7%95%D7%A7%D7%9C%D7%9C%D7%94-%D7%95%D7%9C%D7%90-%D7%A2%D7%95%D7%A0%D7%A9-%D7%A8%D7%90%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אסור ומותר ברכה וקללה ולא עונש (ראה)\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%91%D7%98%D7%95%D7%97-%D7%A9%D7%90%D7%AA%D7%9D-%D7%A8%D7%95%D7%A6%D7%99%D7%9D-%D7%9E%D7%99%D7%9C%D7%99%D7%95%D7%9F-%D7%93%D7%95%D7%9C%D7%A8-%D7%A2%D7%9B%D7%A9%D7%99%D7%95/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"בטוח שאתם רוצים מיליון דולר עכשיו?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%91%D7%98%D7%95%D7%97-%D7%A9%D7%90%D7%AA%D7%9D-%D7%A8%D7%95%D7%A6%D7%99%D7%9D-%D7%9E%D7%99%D7%9C%D7%99%D7%95%D7%9F-%D7%93%D7%95%D7%9C%D7%A8-%D7%A2%D7%9B%D7%A9%D7%99%D7%95/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"בטוח שאתם רוצים מיליון דולר עכשיו?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%90%D7%9D-%D7%90%D7%AA%D7%94-%D7%A8%D7%95%D7%A6%D7%94-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%9E%D7%9E%D7%95%D7%A9%D7%9E%D7%A2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"רוצה להיות ממושמע? לא!!!!!!!!!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%90%D7%9D-%D7%90%D7%AA%D7%94-%D7%A8%D7%95%D7%A6%D7%94-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%9E%D7%9E%D7%95%D7%A9%D7%9E%D7%A2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"רוצה להיות ממושמע? לא!!!!!!!!!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%99%D7%93%D7%A2%D7%AA-%D7%90%D7%95%D7%A9%D7%A8-%D7%96%D7%94-%D7%93%D7%91%D7%A8-%D7%A9%D7%9E%D7%99%D7%99%D7%A6%D7%A8%D7%99%D7%9D-%D7%90%D7%95%D7%AA%D7%95-%D7%9B%D7%9C-%D7%99%D7%95%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הידעת? אושר זה דבר שמייצרים אותו כל יום - אין חיה כזו אושר פאסיבי...\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%99%D7%93%D7%A2%D7%AA-%D7%90%D7%95%D7%A9%D7%A8-%D7%96%D7%94-%D7%93%D7%91%D7%A8-%D7%A9%D7%9E%D7%99%D7%99%D7%A6%D7%A8%D7%99%D7%9D-%D7%90%D7%95%D7%AA%D7%95-%D7%9B%D7%9C-%D7%99%D7%95%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הידעת? אושר זה דבר שמייצרים אותו כל יום - אין חיה כזו אושר פאסיבי...\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%9B%D7%9C-%D7%9E%D7%A9%D7%9E%D7%99%D7%99%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"\"נכון, שברתי לך את הפנס אבל הכל משמיים ולכן אני לא צריך לשלם!\"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%9B%D7%9C-%D7%9E%D7%A9%D7%9E%D7%99%D7%99%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"\"נכון, שברתי לך את הפנס אבל הכל משמיים ולכן אני לא צריך לשלם!\"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%A0%D7%90%D7%94-%D7%96%D7%95-%D7%91%D7%A2%D7%9C%D7%95%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"על פי ההלכה מה ששייך לך זה רק מה שאתה יכול ליהנות ממנו - ידעת את זה?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%A0%D7%90%D7%94-%D7%96%D7%95-%D7%91%D7%A2%D7%9C%D7%95%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"על פי ההלכה מה ששייך לך זה רק מה שאתה יכול ליהנות ממנו - ידעת את זה?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%A4%D7%A9%D7%95%D7%98-%D7%A9%D7%9C-%D7%A4%D7%A8%D7%A9%D7%AA-%D7%94%D7%A9%D7%91%D7%95%D7%A2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הסיפור הפשוט של פרשת השבוע, ימי שני, מרכז כנפיים!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%A4%D7%A9%D7%95%D7%98-%D7%A9%D7%9C-%D7%A4%D7%A8%D7%A9%D7%AA-%D7%94%D7%A9%D7%91%D7%95%D7%A2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הסיפור הפשוט של פרשת השבוע, ימי שני, מרכז כנפיים!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%A8%D7%91%D7%94-%D7%A4%D7%A2%D7%9E%D7%99%D7%9D-%D7%90%D7%A0%D7%97%D7%A0%D7%95-%D7%9E%D7%A4%D7%97%D7%93%D7%99%D7%9D-%D7%9C%D7%92%D7%93%D7%95%D7%9C-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%99%D7%95/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הרבה פעמים אנחנו מפחדים לגדול להיות יותר מאושרים או יותר עשירים כי אולי זה בא על חשבון מישהו אחר\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94%D7%A8%D7%91%D7%94-%D7%A4%D7%A2%D7%9E%D7%99%D7%9D-%D7%90%D7%A0%D7%97%D7%A0%D7%95-%D7%9E%D7%A4%D7%97%D7%93%D7%99%D7%9D-%D7%9C%D7%92%D7%93%D7%95%D7%9C-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%99%D7%95/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הרבה פעמים אנחנו מפחדים לגדול להיות יותר מאושרים או יותר עשירים כי אולי זה בא על חשבון מישהו אחר\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94-%D7%9C%D7%90-%D7%9E%D7%A2%D7%A0%D7%99%D7%A9-%D7%A2%D7%9C-%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%94%D7%99%D7%93%D7%A2%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"ה' לא מעניש על עבירות - הידעת?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%94-%D7%9C%D7%90-%D7%9E%D7%A2%D7%A0%D7%99%D7%A9-%D7%A2%D7%9C-%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%94%D7%99%D7%93%D7%A2%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"ה' לא מעניש על עבירות - הידעת?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%95%D7%93%D7%90%D7%95%D7%AA-%D7%A9%D7%A0%D7%90%D7%91%D7%93%D7%94-%D7%95%D7%A0%D7%A9%D7%9B%D7%97%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מאיפה מגיע החשש, העצבות, התסכול? הכל מוודאות שנאבדה ונשכחה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%95%D7%93%D7%90%D7%95%D7%AA-%D7%A9%D7%A0%D7%90%D7%91%D7%93%D7%94-%D7%95%D7%A0%D7%A9%D7%9B%D7%97%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מאיפה מגיע החשש, העצבות, התסכול? הכל מוודאות שנאבדה ונשכחה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%96%D7%95%D7%92%D7%99%D7%95%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"קצר וקולע - לנגוע עם העיניים- סוד המגע והאושר בזוגיות על פי מחקרי המח האחרונים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%96%D7%95%D7%92%D7%99%D7%95%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"קצר וקולע - לנגוע עם העיניים- סוד המגע והאושר בזוגיות על פי מחקרי המח האחרונים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%97%D7%95%D7%9E%D7%A8%D7%95%D7%AA-%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%AA-%D7%91%D7%94%D7%9C%D7%9B%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"חומרות וקולות בהלכה - החכם עיניו בראשו.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%97%D7%95%D7%9E%D7%A8%D7%95%D7%AA-%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%AA-%D7%91%D7%94%D7%9C%D7%9B%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"חומרות וקולות בהלכה - החכם עיניו בראשו.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%97%D7%99%D7%93%D7%AA-%D7%94%D7%A0%D7%AA%D7%99%D7%A0%D7%94-%D7%A9%D7%90%D7%9C%D7%95-%D7%90%D7%AA-%D7%94%D7%97%D7%91%D7%A8%D7%99%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"חידת הנתינה- שאלו את החברים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "static page scrolls sideways (700 > 375)",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%97%D7%99%D7%93%D7%AA-%D7%94%D7%A0%D7%AA%D7%99%D7%A0%D7%94-%D7%A9%D7%90%D7%9C%D7%95-%D7%90%D7%AA-%D7%94%D7%97%D7%91%D7%A8%D7%99%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"חידת הנתינה- שאלו את החברים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%98%D7%99%D7%A4%D7%99%D7%9D-%D7%A9%D7%90%D7%94%D7%91%D7%AA%D7%99-%D7%9E%D7%94%D7%A8%D7%91-%D7%96%D7%9E%D7%99%D7%A8-%D7%9B%D7%94%D7%9F-%D7%95%D7%90%D7%99%D7%99%D7%9C-%D7%90%D7%95%D7%A0%D7%92%D7%A8/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"טיפים שאהבתי מהרב זמיר כהן ואייל אונגר בחינוך ילדים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%98%D7%99%D7%A4%D7%99%D7%9D-%D7%A9%D7%90%D7%94%D7%91%D7%AA%D7%99-%D7%9E%D7%94%D7%A8%D7%91-%D7%96%D7%9E%D7%99%D7%A8-%D7%9B%D7%94%D7%9F-%D7%95%D7%90%D7%99%D7%99%D7%9C-%D7%90%D7%95%D7%A0%D7%92%D7%A8/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"טיפים שאהבתי מהרב זמיר כהן ואייל אונגר בחינוך ילדים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%99%D7%95%D7%93%D7%A2%D7%99%D7%9D-%D7%9E%D7%94-%D7%96%D7%94-%D7%92%D7%99%D7%94%D7%A0%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה זה גיהנם בתורה? זה ממש, אבל ממש, לא מה שחשבתם, וכן, זה בעולם הזה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%99%D7%95%D7%93%D7%A2%D7%99%D7%9D-%D7%9E%D7%94-%D7%96%D7%94-%D7%92%D7%99%D7%94%D7%A0%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה זה גיהנם בתורה? זה ממש, אבל ממש, לא מה שחשבתם, וכן, זה בעולם הזה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%97-%D7%A8%D7%A6%D7%95%D7%9F-%D7%97%D7%96%D7%A7-%D7%95%D7%91%D7%95%D7%A2%D7%A8/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"להבעיר את האש הפנימית - שאלון בשבילכם לפיתוח כח רצון חזק ובוער\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%97-%D7%A8%D7%A6%D7%95%D7%9F-%D7%97%D7%96%D7%A7-%D7%95%D7%91%D7%95%D7%A2%D7%A8/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"להבעיר את האש הפנימית - שאלון בשבילכם לפיתוח כח רצון חזק ובוער\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%94%D7%A4%D7%95%D7%9A-%D7%90%D7%AA-%D7%94%D7%AA%D7%A4%D7%99%D7%9C%D7%95%D7%AA-%D7%A9%D7%9C%D7%9A-%D7%9C%D7%9E%D7%A8%D7%92%D7%A9%D7%95%D7%AA-%D7%95%D7%97%D7%99%D7%95/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד להפוך את התפילות שלך למרגשות וחיות באמצעות שינוי קטן?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%94%D7%A4%D7%95%D7%9A-%D7%90%D7%AA-%D7%94%D7%AA%D7%A4%D7%99%D7%9C%D7%95%D7%AA-%D7%A9%D7%9C%D7%9A-%D7%9C%D7%9E%D7%A8%D7%92%D7%A9%D7%95%D7%AA-%D7%95%D7%97%D7%99%D7%95/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד להפוך את התפילות שלך למרגשות וחיות באמצעות שינוי קטן?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C-%D7%94%D7%AA%D7%91%D7%95%D7%93%D7%93%D7%95%D7%AA-%D7%A9%D7%A2%D7%AA-%D7%90%D7%99%D7%A4%D7%95%D7%A1-%D7%99%D7%95%D7%9E%D7%99%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד להתחיל התבודדות | שעת איפוס יומית\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C-%D7%94%D7%AA%D7%91%D7%95%D7%93%D7%93%D7%95%D7%AA-%D7%A9%D7%A2%D7%AA-%D7%90%D7%99%D7%A4%D7%95%D7%A1-%D7%99%D7%95%D7%9E%D7%99%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד להתחיל התבודדות | שעת איפוס יומית\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%99%D7%A6%D7%93-%D7%AA%D7%99%D7%99%D7%A6%D7%A8-%D7%90%D7%95%D7%A9%D7%A8-%D7%90%D7%9E%D7%99%D7%AA%D7%99/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד תייצר אושר אמיתי כל יום מחדש ?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "static page scrolls sideways (542 > 375)"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%99%D7%A6%D7%93-%D7%AA%D7%99%D7%99%D7%A6%D7%A8-%D7%90%D7%95%D7%A9%D7%A8-%D7%90%D7%9E%D7%99%D7%AA%D7%99/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד תייצר אושר אמיתי כל יום מחדש ?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%A2%D7%A1-%D7%A2%D7%9C-%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אני מרגיש כעס על ה' - מותר לי לכעוס על הקב\"ה? | הקדמה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9B%D7%A2%D7%A1-%D7%A2%D7%9C-%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אני מרגיש כעס על ה' - מותר לי לכעוס על הקב\"ה? | הקדמה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%A9%D7%9B%D7%99%D7%A8-%D7%90%D7%95-%D7%A2%D7%A6%D7%9E%D7%90%D7%99/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"להיות שכיר או עצמאי?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%A9%D7%9B%D7%99%D7%A8-%D7%90%D7%95-%D7%A2%D7%A6%D7%9E%D7%90%D7%99/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"להיות שכיר או עצמאי?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%94%D7%A6%D7%9C%D7%99%D7%97-%D7%91%D7%9E%D7%A2%D7%A9%D7%99%D7%9A-%D7%9B%D7%9C-%D7%A4%D7%A2%D7%9D-%D7%9E%D7%97%D7%93%D7%A9/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"להצליח במעשיך - כל פעם מחדש!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%94%D7%A6%D7%9C%D7%99%D7%97-%D7%91%D7%9E%D7%A2%D7%A9%D7%99%D7%9A-%D7%9B%D7%9C-%D7%A4%D7%A2%D7%9D-%D7%9E%D7%97%D7%93%D7%A9/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"להצליח במעשיך - כל פעם מחדש!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%94%D7%A8%D7%92%D7%99%D7%A9-%D7%A2%D7%A8%D7%9A-%D7%A2%D7%A6%D7%9E%D7%99-%D7%96%D7%95-%D7%9C%D7%90-%D7%92%D7%90%D7%95%D7%95%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"להרגיש ערך עצמי??!! זו לא גאווה?!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%94%D7%A8%D7%92%D7%99%D7%A9-%D7%A2%D7%A8%D7%9A-%D7%A2%D7%A6%D7%9E%D7%99-%D7%96%D7%95-%D7%9C%D7%90-%D7%92%D7%90%D7%95%D7%95%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"להרגיש ערך עצמי??!! זו לא גאווה?!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9B%D7%91%D7%93-%D7%9B%D7%9C-%D7%90%D7%97%D7%93-%D7%90%D7%95-%D7%9C%D7%97%D7%A9%D7%95%D7%93-%D7%91%D7%9B%D7%9C-%D7%90%D7%97%D7%93/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"לכבד כל אחד או לחשוד בכל אחד?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9B%D7%91%D7%93-%D7%9B%D7%9C-%D7%90%D7%97%D7%93-%D7%90%D7%95-%D7%9C%D7%97%D7%A9%D7%95%D7%93-%D7%91%D7%9B%D7%9C-%D7%90%D7%97%D7%93/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"לכבד כל אחד או לחשוד בכל אחד?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%90%D7%95%D7%9E%D7%A8%D7%99%D7%9D-%D7%90%D7%99%D7%A9-%D7%9E%D7%A6%D7%9C%D7%99%D7%97-%D7%96%D7%94-%D7%9C%D7%90-%D7%AA%D7%97%D7%91%D7%99%D7%A8%D7%99-%D7%90%D7%9E%D7%95%D7%A8%D7%99/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה אומרים איש מצליח? זה לא תחבירי אמורים להגיד איש צולח??!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%90%D7%95%D7%9E%D7%A8%D7%99%D7%9D-%D7%90%D7%99%D7%A9-%D7%9E%D7%A6%D7%9C%D7%99%D7%97-%D7%96%D7%94-%D7%9C%D7%90-%D7%AA%D7%97%D7%91%D7%99%D7%A8%D7%99-%D7%90%D7%9E%D7%95%D7%A8%D7%99/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה אומרים איש מצליח? זה לא תחבירי אמורים להגיד איש צולח??!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%90%D7%A0%D7%97%D7%A0%D7%95-%D7%9C%D7%90-%D7%93%D7%9C%D7%95%D7%A7%D7%99%D7%9D-%D7%90%D7%A9-%D7%91%D7%96%D7%95%D7%92%D7%99%D7%95%D7%AA-%D7%A9%D7%9C%D7%A0%D7%95/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה אנחנו לא \"דלוקים-אש\" בזוגיות שלנו?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%90%D7%A0%D7%97%D7%A0%D7%95-%D7%9C%D7%90-%D7%93%D7%9C%D7%95%D7%A7%D7%99%D7%9D-%D7%90%D7%A9-%D7%91%D7%96%D7%95%D7%92%D7%99%D7%95%D7%AA-%D7%A9%D7%9C%D7%A0%D7%95/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה אנחנו לא \"דלוקים-אש\" בזוגיות שלנו?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%90%D7%A0%D7%99-%D7%9C%D7%90-%D7%9E%D7%A6%D7%9C%D7%99%D7%97/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה אני לא מצליח ?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%90%D7%A0%D7%99-%D7%9C%D7%90-%D7%9E%D7%A6%D7%9C%D7%99%D7%97/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה אני לא מצליח ?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%94%D7%95%D7%A9%D7%9E%D7%98-%D7%94%D7%90%D7%93%D7%9D-%D7%9E%D7%A4%D7%A8%D7%A7-%D7%A9%D7%99%D7%A8%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה הושמט האדם מפרק שירה? מה אין לו שיר? אין לו ניגון?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%94-%D7%94%D7%95%D7%A9%D7%9E%D7%98-%D7%94%D7%90%D7%93%D7%9D-%D7%9E%D7%A4%D7%A8%D7%A7-%D7%A9%D7%99%D7%A8%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה הושמט האדם מפרק שירה? מה אין לו שיר? אין לו ניגון?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%A1%D7%95%D7%A8-%D7%93%D7%99%D7%9F-%D7%9C%D7%A9%D7%9E%D7%99%D7%99%D7%9D-%D7%90%D7%95-%D7%9C%D7%91%D7%98%D7%95%D7%97-%D7%91%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למסור דין לשמיים או לבטוח בה' ?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%9E%D7%A1%D7%95%D7%A8-%D7%93%D7%99%D7%9F-%D7%9C%D7%A9%D7%9E%D7%99%D7%99%D7%9D-%D7%90%D7%95-%D7%9C%D7%91%D7%98%D7%95%D7%97-%D7%91%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למסור דין לשמיים או לבטוח בה' ?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%A2%D7%A6%D7%95%D7%A8-%D7%90%D7%AA-%D7%94%D7%9E%D7%97%D7%A9%D7%91%D7%94-%D7%94%D7%A8%D7%A2%D7%94-%D7%95%D7%9C%D7%AA%D7%AA-%D7%9E%D7%A7%D7%95%D7%9D-%D7%9C%D7%A8%D7%92%D7%A9-%D7%A9%D7%9E%D7%A4/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"לעצור את המחשבה הרעה ולתת מקום לרגש שמפעיל אותה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%A2%D7%A6%D7%95%D7%A8-%D7%90%D7%AA-%D7%94%D7%9E%D7%97%D7%A9%D7%91%D7%94-%D7%94%D7%A8%D7%A2%D7%94-%D7%95%D7%9C%D7%AA%D7%AA-%D7%9E%D7%A7%D7%95%D7%9D-%D7%9C%D7%A8%D7%92%D7%A9-%D7%A9%D7%9E%D7%A4/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"לעצור את המחשבה הרעה ולתת מקום לרגש שמפעיל אותה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%A7%D7%97%D7%AA-%D7%90%D7%AA-%D7%94%D7%94%D7%91%D7%A0%D7%95%D7%AA-%D7%9C%D7%90-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%91%D7%94%D7%9E%D7%AA%D7%A0%D7%94-%D7%95%D7%90%D7%9E%D7%95%D7%A0%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"לקחת בכח את ההבנות במקום להיות בהמתנה ואמונה בטוב\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%A7%D7%97%D7%AA-%D7%90%D7%AA-%D7%94%D7%94%D7%91%D7%A0%D7%95%D7%AA-%D7%9C%D7%90-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%91%D7%94%D7%9E%D7%AA%D7%A0%D7%94-%D7%95%D7%90%D7%9E%D7%95%D7%A0%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"לקחת בכח את ההבנות במקום להיות בהמתנה ואמונה בטוב\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%AA%D7%AA-%D7%A2%D7%A8%D7%9A-%D7%9E%D7%AA%D7%95%D7%9A-%D7%97%D7%95%D7%A1%D7%A8-%D7%A2%D7%A8%D7%9A/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"באתי לעזור… אז למה כועסים עליי? או רוצה לעזור – אבל יוצא ההפך? זה למה.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9C%D7%AA%D7%AA-%D7%A2%D7%A8%D7%9A-%D7%9E%D7%AA%D7%95%D7%9A-%D7%97%D7%95%D7%A1%D7%A8-%D7%A2%D7%A8%D7%9A/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"באתי לעזור… אז למה כועסים עליי? או רוצה לעזור – אבל יוצא ההפך? זה למה.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%90%D7%A0%D7%97%D7%A0%D7%95-%D7%9E%D7%A8%D7%92%D7%99%D7%A9%D7%99%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה אנחנו מרגישים?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%90%D7%A0%D7%97%D7%A0%D7%95-%D7%9E%D7%A8%D7%92%D7%99%D7%A9%D7%99%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה אנחנו מרגישים?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%90%D7%A4%D7%A1%D7%99%D7%93-%D7%9E%D7%9B%D7%9A-%D7%A9%D7%9C%D7%90-%D7%90%D7%A8%D7%A6%D7%94-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%90%D7%93%D7%9D-%D7%9E%D7%9E%D7%95%D7%A9%D7%9E%D7%A2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה אפסיד מכך שלא ארצה להיות אדם ממושמע?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%90%D7%A4%D7%A1%D7%99%D7%93-%D7%9E%D7%9B%D7%9A-%D7%A9%D7%9C%D7%90-%D7%90%D7%A8%D7%A6%D7%94-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%90%D7%93%D7%9D-%D7%9E%D7%9E%D7%95%D7%A9%D7%9E%D7%A2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה אפסיד מכך שלא ארצה להיות אדם ממושמע?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%94%D7%99%D7%99%D7%AA%D7%99-%D7%A2%D7%95%D7%A9%D7%94-%D7%91%D7%9C%D7%A2%D7%93%D7%99%D7%9A/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"\"מה הייתי עושה בלעדיך??!!\", \"בלעדי, ה' היה שולח לך מישהו אחר!\"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%94%D7%99%D7%99%D7%AA%D7%99-%D7%A2%D7%95%D7%A9%D7%94-%D7%91%D7%9C%D7%A2%D7%93%D7%99%D7%9A/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"\"מה הייתי עושה בלעדיך??!!\", \"בלעדי, ה' היה שולח לך מישהו אחר!\"\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%94%D7%A8%D7%95%D7%95%D7%97%D7%99%D7%9D-%D7%9E%D7%9B%D7%9A-%D7%A9%D7%90%D7%A1%D7%9B%D7%99%D7%9D-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%90%D7%93%D7%9D-%D7%9E%D7%9E%D7%95%D7%A9%D7%9E%D7%A2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה ארוויח מכך שאסכים להיות אדם ממושמע?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%94%D7%A8%D7%95%D7%95%D7%97%D7%99%D7%9D-%D7%9E%D7%9B%D7%9A-%D7%A9%D7%90%D7%A1%D7%9B%D7%99%D7%9D-%D7%9C%D7%94%D7%99%D7%95%D7%AA-%D7%90%D7%93%D7%9D-%D7%9E%D7%9E%D7%95%D7%A9%D7%9E%D7%A2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה ארוויח מכך שאסכים להיות אדם ממושמע?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%9C%D7%A2%D7%A9%D7%95%D7%AA-%D7%9B%D7%A9%D7%9C%D7%90-%D7%99%D7%95%D7%93%D7%A2%D7%99%D7%9D-%D7%9E%D7%94-%D7%9C%D7%A2%D7%A9%D7%95%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה לעשות - כשלא יודעים מה לעשות?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%94-%D7%9C%D7%A2%D7%A9%D7%95%D7%AA-%D7%9B%D7%A9%D7%9C%D7%90-%D7%99%D7%95%D7%93%D7%A2%D7%99%D7%9D-%D7%9E%D7%94-%D7%9C%D7%A2%D7%A9%D7%95%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה לעשות - כשלא יודעים מה לעשות?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%95%D7%AA%D7%A8-%D7%9C%D7%99-%D7%9C%D7%94%D7%91%D7%99%D7%A2-%D7%9B%D7%A2%D7%A1-%D7%9B%D7%9C%D7%A4%D7%99-%D7%94-%D7%97%D7%9C%D7%A7-%D7%91/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מותר לי להביע כעס כלפי ה'? | חלק ב'\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%95%D7%AA%D7%A8-%D7%9C%D7%99-%D7%9C%D7%94%D7%91%D7%99%D7%A2-%D7%9B%D7%A2%D7%A1-%D7%9B%D7%9C%D7%A4%D7%99-%D7%94-%D7%97%D7%9C%D7%A7-%D7%91/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מותר לי להביע כעס כלפי ה'? | חלק ב'\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%95%D7%AA%D7%A8-%D7%9C%D7%99-%D7%9C%D7%94%D7%91%D7%99%D7%A2-%D7%9B%D7%A2%D7%A1-%D7%9B%D7%9C%D7%A4%D7%99-%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מותר לי להביע כעס כלפי ה'? | חלק ג' ואחרון\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%95%D7%AA%D7%A8-%D7%9C%D7%99-%D7%9C%D7%94%D7%91%D7%99%D7%A2-%D7%9B%D7%A2%D7%A1-%D7%9B%D7%9C%D7%A4%D7%99-%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מותר לי להביע כעס כלפי ה'? | חלק ג' ואחרון\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%95%D7%AA%D7%A8-%D7%9C%D7%99-%D7%9C%D7%9B%D7%A2%D7%95%D7%A1-%D7%A2%D7%9C-%D7%94%D7%A7%D7%91%D7%94-%D7%97%D7%9C%D7%A7-%D7%90/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מותר לי להביע כעס כלפי הקב\"ה? | חלק א'\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%95%D7%AA%D7%A8-%D7%9C%D7%99-%D7%9C%D7%9B%D7%A2%D7%95%D7%A1-%D7%A2%D7%9C-%D7%94%D7%A7%D7%91%D7%94-%D7%97%D7%9C%D7%A7-%D7%90/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מותר לי להביע כעס כלפי הקב\"ה? | חלק א'\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%A2%D7%A9%D7%94-%D7%A1%D7%95%D7%AA%D7%A8-%D7%9E%D7%97%D7%A9%D7%91%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"האם המעשים שלי סותרים את המחשבות שלי ואת התפילות שלי?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%A2%D7%A9%D7%94-%D7%A1%D7%95%D7%AA%D7%A8-%D7%9E%D7%97%D7%A9%D7%91%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"האם המעשים שלי סותרים את המחשבות שלי ואת התפילות שלי?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%A8%D7%9B%D7%96-%D7%9B%D7%A0%D7%A4%D7%99%D7%99%D7%9D-%D7%9E%D7%92%D7%99%D7%A2-%D7%9C%D7%9B%D7%A4%D7%A8-%D7%A1%D7%91%D7%90-%D7%91%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA-%D7%90%D7%9C-%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מרכז כנפיים מגיע לכפר סבא בשבועות - אל תוך הלילה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%A8%D7%9B%D7%96-%D7%9B%D7%A0%D7%A4%D7%99%D7%99%D7%9D-%D7%9E%D7%92%D7%99%D7%A2-%D7%9C%D7%9B%D7%A4%D7%A8-%D7%A1%D7%91%D7%90-%D7%91%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA-%D7%90%D7%9C-%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מרכז כנפיים מגיע לכפר סבא בשבועות - אל תוך הלילה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%A9%D7%95%D7%9D-%D7%A0%D7%97%D7%AA-%D7%A8%D7%95%D7%97-%D7%93%D7%A0%D7%A9%D7%99%D7%9D-%D7%A2%D7%95%D7%A9%D7%99%D7%9D-%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"שואלת הגמרא איך זה יתכן? וכי \"משום נחת רוח דנשים\" עושים עבירות?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%A9%D7%95%D7%9D-%D7%A0%D7%97%D7%AA-%D7%A8%D7%95%D7%97-%D7%93%D7%A0%D7%A9%D7%99%D7%9D-%D7%A2%D7%95%D7%A9%D7%99%D7%9D-%D7%A2%D7%91%D7%99%D7%A8%D7%95%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"שואלת הגמרא איך זה יתכן? וכי \"משום נחת רוח דנשים\" עושים עבירות?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%AA%D7%9B%D7%95%D7%A0%D7%99%D7%9D-%D7%A9%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%90%D7%95%D7%94%D7%91%D7%99%D7%9D/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מתכונים בריאים שילדים אוהבים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%9E%D7%AA%D7%9B%D7%95%D7%A0%D7%99%D7%9D-%D7%A9%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%90%D7%95%D7%94%D7%91%D7%99%D7%9D/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מתכונים בריאים שילדים אוהבים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A0%D7%96%D7%A7%D7%99-%D7%94%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%94%D7%A4%D7%A1%D7%99%D7%9B%D7%95%D7%9C%D7%95%D7%92%D7%99/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"נזקי הטיפול הפסיכולוגי וכל שאר הטיפולים שמנותקים מהקב\"ה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A0%D7%96%D7%A7%D7%99-%D7%94%D7%98%D7%99%D7%A4%D7%95%D7%9C-%D7%94%D7%A4%D7%A1%D7%99%D7%9B%D7%95%D7%9C%D7%95%D7%92%D7%99/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"נזקי הטיפול הפסיכולוגי וכל שאר הטיפולים שמנותקים מהקב\"ה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A0%D7%A1-%D7%A4%D7%99-%D7%94%D7%90%D7%AA%D7%95%D7%9F-%D7%9E%D7%94-%D7%9E%D7%98%D7%A8%D7%AA%D7%95-%D7%91%D7%9B%D7%9C%D7%9C-%D7%A4%D7%A8%D7%A9%D7%AA-%D7%91%D7%9C%D7%A7/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"נס פי האתון – מה מטרתו בכלל? פרשת בלק\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A0%D7%A1-%D7%A4%D7%99-%D7%94%D7%90%D7%AA%D7%95%D7%9F-%D7%9E%D7%94-%D7%9E%D7%98%D7%A8%D7%AA%D7%95-%D7%91%D7%9B%D7%9C%D7%9C-%D7%A4%D7%A8%D7%A9%D7%AA-%D7%91%D7%9C%D7%A7/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"נס פי האתון – מה מטרתו בכלל? פרשת בלק\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A1%D7%95%D7%93-%D7%94%D7%99%D7%A6%D7%99%D7%90%D7%94-%D7%9E%D7%92%D7%9C%D7%95%D7%AA-%D7%94%D7%A0%D7%A4%D7%A9/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"סוד היציאה מגלות הנפש\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A1%D7%95%D7%93-%D7%94%D7%99%D7%A6%D7%99%D7%90%D7%94-%D7%9E%D7%92%D7%9C%D7%95%D7%AA-%D7%94%D7%A0%D7%A4%D7%A9/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"סוד היציאה מגלות הנפש\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A1%D7%A4%D7%A8-%D7%94%D7%9B%D7%95%D7%96%D7%A8%D7%99-%D7%A8%D7%91%D7%99-%D7%A0%D7%97%D7%9E%D7%9F-%D7%9E%D7%91%D7%A8%D7%A1%D7%9C%D7%91/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"תיקון של טעות נפוצה לגבי ספר הכוזרי ורבי נחמן מברסלב.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "static page scrolls sideways (885 > 375)",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A1%D7%A4%D7%A8-%D7%94%D7%9B%D7%95%D7%96%D7%A8%D7%99-%D7%A8%D7%91%D7%99-%D7%A0%D7%97%D7%9E%D7%9F-%D7%9E%D7%91%D7%A8%D7%A1%D7%9C%D7%91/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"תיקון של טעות נפוצה לגבי ספר הכוזרי ורבי נחמן מברסלב.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A2%D7%95%D7%91%D7%93-%D7%9B%D7%9E%D7%95-%D7%9B%D7%9C%D7%91-%D7%9E%D7%99%D7%A9%D7%94%D7%95-%D7%94%D7%A9%D7%AA%D7%9C%D7%98-%D7%9C%D7%9A-%D7%A2%D7%9C-%D7%94%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"עובד כמו כלב??? מישהו השתלט לך על המערכת\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A2%D7%95%D7%91%D7%93-%D7%9B%D7%9E%D7%95-%D7%9B%D7%9C%D7%91-%D7%9E%D7%99%D7%A9%D7%94%D7%95-%D7%94%D7%A9%D7%AA%D7%9C%D7%98-%D7%9C%D7%9A-%D7%A2%D7%9C-%D7%94%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"עובד כמו כלב??? מישהו השתלט לך על המערכת\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A4%D7%A8%D7%93%D7%95%D7%A7%D7%A1-%D7%94%D7%90%D7%94%D7%91%D7%94-%D7%95%D7%94%D7%A0%D7%AA%D7%99%D7%A0%D7%94/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"פרדוקס האהבה והנתינה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A4%D7%A8%D7%93%D7%95%D7%A7%D7%A1-%D7%94%D7%90%D7%94%D7%91%D7%94-%D7%95%D7%94%D7%A0%D7%AA%D7%99%D7%A0%D7%94/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"פרדוקס האהבה והנתינה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A8%D7%95%D7%A6%D7%94-%D7%9C%D7%96%D7%9B%D7%95%D7%AA-%D7%9C%D7%92%D7%99%D7%9C%D7%95%D7%99-%D7%90%D7%9C%D7%99%D7%94%D7%95/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"רוצה לזכות לגילוי אליהו? כן, זו לא בדיחה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A8%D7%95%D7%A6%D7%94-%D7%9C%D7%96%D7%9B%D7%95%D7%AA-%D7%9C%D7%92%D7%99%D7%9C%D7%95%D7%99-%D7%90%D7%9C%D7%99%D7%94%D7%95/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"רוצה לזכות לגילוי אליהו? כן, זו לא בדיחה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A8%D7%95%D7%A6%D7%94-%D7%9C%D7%A7%D7%91%D7%9C-%D7%94%D7%93%D7%A8%D7%9B%D7%94-%D7%90%D7%99%D7%A9%D7%99%D7%AA-%D7%99%D7%95%D7%9E%D7%99%D7%95%D7%9E%D7%99%D7%AA-%D7%99%D7%A9%D7%99%D7%A8%D7%95%D7%AA/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"רוצה לקבל הדרכה אישית, יומיומית, ישירות מהקב\"ה? כן, ברצינות!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A8%D7%95%D7%A6%D7%94-%D7%9C%D7%A7%D7%91%D7%9C-%D7%94%D7%93%D7%A8%D7%9B%D7%94-%D7%90%D7%99%D7%A9%D7%99%D7%AA-%D7%99%D7%95%D7%9E%D7%99%D7%95%D7%9E%D7%99%D7%AA-%D7%99%D7%A9%D7%99%D7%A8%D7%95%D7%AA/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"רוצה לקבל הדרכה אישית, יומיומית, ישירות מהקב\"ה? כן, ברצינות!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A9%D7%99%D7%97-%D7%A4%D7%A0%D7%99%D7%9E%D7%99-%D7%97%D7%9C%D7%A7-%D7%91/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"שיח פנימי חלק ב'\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A9%D7%99%D7%97-%D7%A4%D7%A0%D7%99%D7%9E%D7%99-%D7%97%D7%9C%D7%A7-%D7%91/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"שיח פנימי חלק ב'\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A9%D7%9E%D7%A0%D7%98%D7%95%D7%96-%D7%9E%D7%92%D7%A2%D7%99%D7%9C/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"ה\"שמנטוז המגעיל\" -חוסר יכולת להתאמן ורגשות שפועלים בחשכה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A9%D7%9E%D7%A0%D7%98%D7%95%D7%96-%D7%9E%D7%92%D7%A2%D7%99%D7%9C/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"ה\"שמנטוז המגעיל\" -חוסר יכולת להתאמן ורגשות שפועלים בחשכה\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/%D7%A9%D7%A2%D7%A8%D7%9A-%D7%A2%D7%A6%D7%9E%D7%99-%D7%94%D7%95%D7%90-%D7%94%D7%99%D7%A1%D7%95%D7%93/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מקורות תורניים לכך שהרגשה חזקה וקבועה של ערך עצמי היא היסוד של הענווה והבסיס לצורת אדם\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/%D7%A9%D7%A2%D7%A8%D7%9A-%D7%A2%D7%A6%D7%9E%D7%99-%D7%94%D7%95%D7%90-%D7%94%D7%99%D7%A1%D7%95%D7%93/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מקורות תורניים לכך שהרגשה חזקה וקבועה של ערך עצמי היא היסוד של הענווה והבסיס לצורת אדם\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/about-me/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אודות יוחי דנחי - תומך ומאמן רגשי רב תחומי, איש עסקים ומומחה לשינויים מהירים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'image.default', 'media-carousel.default', 'nav-menu.default', 'spacer.default', 'testimonial-carousel.default', 'text-editor.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/about-me/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אודות יוחי דנחי - תומך ומאמן רגשי רב תחומי, איש עסקים ומומחה לשינויים מהירים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'image.default', 'media-carousel.default', 'nav-menu.default', 'spacer.default', 'testimonial-carousel.default', 'text-editor.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/angel-of-death/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מלאך המוות טעה?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/angel-of-death/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מלאך המוות טעה?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/bad-food-delivery/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מכירים את הקטע הזה שמזמינים אוכל והוא מגיע על הפנים?!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/bad-food-delivery/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מכירים את הקטע הזה שמזמינים אוכל והוא מגיע על הפנים?!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/behind-his-tattoos/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה מסתתר מאחורי הקעקועים שלו? יום צילומים בת\"א עם דולב דיווידוביץ וערוץ 2000\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/behind-his-tattoos/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה מסתתר מאחורי הקעקועים שלו? יום צילומים בת\"א עם דולב דיווידוביץ וערוץ 2000\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/blog/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/10/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/10/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/11/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/11/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/12/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/12/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/13/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']",
+   "static page scrolls sideways (380 > 375)"
+  ]
+ ],
+ [
+  "/blog/13/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/3/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/3/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/4/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/4/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/5/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/5/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/6/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/6/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/7/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/7/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/8/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/8/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/9/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/blog/9/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"הבלוג של הרב יוחי דנחי - שיטת מנצחים\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'posts.classic', 'shortcode.default', 'spacer.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/connect/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"להצטרפות לקבלת סירטונים ומסרים מהרב יוחי דנחי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'spacer.default', 'testimonial-carousel.default', 'text-editor.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/connect/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"להצטרפות לקבלת סירטונים ומסרים מהרב יוחי דנחי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'spacer.default', 'testimonial-carousel.default', 'text-editor.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/givingandbetrayal/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה דווקא האנשים שהכי השקעתם בהם עלולים יום אחד להתהפך עליכם?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/givingandbetrayal/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה דווקא האנשים שהכי השקעתם בהם עלולים יום אחד להתהפך עליכם?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/halloween-all-saints/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מוקדש לכבוד חג כל הקדושים באהבה ❤️ Halloween All Saints’ Day With Love\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/halloween-all-saints/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מוקדש לכבוד חג כל הקדושים באהבה ❤️ Halloween All Saints’ Day With Love\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/haredi-pork/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך יכול להיות שהוא חרדי ואוכל חזיר??!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/haredi-pork/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך יכול להיות שהוא חרדי ואוכל חזיר??!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/itay-prayer-question/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"שאלתי את איתי, בחור חילוני מתל אביב, האם אתה מתפלל?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/itay-prayer-question/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"שאלתי את איתי, בחור חילוני מתל אביב, האם אתה מתפלל?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/jewish-whatsapp-grou/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"קבוצות וואטסאפ של יהדות ודברי תורה Jewish whatsapp groups יהדות בגובה העיניים יוחנן\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/jewish-whatsapp-grou/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"קבוצות וואטסאפ של יהדות ודברי תורה Jewish whatsapp groups יהדות בגובה העיניים יוחנן\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/judaism-meaning/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כשבחור חילוני שואל רב: מה זו יהדות בשבילך?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/judaism-meaning/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כשבחור חילוני שואל רב: מה זו יהדות בשבילך?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/kids-bring-junk/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה לעשות כשהילד מביא שמונצס ואשכרה רוצה להכניס אותם הביתה??!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/kids-bring-junk/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה לעשות כשהילד מביא שמונצס ואשכרה רוצה להכניס אותם הביתה??!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/lehitpater/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אל תשפוך את אנרגיית השינוי לביוב\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/lehitpater/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אל תשפוך את אנרגיית השינוי לביוב\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/loveandgiving/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"יש אנשים שרוצים אותך ויש אנשים שרוצים רק את מה שיש לך לתת.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/loveandgiving/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"יש אנשים שרוצים אותך ויש אנשים שרוצים רק את מה שיש לך לתת.\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/loved-respected-person/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך להפוך לאדם אהוב ומוערך בחמש דקות ליום?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/loved-respected-person/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך להפוך לאדם אהוב ומוערך בחמש דקות ליום?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/mass-repentance/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"השתגעת?! אתה יודע מה יקרה אם כולם יחזרו בתשובה??!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/mass-repentance/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"השתגעת?! אתה יודע מה יקרה אם כולם יחזרו בתשובה??!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/motorcycle-test/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך עברתי טסט לאופנוע ברבע שעה ובלי קומבינות?!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/motorcycle-test/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך עברתי טסט לאופנוע ברבע שעה ובלי קומבינות?!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/my-services/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד אני יכול לעזור? הרצאות, סדנאות, פגישות\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'spacer.default', 'text-editor.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/my-services/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"כיצד אני יכול לעזור? הרצאות, סדנאות, פגישות\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'heading.default', 'html.default', 'nav-menu.default', 'spacer.default', 'text-editor.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/no-motivation-again/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה שוב לא בא לי לעשות שום דבר????\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/no-motivation-again/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה שוב לא בא לי לעשות שום דבר????\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/nomansland/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה מחאה על עוול היא חלק עמוק מתהליך ההחלמה?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/nomansland/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה מחאה על עוול היא חלק עמוק מתהליך ההחלמה?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/october-miracle/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"זה הנס של השביעי באוקטובר...?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/october-miracle/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"זה הנס של השביעי באוקטובר...?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/prayer-anxiety-trap/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"חרדות... איך יכול להיות שתפילה תרסק לך את הנפש במקום לעזור...?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/prayer-anxiety-trap/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"חרדות... איך יכול להיות שתפילה תרסק לך את הנפש במקום לעזור...?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/prayer-anxiety/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מגי טביבי ורן דנקר - אולי ביקשנו מאלוהים את הדבר הלא נכון?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/prayer-anxiety/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מגי טביבי ורן דנקר - אולי ביקשנו מאלוהים את הדבר הלא נכון?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/rachel-rabin-memory/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אחרי 30 שנה, לראשונה מאז רצח רבין– יום הזיכרון ויום רחל אמנו נפגשים ימים ספורים לפני הבחירות!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/rachel-rabin-memory/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אחרי 30 שנה, לראשונה מאז רצח רבין– יום הזיכרון ויום רחל אמנו נפגשים ימים ספורים לפני הבחירות!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/real-man-anxiety/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אין דבר כזה גבר אמיתי עם חרדה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/real-man-anxiety/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אין דבר כזה גבר אמיתי עם חרדה!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/respecttogiving/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"חכמת הנתינה — לכבד את הנתינה שלי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/respecttogiving/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"חכמת הנתינה — לכבד את הנתינה שלי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/soldiers-first-2/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"0% למשתמטים!! 100% לחיילים!!!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/soldiers-first-2/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"0% למשתמטים!! 100% לחיילים!!!!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/speed/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"המהירות היא מן השטן\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/speed/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"המהירות היא מן השטן\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/tzadikim/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"איך יכול להיות שאלוהים לא סובל צדיקים וחסידים?!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/tzadikim/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"איך יכול להיות שאלוהים לא סובל צדיקים וחסידים?!\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/voting-discovery/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"אני מודה, חשבתי לא להצביע הפעם אבל נחרדתי ממה שגיליתי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/voting-discovery/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"אני מודה, חשבתי לא להצביע הפעם אבל נחרדתי ממה שגיליתי\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/what-to-do-when-a-gang-attacks-you/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"מה לעשות כשחבורת עבריינים מתנפלת עליך? פיתרון פשוט ויעיל\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/what-to-do-when-a-gang-attacks-you/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"מה לעשות כשחבורת עבריינים מתנפלת עליך? פיתרון פשוט ויעיל\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ],
+ [
+  "/yisorim/",
+  375,
+  [
+   "title differs: \"One moment, please...\" vs \"למה חז\"ל אומרים שדווקא מי שריחמת עליו יהיה הראשון לייסר אותך?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']"
+  ]
+ ],
+ [
+  "/yisorim/",
+  1366,
+  [
+   "title differs: \"One moment, please...\" vs \"למה חז\"ל אומרים שדווקא מי שריחמת עליו יהיה הראשון לייסר אותך?\"",
+   "widgets differ: only in WordPress [] | only in static ['button.default', 'facebook-page.default', 'heading.default', 'html.default', 'image.default', 'nav-menu.default', 'post-comments.theme_comments', 'post-info.default', 'post-navigation.default', 'posts.classic', 'share-buttons.default', 'shortcode.default', 'spacer.default', 'text-editor.default', 'theme-post-content.default', 'theme-post-featured-image.default', 'theme-post-title.default', 'theme-site-logo.default']",
+   "images failed on static: ['//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg', '//danyouchy.github.io/wp-content/uploads/2019/09/book110.jpg']"
+  ]
+ ]
+]
