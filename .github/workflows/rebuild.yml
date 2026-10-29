@@ -1,0 +1,90 @@
+name: Rebuild static site from WordPress
+
+# Copies the WordPress site again and rebuilds site/ from it, so new posts
+# published in WordPress appear on the static site. Runs every 3 hours.
+# WordPress keeps running behind the static site; the X-Static-Bypass header
+# asks the server for the WordPress version instead of the static copy.
+on:
+  schedule:
+    - cron: "41 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-build
+  cancel-in-progress: false
+
+env:
+  UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+  BYPASS: "X-Static-Bypass: wp-origin-7f3k"
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect URLs from sitemaps
+        run: |
+          : > urls.txt
+          curl -sL -A "$UA" -H "$BYPASS" "https://www.victory.org.il/sitemaps.xml" -o idx.xml
+          for sm in $(grep -o "<loc>[^<]*</loc>" idx.xml | sed 's/<\/\?loc>//g'); do
+            curl -sL -A "$UA" -H "$BYPASS" "$sm" | grep -o "<loc>[^<]*</loc>" | sed 's/<\/\?loc>//g' >> urls.txt || true
+          done
+          echo "https://www.victory.org.il/" >> urls.txt
+          grep -v -E '\.xml$' urls.txt | sort -u > u && mv u urls.txt
+          echo "URL count: $(wc -l < urls.txt)"
+          rm -f idx.xml
+
+      - name: Download site
+        run: |
+          rm -rf build && mkdir build && cd build
+          wget --recursive --level=inf --page-requisites --adjust-extension \
+               --convert-links --no-parent -e robots=off \
+               --user-agent="$UA" --header="$BYPASS" --wait=0.3 --random-wait --tries=3 --timeout=30 \
+               --domains=victory.org.il,www.victory.org.il \
+               --reject-regex '(wp-admin|wp-login|xmlrpc|wp-json|/feed/?$|/feed/|\?replytocom|\?s=|/embed/?$|oembed|/static-repo/)' \
+               --no-host-directories -i ../urls.txt || true
+          echo "HTML pages: $(find . -name '*.html' | wc -l)"
+
+      - name: Download files the pages refer to
+        run: |
+          for round in 1 2 3; do
+            python3 tools/find_missing.py build > missing.txt
+            [ -s missing.txt ] || break
+            (cd build && wget --force-directories --no-host-directories --page-requisites --adjust-extension \
+               -e robots=off --user-agent="$UA" --header="$BYPASS" --wait=0.2 --tries=2 --timeout=30 \
+               --domains=victory.org.il,www.victory.org.il -i ../missing.txt >/dev/null 2>&1 || true)
+          done
+          (cd build && wget --force-directories --no-host-directories -e robots=off --user-agent="$UA" \
+             --header="$BYPASS" --tries=2 --timeout=30 -i ../tools/extra-urls.txt >/dev/null 2>&1 || true)
+          rm -f missing.txt
+
+      - name: Clean up and finish pages
+        run: |
+          python3 tools/cleanup.py build
+          python3 tools/forms.py build
+          python3 tools/thanks.py build
+          curl -sSfL "https://www.youtube.com/feeds/videos.xml?channel_id=UCcszsZ1SGDe5uRXQoooU8vQ" -o feed.xml \
+            && python3 tools/youtube_feed.py build feed.xml || echo "YouTube feed skipped"
+          rm -f feed.xml
+
+      - name: Check the build before replacing the site
+        run: |
+          n=$(find build -name '*.html' | wc -l)
+          echo "pages: $n"
+          [ "$n" -ge 100 ] || { echo "Too few pages, keeping the current site"; exit 1; }
+          [ -f build/index.html ] || { echo "No home page, keeping the current site"; exit 1; }
+          grep -q 'sby_items_wrap' build/index.html || true
+
+      - name: Replace site and commit
+        run: |
+          rm -rf site && mv build site && rm -f urls.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site
+          git commit -m "Rebuild static site from WordPress" || echo "No changes"
+          git pull --rebase -q origin main && git push
