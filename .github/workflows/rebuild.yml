@@ -1,12 +1,10 @@
 name: Rebuild static site from WordPress
 
-# Copies the WordPress site again and rebuilds site/ from it, so new posts
-# published in WordPress appear on the static site. Runs every 3 hours.
+# Copies the WordPress site and rebuilds site/ from it. Manual only: the static
+# site is now the main site and is edited directly, so a rebuild would undo that.
 # WordPress keeps running behind the static site; the X-Static-Bypass header
 # asks the server for the WordPress version instead of the static copy.
 on:
-  schedule:
-    - cron: "41 */3 * * *"
   workflow_dispatch:
 
 permissions:
