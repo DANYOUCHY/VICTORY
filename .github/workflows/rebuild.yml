@@ -64,6 +64,7 @@ jobs:
       - name: Clean up and finish pages
         run: |
           python3 tools/cleanup.py build
+          python3 tools/own_css.py build
           python3 tools/forms.py build
           python3 tools/comments.py form build
           python3 tools/thanks.py build
