@@ -80,7 +80,7 @@ def attr(s):
     return html.escape(s, quote=True)
 
 def root_paths(s):
-    return re.sub(r'(?:\.\./)+(wp-content|wp-includes)/', r'/\1/', s)
+    return re.sub(r'(?:\.\./)+(assets|wp-content|wp-includes)/', r'/\1/', s)
 
 def page_file(url_path):
     return os.path.join(ROOT, urllib.parse.unquote(url_path).strip('/'), 'index.html')
@@ -277,7 +277,7 @@ def save_images(src, slug, date):
     from PIL import Image
     im = Image.open(src).convert('RGB')
     w, h = im.size
-    folder = os.path.join(ROOT, 'wp-content', 'uploads', '%04d' % date.year, '%02d' % date.month)
+    folder = os.path.join(ROOT, 'assets', 'wp', 'uploads', '%04d' % date.year, '%02d' % date.month)
     os.makedirs(folder, exist_ok=True)
     name = re.sub(r'[^\w֐-׿-]+', '-', slug).strip('-')[:60] or 'post'
     sizes = {}
