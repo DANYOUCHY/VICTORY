@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#8A2F3C">
+<title>מפתח המקורות</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Assistant:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#F3F4F6; --surface:#FFFFFF; --ink:#18202B; --muted:#5D6775; --line:#DCE0E6;
+  --accent:#8A2F3C; --accent-ink:#FFFFFF; --mark:#F3D7DB; --warn:#8A5A12;
+  --display:"Frank Ruhl Libre","David Libre","Times New Roman",serif;
+  --body:"Assistant","Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12161C; --surface:#1A2029; --ink:#E8EBEF; --muted:#9AA4B1; --line:#2B333E;
+  --accent:#E07A88; --accent-ink:#1A0E10; --mark:#5A2830; --warn:#E0B36A; color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 60px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding-top:calc(14px + env(safe-area-inset-top,0px));padding-bottom:12px;display:grid;gap:10px;border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+h1{font-family:var(--display);font-weight:700;font-size:1.8rem;margin:0;line-height:1.1}
+.linkbtn{border:0;background:none;color:var(--muted);font:inherit;font-size:.85rem;cursor:pointer;padding:4px;text-decoration:underline}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 12px}
+.search:focus-within{border-color:var(--accent)}
+.search svg{flex:none;color:var(--muted)}
+.search input:focus-visible{outline:none}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:inherit;padding:12px 0;outline:none}
+.clear{border:0;background:none;color:var(--muted);font:inherit;cursor:pointer;padding:6px}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+select{font:inherit;font-size:.95rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 10px;width:100%;min-width:0}
+.meta{font-size:.85rem;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
+.notice{background:var(--surface);border:1px solid var(--line);border-inline-start:3px solid var(--warn);padding:10px 12px;border-radius:8px;font-size:.92rem;margin-top:14px}
+#list{display:grid;gap:10px;margin-top:14px}
+.card{display:flex;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px;cursor:pointer;text-align:start;font:inherit;color:inherit;width:100%}
+.card:hover{border-color:var(--muted)}
+.card:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.thumb{flex:none;width:76px;height:96px;border-radius:8px;background:var(--bg);object-fit:cover;border:1px solid var(--line)}
+.cbody{min-width:0;display:grid;gap:3px;align-content:start}
+.ctitle{font-family:var(--display);font-weight:700;font-size:1.12rem;line-height:1.3}
+.csrc{color:var(--accent);font-size:.9rem;font-weight:600}
+.csnip{color:var(--muted);font-size:.92rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.chip{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:1px 9px;color:var(--muted);background:transparent;font-family:inherit}
+mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
+.center{text-align:center;padding:48px 12px;color:var(--muted);display:grid;gap:12px;justify-items:center}
+.center h2{font-family:var(--display);color:var(--ink);margin:0;font-size:1.4rem}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:10px 16px;font:600 1rem var(--body);cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.sheet{position:fixed;inset:0;z-index:20;background:var(--bg);overflow-y:auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet .inner{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px 40px;display:grid;gap:14px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0;background:var(--bg);padding-block:8px;z-index:1}
+.dimg img{width:100%;border-radius:10px;border:1px solid var(--line);display:block;min-height:120px;background:var(--surface)}
+.dtitle{font-family:var(--display);font-size:1.55rem;margin:0;line-height:1.25;text-wrap:balance}
+.dsrc{color:var(--accent);font-weight:600}
+.ddesc{white-space:pre-wrap;overflow-wrap:anywhere}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.ocrbox{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:8px}
+.ocrbox h3{margin:0;font-size:.85rem;letter-spacing:.04em;color:var(--muted);font-weight:700}
+.ocrtext{white-space:pre-wrap;font-family:var(--display);font-size:1.05rem;line-height:1.7;overflow-wrap:anywhere}
+.small{font-size:.85rem;color:var(--muted)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top"><h1>מפתח המקורות</h1><button class="linkbtn" id="refresh" hidden>רענון</button></div>
+    <div id="controls" hidden style="display:grid;gap:10px">
+      <div class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="q" type="text" enterkeyhint="search" placeholder="חיפוש בכל מילה, גם מתוך הטקסט שבתמונה" autocomplete="off" aria-label="חיפוש">
+        <button class="clear" id="qclear" hidden aria-label="נקה חיפוש">✕</button>
+      </div>
+      <div class="filters">
+        <select id="fbook" aria-label="סינון לפי ספר"><option value="">כל הספרים</option></select>
+        <select id="ftopic" aria-label="סינון לפי נושא"><option value="">כל הנושאים</option></select>
+      </div>
+      <div class="meta"><span id="count"></span><span id="sync"></span></div>
+    </div>
+  </header>
+
+  <div id="connect" class="center" hidden>
+    <h2>חיבור לדרופבוקס</h2>
+    <p>העמוד קורא את המקורות ישירות מהדרופבוקס שלך, בהרשאת קריאה בלבד. שום מידע לא נשמר בשום מקום אחר. מתחברים פעם אחת בכל מכשיר.</p>
+    <button class="btn primary" id="connectBtn">התחבר לדרופבוקס</button>
+  </div>
+  <div id="notice" class="notice" hidden></div>
+  <div id="list" aria-live="polite"></div>
+  <div id="empty" class="center" hidden>
+    <h2>עוד אין מקורות במפתח</h2>
+    <p>מעלים צילומים לתיקייה "מקורות" בדרופבוקס. עמוד מספר: בתוך תיקייה בשם הספר. אחר כך כותבים לקלוד "תעבד את המקורות החדשים".</p>
+  </div>
+  <p class="small" style="text-align:center;margin-top:30px"><button class="linkbtn" id="logout" hidden>ניתוק המכשיר הזה מהדרופבוקס</button></p>
+</div>
+
+<div class="sheet" id="view" hidden>
+  <div class="inner">
+    <div class="bar"><button class="btn" id="viewBack">→ חזרה</button></div>
+    <div id="viewBody" style="display:grid;gap:14px"></div>
+  </div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const APP_KEY = "__APP_KEY__";
+  const ROOT = "/מקורות";
+  const INDEX = "/מפתח.json";
+  const REDIRECT = location.origin + location.pathname;
+  const $ = s => document.querySelector(s);
+  const LS = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+    del(k) { try { localStorage.removeItem(k); } catch {} }
+  };
+
+  /* ---------- Dropbox auth (PKCE, no secret) ---------- */
+  const b64url = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  async function startAuth() {
+    const verifier = b64url(crypto.getRandomValues(new Uint8Array(48)));
+    const challenge = b64url(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(verifier)));
+    const state = b64url(crypto.getRandomValues(new Uint8Array(12)));
+    sessionStorage.setItem("mk_verifier", verifier); sessionStorage.setItem("mk_state", state);
+    const p = new URLSearchParams({ client_id: APP_KEY, response_type: "code", code_challenge: challenge, code_challenge_method: "S256", token_access_type: "offline", redirect_uri: REDIRECT, state });
+    location.href = "https://www.dropbox.com/oauth2/authorize?" + p;
+  }
+  async function finishAuth(code, state) {
+    const verifier = sessionStorage.getItem("mk_verifier");
+    if (!verifier || state !== sessionStorage.getItem("mk_state")) throw new Error("state");
+    const r = await fetch("https://api.dropboxapi.com/oauth2/token", { method: "POST", body: new URLSearchParams({ code, grant_type: "authorization_code", code_verifier: verifier, client_id: APP_KEY, redirect_uri: REDIRECT }) });
+    if (!r.ok) throw new Error("token");
+    const j = await r.json();
+    LS.set("mk_refresh", j.refresh_token); saveAccess(j);
+    sessionStorage.removeItem("mk_verifier"); sessionStorage.removeItem("mk_state");
+  }
+  let access = null, accessExp = 0;
+  function saveAccess(j) { access = j.access_token; accessExp = Date.now() + (j.expires_in - 120) * 1000; }
+  async function token() {
+    if (access && Date.now() < accessExp) return access;
+    const rt = LS.get("mk_refresh"); if (!rt) throw { auth: true };
+    const r = await fetch("https://api.dropboxapi.com/oauth2/token", { method: "POST", body: new URLSearchParams({ grant_type: "refresh_token", refresh_token: rt, client_id: APP_KEY }) });
+    if (r.status === 400 || r.status === 401) { LS.del("mk_refresh"); throw { auth: true }; }
+    if (!r.ok) throw new Error("net");
+    saveAccess(await r.json()); return access;
+  }
+  const argHeader = o => JSON.stringify(o).replace(/[\u007f-￿]/g, c => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"));
+  async function rpc(path, body) {
+    const r = await fetch("https://api.dropboxapi.com/2/" + path, { method: "POST", headers: { Authorization: "Bearer " + await token(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (r.status === 401) { access = null; throw { auth: true }; }
+    if (!r.ok) { const t = await r.text(); throw { status: r.status, text: t }; }
+    return r.json();
+  }
+  async function content(path, arg) {
+    const r = await fetch("https://content.dropboxapi.com/2/" + path, { method: "POST", headers: { Authorization: "Bearer " + await token(), "Dropbox-API-Arg": argHeader(arg) } });
+    if (r.status === 401) { access = null; throw { auth: true }; }
+    if (!r.ok) { const t = await r.text(); throw { status: r.status, text: t }; }
+    return r;
+  }
+
+  /* ---------- data ---------- */
+  let idx = { topics: [], items: [] }, pendingCount = 0;
+  const thumbs = new Map();
+  try { const c = JSON.parse(LS.get("mk_index") || "null"); if (c && c.items) idx = c; } catch {}
+
+  async function load() {
+    $("#sync").textContent = "מעדכן…";
+    try {
+      let fresh = { topics: [], items: [] };
+      try { fresh = JSON.parse(await (await content("files/download", { path: INDEX })).text()); }
+      catch (e) { if (e && e.auth) throw e; if (!(e && e.status === 409)) throw e; }
+      idx = fresh; LS.set("mk_index", JSON.stringify(idx));
+      render();
+      $("#sync").textContent = "";
+      countPending().catch(() => {});
+    } catch (e) {
+      if (e && e.auth) { showConnect(); return; }
+      $("#sync").textContent = idx.items.length ? "אין חיבור, מוצג העותק השמור" : "";
+      if (!idx.items.length) notice("לא הצלחתי לקרוא מהדרופבוקס. בדוק את החיבור לאינטרנט ולחץ רענון.");
+    }
+  }
+  async function countPending() {
+    const known = new Set(idx.items.map(i => (i.path || "").toLowerCase()));
+    let res = await rpc("files/list_folder", { path: ROOT, recursive: true, limit: 2000 }).catch(e => { if (e && e.status === 409) return null; throw e; });
+    if (!res) return;
+    let n = 0;
+    const scan = entries => { for (const e of entries) if (e[".tag"] === "file" && /\.(jpe?g|png|heic|webp|gif|bmp|tiff?)$/i.test(e.name) && !known.has(e.path_lower)) n++; };
+    scan(res.entries);
+    while (res.has_more) { res = await rpc("files/list_folder/continue", { cursor: res.cursor }); scan(res.entries); }
+    pendingCount = n; renderMeta();
+  }
+
+  /* ---------- Hebrew-aware normalization ---------- */
+  const FINALS = { "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ" };
+  function normMap(s) {
+    s = String(s || ""); let n = "", map = [];
+    for (let i = 0; i < s.length; i++) {
+      const c = s[i], code = c.charCodeAt(0);
+      if ((code >= 0x0591 && code <= 0x05C7 && code !== 0x05BE) || "״׳\"'`".includes(c)) continue;
+      let m = FINALS[c] || c.toLowerCase();
+      if (code === 0x05BE || /\s/.test(m)) { if (n.endsWith(" ")) continue; m = " "; }
+      n += m; map.push(i);
+    }
+    return { n, map };
+  }
+  const norm = s => normMap(s).n;
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function ranges(text, terms) {
+    const { n, map } = normMap(text), out = [];
+    for (const t of terms) { let p = 0; while ((p = n.indexOf(t, p)) !== -1) { out.push([map[p], map[p + t.length - 1] + 1]); p += t.length; } }
+    out.sort((a, b) => a[0] - b[0]); const m = [];
+    for (const r of out) { const l = m[m.length - 1]; if (l && r[0] <= l[1]) l[1] = Math.max(l[1], r[1]); else m.push(r.slice()); }
+    return m;
+  }
+  function hl(text, terms, from = 0, to = null) {
+    text = String(text || ""); if (to == null) to = text.length;
+    if (!terms.length) return esc(text.slice(from, to));
+    let h = "", pos = from;
+    for (const [a, b] of ranges(text, terms)) { if (b <= from || a >= to) continue; const s = Math.max(a, from), e = Math.min(b, to); h += esc(text.slice(pos, s)) + "<mark>" + esc(text.slice(s, e)) + "</mark>"; pos = e; }
+    return h + esc(text.slice(pos, to));
+  }
+  function snippet(text, terms) {
+    text = String(text || ""); const r = ranges(text, terms)[0]; if (!r) return null;
+    const s = Math.max(0, r[0] - 50), e = Math.min(text.length, r[1] + 90);
+    return (s > 0 ? "…" : "") + hl(text, terms, s, e) + (e < text.length ? "…" : "");
+  }
+
+  /* ---------- search & render ---------- */
+  const srcLine = it => [it.book, it.location].filter(Boolean).join(", ");
+  function search() {
+    const terms = norm($("#q").value).split(" ").filter(Boolean);
+    const book = $("#fbook").value, topic = $("#ftopic").value;
+    const W = { title: 8, src: 6, topics: 5, tags: 5, desc: 3, note: 3, text: 1 };
+    const res = [];
+    for (const it of idx.items) {
+      if (book && it.book !== book) continue;
+      if (topic && !(it.topics || []).includes(topic)) continue;
+      if (!terms.length) { res.push({ it, score: 0 }); continue; }
+      const f = { title: norm(it.title), src: norm(srcLine(it)), topics: norm((it.topics || []).join(" ")), tags: norm((it.tags || []).join(" ")), desc: norm(it.description), note: norm(it.note), text: norm(it.text) };
+      const all = Object.values(f).join(" ");
+      if (!terms.every(t => all.includes(t))) continue;
+      let score = 0; for (const t of terms) for (const k in W) if (f[k].includes(t)) score += W[k];
+      const snip = terms.every(t => f.title.includes(t)) ? null : (snippet(it.description, terms) || snippet(it.note, terms) || snippet(it.text, terms));
+      res.push({ it, score, snip });
+    }
+    if (terms.length) res.sort((a, b) => b.score - a.score);
+    else res.sort((a, b) => book ? (a.it.path || "").localeCompare(b.it.path || "", "he", { numeric: true }) : String(b.it.added || "").localeCompare(String(a.it.added || "")));
+    return { terms, res };
+  }
+  function fillSelect(sel, values, label) {
+    const cur = sel.value;
+    sel.innerHTML = `<option value="">${label}</option>` + values.map(v => `<option${v === cur ? " selected" : ""}>${esc(v)}</option>`).join("");
+  }
+  let lastShown = 0;
+  function renderMeta() {
+    const p = pendingCount ? ` · ${pendingCount} תמונות ממתינות לעיבוד` : "";
+    const filtered = $("#q").value.trim() || $("#fbook").value || $("#ftopic").value;
+    $("#count").textContent = (filtered ? `${lastShown} מתוך ${idx.items.length} מקורות` : `${idx.items.length} מקורות`) + p;
+  }
+  function render() {
+    $("#qclear").hidden = !$("#q").value;
+    const books = [...new Set(idx.items.map(i => i.book).filter(Boolean))].sort((a, b) => a.localeCompare(b, "he"));
+    fillSelect($("#fbook"), books, "כל הספרים");
+    fillSelect($("#ftopic"), idx.topics || [], "כל הנושאים");
+    const { terms, res } = search(); lastShown = res.length; renderMeta();
+    $("#empty").hidden = idx.items.length > 0;
+    $("#list").innerHTML = res.map(({ it, snip }) => {
+      const body = snip || (it.description ? hl(it.description.slice(0, 180), terms) : "");
+      const chips = (it.topics || []).map(t => `<span class="chip">${hl(t, terms)}</span>`).join("");
+      return `<button class="card" data-path="${esc(it.path)}"><img class="thumb" alt="" data-thumb="${esc(it.path)}">
+        <div class="cbody"><div class="ctitle">${hl(it.title || "(ללא שם)", terms)}</div>
+        ${srcLine(it) ? `<div class="csrc">${hl(srcLine(it), terms)}</div>` : ""}
+        ${body ? `<div class="csnip">${body}</div>` : ""}${chips ? `<div class="chips">${chips}</div>` : ""}</div></button>`;
+    }).join("");
+    loadThumbs();
+  }
+
+  /* ---------- thumbnails ---------- */
+  let thumbQueue = Promise.resolve();
+  function loadThumbs() {
+    const imgs = [...document.querySelectorAll("img[data-thumb]")];
+    const need = [];
+    for (const img of imgs) { const p = img.dataset.thumb; if (thumbs.has(p)) img.src = thumbs.get(p); else need.push(p); }
+    if (!need.length || !LS.get("mk_refresh")) return;
+    const uniq = [...new Set(need)];
+    for (let i = 0; i < uniq.length; i += 25) {
+      const chunk = uniq.slice(i, i + 25);
+      thumbQueue = thumbQueue.then(async () => {
+        try {
+          const r = await rpcContentJson("files/get_thumbnail_batch", { entries: chunk.map(path => ({ path, format: "jpeg", size: "w128h128", mode: "fitone_bestfit" })) });
+          r.entries.forEach((e, k) => { if (e[".tag"] === "success") thumbs.set(chunk[k], "data:image/jpeg;base64," + e.thumbnail); });
+          for (const img of document.querySelectorAll("img[data-thumb]")) if (thumbs.has(img.dataset.thumb)) img.src = thumbs.get(img.dataset.thumb);
+        } catch {}
+      });
+    }
+  }
+  async function rpcContentJson(path, body) {
+    const r = await fetch("https://content.dropboxapi.com/2/" + path, { method: "POST", headers: { Authorization: "Bearer " + await token(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (!r.ok) throw { status: r.status };
+    return r.json();
+  }
+
+  /* ---------- detail view ---------- */
+  let viewing = null;
+  async function openView(path) {
+    const it = idx.items.find(i => i.path === path); if (!it) return;
+    viewing = path;
+    const terms = norm($("#q").value).split(" ").filter(Boolean);
+    $("#viewBody").innerHTML = `
+      <div><h2 class="dtitle">${hl(it.title || "(ללא שם)", terms)}</h2>${srcLine(it) ? `<div class="dsrc">${hl(srcLine(it), terms)}</div>` : ""}</div>
+      ${(it.topics || []).length || (it.tags || []).length ? `<div class="chips">${(it.topics || []).map(t => `<span class="chip">${esc(t)}</span>`).join("")}${(it.tags || []).map(t => `<span class="chip">#${esc(t)}</span>`).join("")}</div>` : ""}
+      ${it.description ? `<div class="ddesc">${hl(it.description, terms)}</div>` : ""}
+      ${it.note ? `<div class="note"><span class="small">הערה שלך: </span>${hl(it.note, terms)}</div>` : ""}
+      <a class="dimg" id="dimgLink" target="_blank" rel="noopener"><img id="dimg" alt="צילום המקור" src="${thumbs.get(path) || ""}"></a>
+      ${it.text ? `<div class="ocrbox"><h3>הטקסט שבתמונה</h3><div class="ocrtext">${hl(it.text, terms)}</div><div><button class="btn" id="copyText">העתק טקסט</button> <span class="small" id="copyStatus"></span></div></div>` : ""}
+      <div class="small">${esc(it.path)}</div>`;
+    $("#view").hidden = false; $("#view").scrollTop = 0;
+    const cp = $("#copyText");
+    if (cp) cp.onclick = async () => {
+      try { await navigator.clipboard.writeText(it.text); $("#copyStatus").textContent = "הועתק"; }
+      catch { const r = document.createRange(); r.selectNodeContents($(".ocrtext")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("#copyStatus").textContent = "הטקסט מסומן"; }
+    };
+    try {
+      const { link } = await rpc("files/get_temporary_link", { path });
+      if (viewing === path) { $("#dimg").src = link; $("#dimgLink").href = link; }
+    } catch { if (viewing === path) $("#dimg").alt = "התמונה לא נטענה"; }
+  }
+  function closeView() { viewing = null; $("#view").hidden = true; if (location.hash === "#v") history.back(); }
+  $("#viewBack").onclick = closeView;
+  window.addEventListener("popstate", () => { if (!$("#view").hidden && location.hash !== "#v") { viewing = null; $("#view").hidden = true; } });
+  $("#list").addEventListener("click", e => { const c = e.target.closest(".card"); if (c) { history.pushState(null, "", "#v"); openView(c.dataset.path); } });
+
+  /* ---------- wiring ---------- */
+  let qt; $("#q").addEventListener("input", () => { clearTimeout(qt); qt = setTimeout(render, 120); });
+  $("#qclear").onclick = () => { $("#q").value = ""; render(); $("#q").focus(); };
+  $("#fbook").onchange = render; $("#ftopic").onchange = render;
+  $("#refresh").onclick = load;
+  $("#connectBtn").onclick = startAuth;
+  $("#logout").onclick = () => { LS.del("mk_refresh"); LS.del("mk_index"); access = null; idx = { topics: [], items: [] }; showConnect(); };
+  function notice(t) { $("#notice").textContent = t; $("#notice").hidden = !t; }
+  function showConnect() { $("#connect").hidden = false; $("#controls").hidden = true; $("#list").innerHTML = ""; $("#empty").hidden = true; $("#refresh").hidden = true; $("#logout").hidden = true; }
+  function showApp() { $("#connect").hidden = true; $("#controls").hidden = false; $("#refresh").hidden = false; $("#logout").hidden = false; }
+
+  (async () => {
+    const qs = new URLSearchParams(location.search);
+    if (qs.get("code")) {
+      try { await finishAuth(qs.get("code"), qs.get("state")); } catch { notice("החיבור לדרופבוקס לא הושלם. נסה שוב."); }
+      history.replaceState(null, "", location.pathname);
+    } else if (qs.get("error")) { notice("החיבור לדרופבוקס בוטל."); history.replaceState(null, "", location.pathname); }
+    if (!LS.get("mk_refresh")) { showConnect(); return; }
+    showApp(); render(); load();
+  })();
+})();
+</script>
+</body>
+</html>
