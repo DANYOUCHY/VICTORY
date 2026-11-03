@@ -190,11 +190,11 @@ mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
     }
   }
   async function countPending() {
-    const known = new Set(idx.items.map(i => (i.path || "").toLowerCase()));
+    const known = new Set(idx.items.map(i => (i.path || "").toLowerCase()).concat((idx.processed || []).map(x => String(x).toLowerCase())));
     let res = await rpc("files/list_folder", { path: ROOT, recursive: true, limit: 2000 }).catch(e => { if (e && e.status === 409) return null; throw e; });
     if (!res) return;
     let n = 0;
-    const scan = entries => { for (const e of entries) if (e[".tag"] === "file" && /\.(jpe?g|png|heic|webp|gif|bmp|tiff?)$/i.test(e.name) && !known.has(e.path_lower)) n++; };
+    const scan = entries => { for (const e of entries) if (e[".tag"] === "file" && /\.(jpe?g|png|heic|webp|gif|bmp|tiff?|pdf)$/i.test(e.name) && !known.has(e.path_lower)) n++; };
     scan(res.entries);
     while (res.has_more) { res = await rpc("files/list_folder/continue", { cursor: res.cursor }); scan(res.entries); }
     pendingCount = n; renderMeta();
@@ -263,7 +263,7 @@ mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
   }
   let lastShown = 0;
   function renderMeta() {
-    const p = pendingCount ? ` · ${pendingCount} תמונות ממתינות לעיבוד` : "";
+    const p = pendingCount ? ` · ${pendingCount} קבצים ממתינים לעיבוד` : "";
     const filtered = $("#q").value.trim() || $("#fbook").value || $("#ftopic").value;
     $("#count").textContent = (filtered ? `${lastShown} מתוך ${idx.items.length} מקורות` : `${idx.items.length} מקורות`) + p;
   }
