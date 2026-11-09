@@ -16,4 +16,5 @@ jobs:
     timeout-minutes: 3
     steps:
       - name: Tell the server to pull now
-        run: curl -fsS --retry 4 --retry-delay 5 -X POST -H "X-Sync-Key: m1-oY8WDlEgP9pJWpX00wqSd37siNCC3nrumuJIIjjw" -A "Mozilla/5.0 (compatible; VictorySiteUpdate)" https://www.victory.org.il/static-repo/site/deploy-api/sync.php
+        run: |
+          curl -fsS --retry 4 --retry-delay 5 -X POST -H "X-Sync-Key: m1-oY8WDlEgP9pJWpX00wqSd37siNCC3nrumuJIIjjw" -A "Mozilla/5.0 (compatible; VictorySiteUpdate)" https://www.victory.org.il/static-repo/site/deploy-api/sync.php
