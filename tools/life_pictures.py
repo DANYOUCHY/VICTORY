@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""The page "התמונות של החיים" (/life-pictures/): two rows of insight pictures that keep
-moving (in opposite directions). Clicking a picture opens it large, with buttons to
-download, print and share it.
+"""The page "תמונות כח" (/life-pictures/): two rows of insight pictures that keep moving
+(in opposite directions). Clicking a picture opens it large, with buttons to download (in
+the original quality), print and share it. The page is linked from the top menu and the
+footer of every page.
 
 The list of pictures is data/life-pictures.json. It mirrors the pictures (top level only)
 of the owner's folder Downloads\\תמונות מנצחים על החיים. To update: change the entries
@@ -10,6 +11,10 @@ name for the downloaded file; alt = the picture's text), then run:
 
   python3 tools/life_pictures.py images "<folder with the original images>"
   python3 tools/life_pictures.py page
+
+The title, text and download explanation are in the same data file. After changing the
+title, also run "python3 tools/life_pictures.py menu" (it updates the menu label on every
+page; it also adds the menu links if they are missing).
 
 "images" makes, for each picture, the original for download and print (.png, or .jpg
 without its camera data), a .jpg for sharing and two .webp sizes for the page, in
@@ -110,8 +115,14 @@ def items_html(pics, indexes):
 
 
 CSS = """<style id="lp-css">
-.lp-intro .elementor-widget-container{text-align:center}
-.lp-intro p{margin-bottom:.35em}
+.lp-intro .elementor-widget-container{max-width:820px;margin:0 auto;text-align:right;font-size:20px;line-height:1.8}
+.lp-intro p{margin:0 0 .9em}
+.lp-intro p.lp-lead{text-align:center;font-size:24px;line-height:1.55;font-weight:600;color:#0e8fab;margin-bottom:1.1em}
+.lp-howto{max-width:820px;margin:28px auto 0;background:#eef9fc;border-right:5px solid #14AED0;border-radius:12px;padding:20px 26px;text-align:right;line-height:1.7}
+.lp-howto h2{margin:0 0 10px;font-size:24px;line-height:1.4;color:#0e8fab}
+.lp-howto ol{margin:0;padding:0 1.3em 0 0}
+.lp-howto li{margin:0 0 6px;font-size:18px}
+.lp-quality{color:#cfe9f1;text-align:center;margin:10px 0 0;font-size:.98em}
 .lp-section{padding:10px 0 50px;overflow:hidden}
 .lp-rows{display:flex;flex-direction:column;gap:18px}
 .lp-row{overflow:hidden;direction:ltr;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
@@ -150,6 +161,11 @@ html.lp-lock{overflow:hidden}
 .lp-arrow svg{width:20px;height:20px}
 .lp-viewer .lp-prev{right:2px}.lp-viewer .lp-next{left:2px}
 .lp-viewer .lp-btn{padding:10px 18px}
+.lp-intro .elementor-widget-container{font-size:17px;line-height:1.75}
+.lp-intro p.lp-lead{font-size:20px}
+.lp-howto h2{font-size:20px}
+.lp-howto li{font-size:16px}
+.lp-howto{margin:22px 4px 0;padding:16px 18px}
 }
 @media (prefers-reduced-motion:reduce){.lp-belt{animation:none}.lp-row{overflow-x:auto}}
 </style>"""
@@ -200,7 +216,7 @@ w.document.write('<!DOCTYPE html><html dir="rtl"><head><meta charset="utf-8"><ti
 var sh=v.querySelector('.lp-share');
 function fileFor(p){if(!shareFile){shareFile=fetch(p.s).then(function(r){return r.blob();}).then(function(b){return new File([b],p.n+'.jpg',{type:'image/jpeg'});}).catch(function(){return null;});}return shareFile;}
 sh.addEventListener('pointerdown',function(){if(navigator.canShare){fileFor(data[cur]);}});
-sh.addEventListener('click',function(){var p=data[cur],url=location.origin+location.pathname+'#lp-'+(cur+1),text=p.n+' – התמונות של החיים';
+sh.addEventListener('click',function(){var p=data[cur],url=location.origin+location.pathname+'#lp-'+(cur+1),text=p.n+' – '+document.querySelector('.lp-section').getAttribute('aria-label');
 function wa(){window.open('https://wa.me/?text='+encodeURIComponent(text+'\n'+url),'_blank','noopener');}
 if(navigator.canShare){fileFor(p).then(function(f){if(f&&navigator.canShare({files:[f]})){return navigator.share({files:[f],title:text,text:text+'\n'+url});}
 return navigator.share({title:text,text:text,url:url});}).catch(function(e){if(!e||e.name!=='AbortError'){wa();}});}
@@ -211,7 +227,11 @@ var m=location.hash.match(/^#lp-(\d+)$/);if(m){var n=parseInt(m[1],10)-1;if(n>=0
 
 
 def content_html(d):
-    intro = ''.join('<p>%s</p>' % esc(p) for p in d['intro'])
+    intro = ''.join('<p%s>%s</p>' % (' class="lp-lead"' if n == 0 else '', esc(p)) for n, p in enumerate(d['intro']))
+    how = d.get('howto')
+    if how:
+        intro += '<div class="lp-howto"><h2>%s</h2><ol>%s</ol></div>' % (
+            esc(how['title']), ''.join('<li>%s</li>' % esc(x) for x in how['steps']))
     pics = d['pictures']
     title = esc(d['title'])
     data = [{'o': URL_DIR + original(p), 's': URL_DIR + p['file'] + '.jpg',
@@ -247,6 +267,7 @@ def content_html(d):
 <button type="button" class="lp-btn lp-print">{ICON_PRINT}<span>הדפסה</span></button>
 <button type="button" class="lp-btn lp-share">{ICON_SHARE}<span>שיתוף</span></button>
 </div>
+<p class="lp-quality">{esc(d.get('howto', {}).get('quality', ''))}</p>
 </div>
 <script type="application/json" id="lp-data">{data_json}</script>
 </div>
@@ -292,6 +313,8 @@ def cmd_page():
     # the menu must not mark the services page as the current one
     t = re.sub(r' current-menu-item| current_page_item', '', t)
     t = t.replace(' aria-current="page"', '').replace(' elementor-item-active', '')
+    t = t.replace('menu-item-power-pictures"><a href="%s" class="elementor-item menu-link"' % path,
+                  'menu-item-power-pictures current-menu-item"><a href="%s" aria-current="page" class="elementor-item elementor-item-active menu-link"' % path)
     t = t.replace('</head>', CSS + '\n</head>', 1)
     t = t.replace('</body>', JS + '\n</body>', 1)
     out = os.path.join(ROOT, path.strip('/'), 'index.html')
@@ -301,10 +324,50 @@ def cmd_page():
     print('wrote', out, len(t))
 
 
+MENU_LI = ('<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-power-pictures">'
+           '<a href="{path}" class="elementor-item menu-link"{tab}>{label}</a></li>')
+BLOG_LI = re.compile(r'<li class="[^"]*menu-item-488[^"]*"><a href="/blog/"[^>]*>בלוג</a></li>')
+OUR_LI = re.compile(r'(menu-item-power-pictures[^"]*"><a href="[^"]*"[^>]*>)[^<]*(</a>)')
+FOOT_AFTER = '<li><a href="/blog/#sy-blog-articles">סרטונים ומאמרים</a></li>'
+
+
+def cmd_menu():
+    """Link the page from the top menu (after "בלוג") and the footer column "כלים לחיים"."""
+    d = load()
+    path, label = d['path'], esc(d.get('menu_label', d['title']))
+    foot_li = '<li><a href="%s" class="sy-power-pictures">%s</a></li>' % (path, label)
+    changed = 0
+    for dirpath, _, files in os.walk(ROOT):
+        if dirpath.startswith(os.path.join(ROOT, 'assets')):
+            continue
+        for name in files:
+            if not name.endswith('.html'):
+                continue
+            f = os.path.join(dirpath, name)
+            t = open(f, encoding='utf-8').read()
+            new = t
+            if 'menu-item-power-pictures' in new:
+                new = OUR_LI.sub(lambda m: m.group(1) + label + m.group(2), new)
+            else:
+                new = BLOG_LI.sub(lambda m: m.group(0) + '\n' + MENU_LI.format(
+                    path=path, label=label, tab=' tabindex="-1"' if 'tabindex="-1"' in m.group(0) else ''), new)
+            if 'sy-power-pictures' in new:
+                new = re.sub(r'(class="sy-power-pictures">)[^<]*(</a>)', lambda m: m.group(1) + label + m.group(2), new)
+            elif FOOT_AFTER in new:
+                new = new.replace(FOOT_AFTER, FOOT_AFTER + foot_li)
+            if new != t:
+                with open(f, 'w', encoding='utf-8') as out:
+                    out.write(new)
+                changed += 1
+    print('pages updated:', changed)
+
+
 if __name__ == '__main__':
     if len(sys.argv) >= 3 and sys.argv[1] == 'images':
         cmd_images(sys.argv[2])
     elif len(sys.argv) >= 2 and sys.argv[1] == 'page':
         cmd_page()
+    elif len(sys.argv) >= 2 and sys.argv[1] == 'menu':
+        cmd_menu()
     else:
         print(__doc__)
