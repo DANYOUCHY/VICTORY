@@ -1,9 +1,13 @@
 name: Update the live site right away
 
-# Every update of main tells the server to take it now.
+# Every update of main tells the server to take it now. Updates pushed by another
+# workflow do not fire "push", so the sidebar videos workflow is listed separately.
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Update YouTube videos"]
+    types: [completed]
   workflow_dispatch:
 
 jobs:

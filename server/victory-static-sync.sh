@@ -1,6 +1,6 @@
 #!/bin/bash
 # Keeps the static copy of victory.org.il in sync with GitHub (DANYOUCHY/VICTORY).
-# Placed at /home/dhdanchi/victory-static-sync.sh and run by cron every 10 minutes.
+# Placed at /home/dhdanchi/victory-static-sync.sh and run right after every update (site/deploy-api/sync.php), with a daily cron as a safety net.
 REPO=/home/dhdanchi/victory.org.il/static-repo
 LOG=/home/dhdanchi/victory-static-sync.log
 GIT=$(command -v git || echo /usr/local/cpanel/3rdparty/bin/git)
