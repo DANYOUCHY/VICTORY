@@ -110,7 +110,7 @@ def items_html(pics, indexes):
         thumb = URL_DIR + p['file'] + '-600.webp'
         w, h = Image.open(os.path.join(OUT_DIR, p['file'] + '-600.webp')).size
         out.append(f'<a class="lp-item" href="{URL_DIR}{original(p)}" data-i="{i}" data-elementor-open-lightbox="no">'
-                   f'<img src="{thumb}" width="{w}" height="{h}" alt="{esc(p["alt"])}" decoding="async"></a>')
+                   f'<img src="{thumb}" width="{w}" height="{h}" alt="{esc(p["alt"])}" decoding="async" draggable="false"></a>')
     return ''.join(out)
 
 
@@ -125,11 +125,12 @@ CSS = """<style id="lp-css">
 .lp-quality{color:#cfe9f1;text-align:center;margin:10px 0 0;font-size:.98em}
 .lp-section{padding:10px 0 50px;overflow:hidden}
 .lp-rows{display:flex;flex-direction:column;gap:18px}
-.lp-row{overflow:hidden;direction:ltr;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
-.lp-belt{display:flex;width:max-content;padding:10px 0;animation:lp-move var(--lp-dur,60s) linear infinite}
-.lp-row-b .lp-belt{animation-direction:reverse}
-.lp-row:hover .lp-belt,.lp-rows.lp-paused .lp-belt{animation-play-state:paused}
-@keyframes lp-move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.lp-row{overflow-x:auto;overflow-y:hidden;direction:ltr;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.lp-row::-webkit-scrollbar{display:none}
+.lp-row.lp-drag{cursor:grabbing}
+.lp-row.lp-drag .lp-item{pointer-events:none}
+.lp-belt{display:flex;width:max-content;padding:10px 0}
+.lp-item img{-webkit-user-drag:none;user-select:none}
 .lp-item{flex:0 0 auto;display:block;height:300px;margin-right:18px;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .25s}
 .lp-item:hover,.lp-item:focus-visible{transform:scale(1.04)}
 .lp-item img{display:block;height:100%;width:auto;max-width:none;border-radius:0}
@@ -167,7 +168,6 @@ html.lp-lock{overflow:hidden}
 .lp-howto li{font-size:16px}
 .lp-howto{margin:22px 4px 0;padding:16px 18px}
 }
-@media (prefers-reduced-motion:reduce){.lp-belt{animation:none}.lp-row{overflow-x:auto}}
 </style>"""
 
 ICON_PREV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6 1.4 1.4 8-8-8-8z"/></svg>'
@@ -183,25 +183,48 @@ var dataEl=document.getElementById('lp-data');if(!dataEl){return;}
 var data=JSON.parse(dataEl.textContent),wrap=document.querySelector('.lp-rows'),rows=[].slice.call(document.querySelectorAll('.lp-row'));
 var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 function copy(n){var c=n.cloneNode(true);c.setAttribute('aria-hidden','true');c.setAttribute('tabindex','-1');return c;}
+// Rows: they move on their own and can also be swiped (finger) or dragged (mouse).
+// Each row holds its pictures three times; it starts in the middle copy and jumps by one
+// copy (invisible, the copies are identical) whenever it drifts toward an end.
+var states=rows.map(function(row,k){return {row:row,belt:row.querySelector('.lp-belt'),dir:k%2?-1:1,pos:0,set:0,hold:0,touch:false,drag:false,hover:false};});
 var lastW=0;
-function fill(){if(window.innerWidth===lastW){return;}lastW=window.innerWidth;
-rows.forEach(function(row){var belt=row.querySelector('.lp-belt');if(!belt._orig){belt._orig=[].slice.call(belt.children);}
+function build(){if(window.innerWidth===lastW){return;}lastW=window.innerWidth;
+states.forEach(function(st){var belt=st.belt,row=st.row;if(!belt._orig){belt._orig=[].slice.call(belt.children);}
+var ratio=st.set?(st.pos-st.set)/st.set:0;
 while(belt.children.length>belt._orig.length){belt.removeChild(belt.lastChild);}
-if(reduce){return;}
 var one=belt.scrollWidth,w=one;while(w<row.clientWidth+40){belt._orig.forEach(function(n){belt.appendChild(copy(n));});w+=one;}
-[].slice.call(belt.children).forEach(function(n){belt.appendChild(copy(n));});
-belt.style.setProperty('--lp-dur',Math.max(20,Math.round(w/(window.innerWidth<768?28:38)))+'s');});}
-fill();window.addEventListener('resize',function(){clearTimeout(fill.t);fill.t=setTimeout(fill,200);});
-var held;wrap.addEventListener('touchstart',function(){clearTimeout(held);wrap.classList.add('lp-paused');},{passive:true});
-wrap.addEventListener('touchend',function(){held=setTimeout(function(){if(v.hidden){wrap.classList.remove('lp-paused');}},1500);},{passive:true});
-var v=document.getElementById('lp-viewer');document.body.appendChild(v);
+var set=[].slice.call(belt.children);for(var c=0;c<2;c++){set.forEach(function(n){belt.appendChild(copy(n));});}
+st.set=belt.scrollWidth/3;st.pos=st.set+ratio*st.set;row.scrollLeft=st.pos;});}
+build();window.addEventListener('resize',function(){clearTimeout(build.t);build.t=setTimeout(build,200);});
+function norm(st){if(st.pos<st.set*0.5){st.pos+=st.set;}else if(st.pos>st.set*2.5){st.pos-=st.set;}}
+var lastT=0;
+function tick(t){var dt=lastT?Math.min(64,t-lastT):0;lastT=t;var now=Date.now(),speed=window.innerWidth<768?0.028:0.038;
+states.forEach(function(st){if(!st.set||reduce||st.touch||st.drag||st.hover||now<st.hold||!v.hidden){return;}
+if(Math.abs(st.row.scrollLeft-st.pos)>2){st.pos=st.row.scrollLeft;}
+norm(st);st.pos+=st.dir*speed*dt;if(st.pos>=st.set*2){st.pos-=st.set;}else if(st.pos<st.set){st.pos+=st.set;}
+st.row.scrollLeft=st.pos;});
+requestAnimationFrame(tick);}
+states.forEach(function(st){var row=st.row;
+row.addEventListener('touchstart',function(){st.touch=true;},{passive:true});
+row.addEventListener('touchend',function(){st.touch=false;st.hold=Date.now()+1800;},{passive:true});
+row.addEventListener('touchcancel',function(){st.touch=false;st.hold=Date.now()+1800;},{passive:true});
+row.addEventListener('scroll',function(){if(Math.abs(row.scrollLeft-st.pos)>2){st.pos=row.scrollLeft;st.hold=Math.max(st.hold,Date.now()+1200);}},{passive:true});
+row.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse'){st.hover=true;}});
+row.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'){st.hover=false;}});
+row.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse'||e.button!==0){return;}
+var sx=e.clientX,sl=row.scrollLeft,moved=false;
+function mv(ev){var dx=ev.clientX-sx;if(!moved&&Math.abs(dx)>5){moved=true;st.drag=true;row.classList.add('lp-drag');}if(moved){row.scrollLeft=sl-dx;st.pos=row.scrollLeft;}}
+function up(){window.removeEventListener('pointermove',mv);window.removeEventListener('pointerup',up);
+if(moved){st.drag=false;st.hold=Date.now()+1500;setTimeout(function(){row.classList.remove('lp-drag');},0);}}
+window.addEventListener('pointermove',mv);window.addEventListener('pointerup',up);});});
+var v=document.getElementById('lp-viewer');document.body.appendChild(v);requestAnimationFrame(tick);
 var big=v.querySelector('.lp-big'),cnt=v.querySelector('.lp-count'),dl=v.querySelector('.lp-download'),cur=0,from=null,shareFile=null;
 function show(i){cur=(i+data.length)%data.length;var p=data[cur];big.src=p.b;big.alt=p.a;cnt.textContent=(cur+1)+' מתוך '+data.length;
 dl.href=p.o;dl.setAttribute('download',p.n+p.o.slice(p.o.lastIndexOf('.')));shareFile=null;
 try{history.replaceState(null,'','#lp-'+(cur+1));}catch(e){}
 [1,-1].forEach(function(d){(new Image()).src=data[(cur+d+data.length)%data.length].b;});}
-function open(i,el){from=el||null;v.hidden=false;document.documentElement.classList.add('lp-lock');wrap.classList.add('lp-paused');show(i);v.querySelector('.lp-close').focus();}
-function close(){v.hidden=true;document.documentElement.classList.remove('lp-lock');wrap.classList.remove('lp-paused');
+function open(i,el){from=el||null;v.hidden=false;document.documentElement.classList.add('lp-lock');show(i);v.querySelector('.lp-close').focus();}
+function close(){v.hidden=true;document.documentElement.classList.remove('lp-lock');states.forEach(function(st){st.hold=Date.now()+800;});
 try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}if(from){from.focus();}}
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.lp-item');if(a){e.preventDefault();open(parseInt(a.getAttribute('data-i'),10),a);}});
 v.querySelector('.lp-close').addEventListener('click',close);
