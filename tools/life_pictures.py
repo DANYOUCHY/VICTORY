@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The page "תמונות כח" (/life-pictures/): two rows of insight pictures that keep moving
+"""The page "תמונות כח" (/power-pictures/; the old address /life-pictures/ forwards to it): two rows of insight pictures that keep moving
 (in opposite directions). Clicking a picture opens it large, with buttons to download (in
 the original quality), print and share it. The page is linked from the top menu and the
 footer of every page.
@@ -345,14 +345,18 @@ def cmd_menu():
                 continue
             f = os.path.join(dirpath, name)
             t = open(f, encoding='utf-8').read()
+            if 'id="forward-page"' in t:
+                continue
             new = t
             if 'menu-item-power-pictures' in new:
                 new = OUR_LI.sub(lambda m: m.group(1) + label + m.group(2), new)
+                new = re.sub(r'(menu-item-power-pictures[^"]*"><a href=")[^"]*', lambda m: m.group(1) + path, new)
             else:
                 new = BLOG_LI.sub(lambda m: m.group(0) + '\n' + MENU_LI.format(
                     path=path, label=label, tab=' tabindex="-1"' if 'tabindex="-1"' in m.group(0) else ''), new)
             if 'sy-power-pictures' in new:
                 new = re.sub(r'(class="sy-power-pictures">)[^<]*(</a>)', lambda m: m.group(1) + label + m.group(2), new)
+                new = re.sub(r'<a href="[^"]*" class="sy-power-pictures">', '<a href="%s" class="sy-power-pictures">' % path, new)
             elif FOOT_AFTER in new:
                 new = new.replace(FOOT_AFTER, FOOT_AFTER + foot_li)
             if new != t:
