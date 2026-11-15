@@ -100,3 +100,8 @@ print('files changed:', changed)
 # 7. duplicate short-link pages
 for f in [x for x in glob.glob(os.path.join(root, '*')) if '?p=' in x]:
     os.remove(f)
+
+# 8. links point to clean addresses, not .../index.html (no duplicate pages) - tools/clean_index_links.py
+import runpy
+sys.argv = [sys.argv[0], root]
+runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'clean_index_links.py'), run_name='__main__')
