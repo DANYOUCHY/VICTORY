@@ -1,0 +1,9 @@
+# Pages are served from index.html files, but an address that ends in "index.html"
+# would show the same page twice (for example /index.html next to /).
+# A visitor or search engine that asks for .../index.html is sent to the clean address with a 301.
+# THE_REQUEST is the address the visitor typed, so the internal rewrite to index.html is not affected.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]+\s/+((?!static-repo/)[^\s?]*/)?index\.html[\s?]
+RewriteRule ^ https://www.victory.org.il/%1 [R=301,L]
+</IfModule>
