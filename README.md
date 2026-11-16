@@ -7,6 +7,7 @@
 - `tools/`: הכלים של האתר.
 - `server/`: הגדרות השרת.
 - `.github/workflows/youtube-feed.yml`: מעדכן את הסרטונים בסרגל הצד כל 6 שעות.
+- `.github/workflows/live-update.yml`: אחרי כל עדכון של `main` מודיע לשרת למשוך את הגרסה החדשה מיד (דרך `site/deploy-api/sync.php`). המפתח לקריאה הזו שמור כסוד של המאגר בשם `VICTORY_SYNC_KEY` (Settings → Secrets and variables → Actions), ובשרת בקובץ `victory-sync.key` ליד `victory-static-sync.sh`. המפתח עצמו לא נשמר במאגר.
 - `.github/workflows/rebuild.yml` ו־`compare.yml`: הפעלה ידנית בלבד, ורק כל עוד וורדפרס קיים.
 
 ## בדיקה שהאתר עומד בפני עצמו
@@ -17,7 +18,7 @@
 מה שחייב להישאר בשרת:
 - התיקייה `static-repo` בתוך תיקיית האתר.
 - בקובץ `.htaccess` של האתר: הקטע שבין `BEGIN StaticSite` לבין `END StaticSite`. את שאר הקטעים של וורדפרס ושל התוספים שלו אפשר למחוק.
-- מחוץ לתיקיית האתר: הקובץ `victory-static-sync.sh`, התיקייה `victory-comments` ושתי המשימות המתוזמנות ב־cPanel (`server/cron.txt`).
+- מחוץ לתיקיית האתר: הקבצים `victory-static-sync.sh` ו־`victory-sync.key`, התיקייה `victory-comments` ושתי המשימות המתוזמנות ב־cPanel (`server/cron.txt`).
 
 כל השאר אפשר למחוק: קבצי וורדפרס (`wp-admin`, `wp-content`, `wp-includes`, קבצי `wp-*.php`, `index.php`) ומסד הנתונים שלו.
 אחרי המחיקה צריך לכבות גם את המשימה המתוזמנת ״גיבוי לילי לוורדפרס״.
