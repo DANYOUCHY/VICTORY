@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "key": "home",
+      "label": "דף הבית",
+      "href": "@home",
+      "classes": "menu-item menu-item-type-post_type menu-item-object-page menu-item-home",
+      "id_class": "menu-item-1634",
+      "page_id": 10
+    },
+    {
+      "key": "my-services",
+      "label": "כיצד אני יכול לעזור?",
+      "href": "/my-services/",
+      "classes": "menu-item menu-item-type-post_type menu-item-object-page",
+      "id_class": "menu-item-484",
+      "page_id": 459
+    },
+    {
+      "key": "about-me",
+      "label": "אודותי",
+      "href": "/about-me/",
+      "classes": "menu-item menu-item-type-post_type menu-item-object-page",
+      "id_class": "menu-item-843",
+      "page_id": 830
+    },
+    {
+      "key": "blog",
+      "label": "בלוג",
+      "href": "/blog/",
+      "classes": "menu-item menu-item-type-post_type menu-item-object-page",
+      "id_class": "menu-item-488",
+      "page_id": 61
+    },
+    {
+      "key": "power-pictures",
+      "label": "תמונות כח",
+      "href": "/power-pictures/",
+      "classes": "menu-item menu-item-type-custom menu-item-object-custom",
+      "id_class": "menu-item-power-pictures",
+      "page_id": null
+    }
+  ]
+}
