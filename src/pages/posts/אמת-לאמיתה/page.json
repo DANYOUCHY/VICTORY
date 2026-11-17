@@ -1,0 +1,25 @@
+{
+  "output": "אמת-לאמיתה/index.html",
+  "layout": "components/post/page.html",
+  "params": {
+    "home_url": "../",
+    "active_menu": "",
+    "schema_type": "Blog",
+    "body_class": "rtl wp-singular post-template-default single single-post postid-3643 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-astra wp-child-theme-astra-child ally-default ast-desktop ast-page-builder-template ast-no-sidebar astra-4.14.1 ast-header-custom-item-inside ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent elementor-page-255 ast-normal-title-enabled elementor-default elementor-kit-2548",
+    "skip_href": "#content",
+    "contact_href": "#contact",
+    "post_id": 3643,
+    "footer_logo_attrs": "loading=\"lazy\" class=\"sy-logo\"",
+    "sby_flags": "resizeDisable",
+    "sby_postid": "3643",
+    "post_class": "post-3643 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized ast-article-single",
+    "elementor_post": "{\"id\":3643,\"title\":\"%D7%94%D7%93%D7%A8%D7%9A%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%AA%D7%A9%D7%95%D7%91%D7%95%D7%AA%20%D7%A4%D7%A0%D7%99%D7%9E%D7%99%D7%95%D7%AA%20%D7%9C%D7%9B%D7%9C%20%D7%91%D7%A2%D7%99%D7%94%20%D7%95%D7%A7%D7%95%D7%A9%D7%99%20\",\"excerpt\":\"\",\"featuredImage\":\"\\/assets\\/wp\\/uploads\\/2026\\/02\\/\\u05d0\\u05de\\u05ea-\\u05d5\\u05d0\\u05de\\u05ea-\\u05d5\\u05d0\\u05de\\u05d9\\u05ea\\u05d4-1024x683.png\"}",
+    "cache_note": "<!-- WP Fastest Cache file was created in 1.691 seconds, on 29/10/2026 @ 08:58 -->",
+    "form_page": "/%D7%90%D7%9E%D7%AA-%D7%9C%D7%90%D7%9E%D7%99%D7%AA%D7%94/",
+    "self_prefix": "",
+    "featured_image": "on",
+    "astra_single_post_nav": "on",
+    "astra_elementor_fixes": "off",
+    "comments": "on"
+  }
+}
