@@ -21,7 +21,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from tools.build.__main__ import main as build_pages   # noqa: E402
+from tools.build.__main__ import SITE, SRC, main as build_pages   # noqa: E402
+from tools.build.output import current_text                      # noqa: E402
+from tools.build.pages import find_pages                          # noqa: E402
+from tools.build.render import build_page                         # noqa: E402
 
 CHANNEL = 'UCcszsZ1SGDe5uRXQoooU8vQ'
 COUNT = 5
@@ -108,11 +111,21 @@ def update_own_copies(root, block):
     return changed
 
 
+def hand_edited_pages():
+    """Pages built from src/ whose file in site/ is not what src/ gives: someone edited site/ by hand.
+    Rebuilding would wipe that edit, so the tool stops instead."""
+    return [p.output for p in find_pages(SRC) if build_page(p, SRC) != current_text(SITE / p.output)]
+
+
 def main(root, feed_file):
     entries = read_entries(feed_file)
     if not entries:
         sys.exit('feed has no videos; pages left unchanged')
     block = video_list(entries)
+    edited = hand_edited_pages()
+    if edited:
+        sys.exit('these pages were changed in site/ instead of src/; fix that first (see src/README.md): '
+                 + ', '.join(edited[:10]))
     if write_component(block):
         print('video list changed; rebuilding pages from src/')
         if build_pages([]) != 0:

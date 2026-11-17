@@ -354,39 +354,81 @@ OUR_LI = re.compile(r'(menu-item-power-pictures[^"]*"><a href="[^"]*"[^>]*>)[^<]
 FOOT_AFTER = '<li><a href="/blog/#sy-blog-articles">סרטונים ומאמרים</a></li>'
 
 
-def cmd_menu():
-    """Link the page from the top menu (after "בלוג") and the footer column "כלים לחיים"."""
-    d = load()
-    path, label = d['path'], esc(d.get('menu_label', d['title']))
-    foot_li = '<li><a href="%s" class="sy-power-pictures">%s</a></li>' % (path, label)
-    changed = 0
-    for dirpath, _, files in os.walk(ROOT):
+MENU_JSON = os.path.join('src', 'components', 'header', 'menu.json')
+
+
+def with_links(t, path, label):
+    """This HTML with the page's top-menu item and footer link present, with this address and label."""
+    if 'menu-item-power-pictures' in t:
+        t = OUR_LI.sub(lambda m: m.group(1) + label + m.group(2), t)
+        t = re.sub(r'(menu-item-power-pictures[^"]*"><a href=")[^"]*', lambda m: m.group(1) + path, t)
+    else:
+        t = BLOG_LI.sub(lambda m: m.group(0) + '\n' + MENU_LI.format(
+            path=path, label=label, tab=' tabindex="-1"' if 'tabindex="-1"' in m.group(0) else ''), t)
+    if 'sy-power-pictures' in t:
+        t = re.sub(r'(class="sy-power-pictures">)[^<]*(</a>)', lambda m: m.group(1) + label + m.group(2), t)
+        t = re.sub(r'<a href="[^"]*" class="sy-power-pictures">', '<a href="%s" class="sy-power-pictures">' % path, t)
+    elif FOOT_AFTER in t:
+        t = t.replace(FOOT_AFTER, FOOT_AFTER + '<li><a href="%s" class="sy-power-pictures">%s</a></li>' % (path, label))
+    return t
+
+
+def html_files(top):
+    for dirpath, _, files in os.walk(top):
         if dirpath.startswith(os.path.join(ROOT, 'assets')):
             continue
         for name in files:
-            if not name.endswith('.html'):
-                continue
-            f = os.path.join(dirpath, name)
-            t = open(f, encoding='utf-8').read()
-            if 'id="forward-page"' in t:
-                continue
-            new = t
-            if 'menu-item-power-pictures' in new:
-                new = OUR_LI.sub(lambda m: m.group(1) + label + m.group(2), new)
-                new = re.sub(r'(menu-item-power-pictures[^"]*"><a href=")[^"]*', lambda m: m.group(1) + path, new)
-            else:
-                new = BLOG_LI.sub(lambda m: m.group(0) + '\n' + MENU_LI.format(
-                    path=path, label=label, tab=' tabindex="-1"' if 'tabindex="-1"' in m.group(0) else ''), new)
-            if 'sy-power-pictures' in new:
-                new = re.sub(r'(class="sy-power-pictures">)[^<]*(</a>)', lambda m: m.group(1) + label + m.group(2), new)
-                new = re.sub(r'<a href="[^"]*" class="sy-power-pictures">', '<a href="%s" class="sy-power-pictures">' % path, new)
-            elif FOOT_AFTER in new:
-                new = new.replace(FOOT_AFTER, FOOT_AFTER + foot_li)
-            if new != t:
-                with open(f, 'w', encoding='utf-8') as out:
-                    out.write(new)
-                changed += 1
-    print('pages updated:', changed)
+            if name.endswith('.html'):
+                yield os.path.join(dirpath, name)
+
+
+def update_files(top, path, label):
+    """Apply with_links to every HTML file under top; returns how many changed."""
+    changed = 0
+    for f in html_files(top):
+        t = open(f, encoding='utf-8').read()
+        if 'id="forward-page"' in t:
+            continue
+        new = with_links(t, path, label)
+        if new != t:
+            with open(f, 'w', encoding='utf-8', newline='\n') as out:
+                out.write(new)
+            changed += 1
+    return changed
+
+
+def update_menu_json(path, label):
+    """The top menu of pages built from src/ comes from menu.json: set the item, or add it after "בלוג"."""
+    with open(MENU_JSON, encoding='utf-8') as f:
+        menu = json.load(f)
+    items = menu['items']
+    item = next((i for i in items if i['key'] == 'power-pictures'), None)
+    if item is None:
+        item = {'key': 'power-pictures', 'classes': 'menu-item menu-item-type-custom menu-item-object-custom',
+                'id_class': 'menu-item-power-pictures', 'page_id': None}
+        items.insert(next(n for n, i in enumerate(items) if i['key'] == 'blog') + 1, item)
+    if (item.get('href'), item.get('label')) == (path, label):
+        return False
+    item['href'], item['label'] = path, label
+    with open(MENU_JSON, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(json.dumps(menu, ensure_ascii=False, indent=2) + '\n')
+    return True
+
+
+def cmd_menu():
+    """Link the page from the top menu (after "בלוג") and the footer column "כלים לחיים".
+
+    Pages built from src/ get it through menu.json and the footer component (then they are
+    rebuilt); other pages are changed in place."""
+    d = load()
+    path, label = d['path'], esc(d.get('menu_label', d['title']))
+    src_changed = update_menu_json(path, label) + update_files('src', path, label)
+    if src_changed:
+        sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        from tools.build.__main__ import main as build_pages
+        if build_pages([]) != 0:
+            sys.exit('building the pages failed')
+    print('pages updated in place:', update_files(ROOT, path, label))
 
 
 if __name__ == '__main__':

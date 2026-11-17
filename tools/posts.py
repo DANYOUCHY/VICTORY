@@ -3,7 +3,12 @@
   python3 tools/posts.py index              build data/posts.json from the site as it is now
   python3 tools/posts.py add post.json      add a new post (see NEW POST below)
   python3 tools/posts.py lists              rebuild the blog pages and the "recent posts"
-                                            sidebar on every page from data/posts.json
+                                            sidebar from data/posts.json
+
+Every post is built from src/ (see src/README.md): its own small files are in
+src/pages/posts/<slug>/ (title, date, image, content, navigation, comments, seo, page.json),
+and the layout it shares with all posts is in src/components/post/. The blog pages and the
+recent-posts sidebar are made by the build (tools/build) from data/posts.json.
 
 NEW POST (post.json, UTF-8):
   {
@@ -17,29 +22,37 @@ NEW POST (post.json, UTF-8):
     "author": "יוחי דנחי"                   optional
   }
 
-A new post is built from the newest existing post page, so it has exactly the same
-layout. Adding a post also updates the previous post's "next" link, every blog page,
-the recent-posts sidebar on every page and the sitemaps.
+A new post's folder is made from the newest post's folder, so it has exactly the same
+layout. Adding a post also updates the previous post's "next" link, data/posts.json,
+every blog page and sidebar (by rebuilding the pages from src/) and the sitemaps.
+If it fails half way: git checkout -- site data src  (and remove the new post's folder).
 """
 import datetime
-import glob
 import html
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 import urllib.parse
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from tools.build.__main__ import main as build_pages                      # noqa: E402
+from tools.build.post_lists import (ARTICLE_CLASS, SIDEBAR_COUNT,           # noqa: E402
+                                    blog_page_count, paragraph)
+from tools.build.template import read_source                                # noqa: E402
 
 ROOT = 'site'
 DATA = 'data/posts.json'
+POSTS_SRC = os.path.join('src', 'pages', 'posts')
+BLOG_SRC = os.path.join('src', 'pages', 'blog')
+POST_LAYOUT = 'components/post/page.html'
 BASE = 'https://www.victory.org.il'
-PER_PAGE = 8
-SIDEBAR_COUNT = 3
 BLOG_WORDS, SIDEBAR_WORDS = 25, 20
 MONTHS_HE = ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט',
              'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר']
+para = paragraph
 
 
 # ---------- small HTML helpers (string based, so untouched parts stay byte for byte) ----------
@@ -144,99 +157,54 @@ def cmd_index():
     print('posts indexed:', len(posts))
 
 
-# ---------- list rendering ----------
 
-def para(s):
-    return '<p>%s</p>' % html.escape(s, quote=False) if s else ''
+# ---------- the source files of a post (src/pages/posts/<slug>/) ----------
 
-ARTICLE_CLASS = ('elementor-post elementor-grid-item post-%d post type-post status-publish '
-                 'format-standard has-post-thumbnail hentry category-uncategorized')
+def post_folder(url_path):
+    """Where a post's own files are, from its address."""
+    return os.path.join(POSTS_SRC, urllib.parse.unquote(url_path).strip('/'))
 
-def blog_article(p, first):
-    thumb = p['thumb']
-    if not first:
-        thumb = thumb.replace('fetchpriority="high" ', '')
-    thumb_link = ('\t\t\t\t<a class="elementor-post__thumbnail__link" href="%s" tabindex="-1" >\n'
-                  '\t\t\t<div class="elementor-post__thumbnail">%s</div>\n\t\t</a>\n' % (p['url'], thumb)) if thumb else ''
-    return (
-        '<article class="%s" role="listitem">\n'
-        '%s'
-        '\t\t\t\t<div class="elementor-post__text">\n'
-        '\t\t\t\t<h3 class="elementor-post__title">\n\t\t\t<a href="%s" >\n\t\t\t\t%s\t\t\t</a>\n\t\t</h3>\n'
-        '\t\t\t\t<div class="elementor-post__meta-data">\n\t\t\t\t\t<span class="elementor-post-author">\n'
-        '\t\t\t%s\t\t</span>\n\t\t\t\t</div>\n'
-        '\t\t\t\t<div class="elementor-post__excerpt">\n\t\t\t%s\n\t\t</div>\n'
-        '\t\t\n\t\t<a class="elementor-post__read-more" href="%s" aria-label="קרא עוד אודות %s" tabindex="-1" >\n'
-        '\t\t\tקראו עוד »\t\t</a>\n\n\t\t\t\t</div>\n\t\t\t\t</article>\n'
-    ) % (p.get('cls') or ARTICLE_CLASS % p['id'], thumb_link, p['url'], html.escape(p['title'], quote=False),
-         html.escape(p['author'] or 'יוחי דנחי', quote=False), p.get('excerpt_html', para(p['excerpt'])),
-         p['url'], attr(p['title']))
+def read_part(folder, name):
+    return read_source(Path(folder) / name)
 
-def sidebar_article(p):
-    return (
-        '<article class="%s" role="listitem">\n'
-        '\t\t\t\t<div class="elementor-post__text">\n'
-        '\t\t\t\t<h3 class="elementor-post__title">\n\t\t\t<a href="%s" >\n\t\t\t\t%s\t\t\t</a>\n\t\t</h3>\n'
-        '\t\t\t\t<div class="elementor-post__excerpt">\n\t\t\t%s\n\t\t</div>\n'
-        '\t\t\n\t\t<a class="elementor-post__read-more" href="%s" aria-label="קרא עוד אודות %s" tabindex="-1" >\n'
-        '\t\t\tקראו עוד...\t\t</a>\n\n\t\t\t\t</div>\n\t\t\t\t</article>\n'
-    ) % (p.get('cls') or ARTICLE_CLASS % p['id'], p['url'], html.escape(p['title'], quote=False),
-         p.get('excerpt_short_html', ''), p['url'], attr(p['title']))
+def write_part(folder, name, text):
+    """A source file holds its text plus one final newline (see src/README.md)."""
+    os.makedirs(folder, exist_ok=True)
+    with open(os.path.join(folder, name), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(text + '\n')
 
-def pagination(page, last):
-    def link(n):
-        return '/blog/' if n == 1 else '/blog/%d/' % n
-    parts = []
-    parts.append('<a class="page-numbers prev" href="%s">&laquo; הקודם</a>' % link(page - 1) if page > 1
-                 else '<span class="page-numbers prev">&laquo; הקודם</span>')
-    for n in range(1, last + 1):
-        if n == page:
-            parts.append('<span aria-current="page" class="page-numbers current"><span class="elementor-screen-only">עמוד</span>%d</span>' % n)
-        else:
-            parts.append('<a class="page-numbers" href="%s"><span class="elementor-screen-only">עמוד</span>%d</a>' % (link(n), n))
-    parts.append('<a class="page-numbers next" href="%s">הבא &raquo;</a>' % link(page + 1) if page < last
-                 else '<span class="page-numbers next">הבא &raquo;</span>')
-    return ('\t\t<div class="e-load-more-anchor" data-page="%d" data-max-page="%d" data-next-page="%s"></div>\n'
-            '\t\t\t\t<nav class="elementor-pagination" aria-label="עימוד">\n\t\t\t%s\t\t</nav>\n'
-            ) % (page, last, BASE + link(min(page + 1, last)), ' \n'.join(parts))
+def read_page_json(folder):
+    return json.load(open(os.path.join(folder, 'page.json'), encoding='utf-8'))
+
+def write_page_json(folder, data):
+    write_part(folder, 'page.json', json.dumps(data, ensure_ascii=False, indent=2))
+
+
+# ---------- lists: the blog pages and the recent-posts sidebar ----------
+
+def ensure_blog_pages(posts):
+    """One src/pages/blog/<n>/ per blog page; a new last page is a copy of page 2 with its own number."""
+    model_dir = os.path.join(BLOG_SRC, '2')
+    for n in range(2, blog_page_count(posts) + 1):
+        folder = os.path.join(BLOG_SRC, str(n))
+        if os.path.exists(os.path.join(folder, 'page.json')):
+            continue
+        text = json.dumps(read_page_json(model_dir), ensure_ascii=False)
+        text = text.replace('/blog/2/', '/blog/%d/' % n).replace('paged-2 ', 'paged-%d ' % n)
+        data = json.loads(text)
+        data['output'] = 'blog/%d/index.html' % n
+        data['params']['blog_page'] = n
+        write_page_json(folder, data)
+        print('new blog page', n)
+
+def build_all():
+    """Rebuild every page from src/ (the lists come from data/posts.json)."""
+    if build_pages([]) != 0:
+        sys.exit('building the pages failed')
 
 def cmd_lists():
-    posts = json.load(open(DATA, encoding='utf-8'))
-    pages = [posts[i:i + PER_PAGE] for i in range(0, len(posts), PER_PAGE)]
-    for n, chunk in enumerate(pages, 1):
-        f = os.path.join(ROOT, 'blog', 'index.html') if n == 1 else os.path.join(ROOT, 'blog', str(n), 'index.html')
-        t = open(f, encoding='utf-8').read() if os.path.exists(f) else ''
-        if 'data-widget_type="posts.classic"' not in t:
-            # a new last page (or WordPress's empty one): copy page 2 and give it this page's address
-            t = open(os.path.join(ROOT, 'blog', '2', 'index.html'), encoding='utf-8').read()
-            t = t.replace(BASE + '/blog/2/"', BASE + '/blog/%d/"' % n)
-            os.makedirs(os.path.dirname(f), exist_ok=True)
-        span = widget_spans(t, 'posts.classic')[0]
-        inner = ('\n\t\t\t<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid" role="list">\n'
-                 + ''.join(blog_article(p, i == next((k for k, q in enumerate(chunk) if q['thumb']), -1))
-                           for i, p in enumerate(chunk))
-                 + '\t\t\t\t</div>\n' + pagination(n, len(pages)) + '\t\t\t\t')
-        t = replace_widget_inner(t, span, inner)
-        open(f, 'w', encoding='utf-8').write(t)
-    def side_for(own_id):
-        shown = [p for p in posts if p['id'] != own_id][:SIDEBAR_COUNT]
-        return ('\n\t\t\t<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid" role="list">\n'
-                + ''.join(sidebar_article(p) for p in shown) + '\t\t\t\t</div>\n\t\t\t\t')
-    changed = 0
-    for f in glob.glob(os.path.join(ROOT, '**', '*.html'), recursive=True):
-        if os.sep + 'blog' + os.sep in f or f.startswith(os.path.join(ROOT, 'wp-')):
-            continue
-        t = open(f, encoding='utf-8').read()
-        o = t
-        own = re.search(r'\bpostid-(\d+)\b', t)
-        side = side_for(int(own.group(1)) if own else None)
-        for span in reversed(widget_spans(t, 'posts.classic')):
-            if 'elementor-posts--thumbnail-none' in t[span[0]:t.find('>', span[0])]:
-                t = replace_widget_inner(t, span, side)
-        if t != o:
-            open(f, 'w', encoding='utf-8').write(t)
-            changed += 1
-    print('blog pages:', len(pages), '| pages with recent posts updated:', changed)
+    ensure_blog_pages(json.load(open(DATA, encoding='utf-8')))
+    build_all()
 
 
 # ---------- add ----------
@@ -258,20 +226,13 @@ def nav_inner(prev_p, next_p):
             '\t\t\t\t\t\t<div class="elementor-post-navigation__next elementor-post-navigation__link">\n\t\t\t\t%s\t\t\t</div>\n'
             '\t\t</div>\n\t\t\t\t') % (prev_html(prev_p) if prev_p else '', next_html(next_p) if next_p else '')
 
-def copy_nav_arrows(t, span):
-    """Keep the arrow icons the site already uses (svg or font icon) when rebuilding the navigation."""
-    seg = t[span[0]:span[1]]
-    prev_icon = re.search(r'post-navigation__arrow-prev">(.*?)<span class="elementor-screen-only">', seg, re.S)
-    next_icon = re.search(r'post-navigation__arrow-next">(.*?)<span class="elementor-screen-only">', seg, re.S)
-    return (prev_icon.group(1) if prev_icon else '', next_icon.group(1) if next_icon else '')
-
-def set_nav(t, prev_p, next_p):
-    span = widget_spans(t, 'post-navigation.default')[0]
-    pi, ni = copy_nav_arrows(t, span)
+def navigation(old_inner, prev_p, next_p):
+    """The "previous / next" links, keeping the arrow icons the post already uses (svg or font icon)."""
+    prev_icon = re.search(r'post-navigation__arrow-prev">(.*?)<span class="elementor-screen-only">', old_inner, re.S)
+    next_icon = re.search(r'post-navigation__arrow-next">(.*?)<span class="elementor-screen-only">', old_inner, re.S)
     inner = nav_inner(prev_p, next_p)
-    inner = inner.replace('<i aria-hidden="true" class="fa fa-angle-right"></i>', pi or '')
-    inner = inner.replace('<i aria-hidden="true" class="fa fa-angle-left"></i>', ni or '')
-    return replace_widget_inner(t, span, inner)
+    inner = inner.replace('<i aria-hidden="true" class="fa fa-angle-right"></i>', prev_icon.group(1) if prev_icon else '')
+    return inner.replace('<i aria-hidden="true" class="fa fa-angle-left"></i>', next_icon.group(1) if next_icon else '')
 
 def save_images(src, slug, date):
     from PIL import Image
@@ -299,6 +260,74 @@ def save_images(src, slug, date):
 def srcset(sizes):
     return ', '.join('%s %dw' % (sizes[k][0], sizes[k][1][0]) for k in ('medium_large', 'medium', 'large', 'full'))
 
+def seo_part(seo, url, title, description, alt, sizes):
+    """The search and sharing tags (title, description, picture) of the new post."""
+    seo = re.sub(r'<title>.*?</title>', '<title>%s</title>' % html.escape(title, quote=False), seo, count=1, flags=re.S)
+    def meta(t, key, value, prop=True):
+        k = 'property' if prop else 'name'
+        return re.sub(r'(<meta %s="%s" content=")[^"]*(")' % (k, re.escape(key)), lambda m: m.group(1) + attr(value) + m.group(2), t)
+    seo = meta(seo, 'description', description, prop=False)
+    for k, v in (('og:url', BASE + url), ('og:title', title), ('og:description', description),
+                 ('og:image', BASE + sizes['og'][0]), ('og:image:secure_url', BASE + sizes['og'][0]),
+                 ('og:image:width', str(sizes['og'][1][0])), ('og:image:height', str(sizes['og'][1][1])),
+                 ('og:image:alt', alt)):
+        seo = meta(seo, k, v)
+    for k, v in (('twitter:title', title), ('twitter:description', description), ('twitter:image', BASE + sizes['og'][0])):
+        seo = meta(seo, k, v, prop=False)
+    return re.sub(r'<link rel="canonical" href="[^"]*"', '<link rel="canonical" href="%s"' % (BASE + url), seo)
+
+def image_part(sizes, alt):
+    ml = sizes['medium_large']
+    img = ('<img fetchpriority="high" width="%d" height="%d" src="%s" class="attachment-medium_large size-medium_large" '
+           'alt="%s" srcset="%s" sizes="(max-width: %dpx) 100vw, %dpx" />') % (ml[1][0], ml[1][1], ml[0], attr(alt), srcset(sizes), ml[1][0], ml[1][0])
+    return '\n' + '\t' * 14 + img + '\t' * 18
+
+def comments_part(old, old_url, url, new_id):
+    """The comment form of the new post; a new post starts with no comments."""
+    seg = re.sub(r'<h3 class="comments-title">.*?</h3>', '', old, flags=re.S)
+    seg = re.sub(r'<ol class="ast-comment-list">.*?</ol>|<ol class="comment-list">.*?</ol>', '', seg, flags=re.S)
+    seg = re.sub(r"(name=['\"]comment_post_ID['\"] value=['\"])\d+", lambda m: m.group(1) + str(new_id), seg)
+    seg = seg.replace(old_url + '#respond', url + '#respond')
+    return re.sub(r'(name="page" value=")[^"]*', lambda m: m.group(1) + url, seg)
+
+def post_params(old, new_id, url, title, sizes):
+    """The new post's page.json values, from the newest post's. Links to "this page" use the new address."""
+    p = dict(old)
+    p['body_class'] = p['body_class'].replace('postid-%d' % old['post_id'], 'postid-%d' % new_id)
+    p['post_class'] = re.sub(r'^post-\d+ ', 'post-%d ' % new_id, p['post_class'])
+    p['post_id'] = new_id
+    p['elementor_post'] = '{"id":%d,"title":"%s","excerpt":"","featuredImage":"%s"}' % (
+        new_id, urllib.parse.quote(title), (BASE + sizes['large'][0]).replace('/', '\\/'))
+    p['skip_href'], p['contact_href'] = url + '#content', url + '#contact'
+    p['self_prefix'] = p['form_page'] = url
+    p['featured_image'] = p['comments'] = 'on'
+    return p
+
+def post_entry(new_id, url, title, plain, alt, sizes, author, date):
+    """The new post's line in data/posts.json (the blog pages and sidebars are built from it)."""
+    medium = sizes['medium']
+    thumb = ('<img fetchpriority="high" decoding="async" width="%d" height="%d" src="%s" class="attachment-medium size-medium" '
+             'alt="%s" srcset="%s" sizes="(max-width: %dpx) 100vw, %dpx" />') % (
+        medium[1][0], medium[1][1], medium[0], attr(alt), srcset(sizes), medium[1][0], medium[1][0])
+    excerpt = words(plain, BLOG_WORDS)
+    return {'id': new_id, 'url': url, 'title': title, 'excerpt': excerpt,
+            'excerpt_html': paragraph(excerpt), 'excerpt_short_html': paragraph(words(plain, SIDEBAR_WORDS)),
+            'cls': ARTICLE_CLASS % new_id, 'thumb': thumb, 'author': author, 'date': date.isoformat()}
+
+def write_new_post(folder, newest_dir, newest, url, title, date, content, seo, alt, sizes, new_id):
+    """All the files of the new post, made from the newest post's files."""
+    old = read_page_json(newest_dir)
+    write_part(folder, 'seo.html', seo)
+    write_part(folder, 'title.html', re.sub(r'(<h1[^>]*>).*?(</h1>)', lambda m: m.group(1) + html.escape(title, quote=False) + m.group(2),
+                                            read_part(newest_dir, 'title.html'), count=1, flags=re.S))
+    write_part(folder, 'date.html', re.sub(r'<time>.*?</time>', '<time>%s</time>' % he_date(date), read_part(newest_dir, 'date.html'), count=1))
+    write_part(folder, 'image.html', image_part(sizes, alt))
+    write_part(folder, 'content.html', '\n\t\t\t\t\t' + content + '\n\t\t\t\t')
+    write_part(folder, 'navigation.html', navigation(read_part(newest_dir, 'navigation.html'), newest, None))
+    write_part(folder, 'comments.html', comments_part(read_part(newest_dir, 'comments.html'), newest['url'], url, new_id))
+    write_page_json(folder, {'output': urllib.parse.unquote(url).strip('/') + '/index.html', 'layout': POST_LAYOUT,
+                             'params': post_params(old['params'], new_id, url, title, sizes)})
+
 def cmd_add(spec_file):
     spec = json.load(open(spec_file, encoding='utf-8'))
     posts = json.load(open(DATA, encoding='utf-8'))
@@ -306,85 +335,30 @@ def cmd_add(spec_file):
     url = '/' + urllib.parse.quote(slug) + '/'
     if any(p['url'] == url for p in posts):
         sys.exit('a post with this address already exists: ' + url)
+    folder = post_folder(url)
+    if os.path.exists(folder):
+        sys.exit('this post already has a folder in src: ' + folder)
     date = datetime.date.fromisoformat(spec.get('date') or datetime.date.today().isoformat())
     title = spec['title'].strip()
     alt = spec.get('image_alt') or title
     content = spec['content_html']
     plain = re.sub(r'https?://\S+', '', text_of(content))
-    excerpt = words(plain, BLOG_WORDS)
     description = spec.get('description') or words(plain, 30)
     new_id = max(p['id'] for p in posts) + 1
+    newest = posts[0]
+    newest_dir = post_folder(newest['url'])
+    if not os.path.exists(os.path.join(newest_dir, 'page.json')):
+        sys.exit('the newest post has no folder in src: ' + newest_dir)
     sizes = save_images(spec['image'], slug, date)
 
-    newest = posts[0]
-    t = open(page_file(newest['url']), encoding='utf-8').read()
-    old_id = newest['id']
-
-    # head
-    t = re.sub(r'<title>.*?</title>', '<title>%s</title>' % html.escape(title, quote=False), t, count=1, flags=re.S)
-    def meta(t, key, value, prop=True):
-        k = 'property' if prop else 'name'
-        return re.sub(r'(<meta %s="%s" content=")[^"]*(")' % (k, re.escape(key)), lambda m: m.group(1) + attr(value) + m.group(2), t)
-    t = meta(t, 'description', description, prop=False)
-    for k, v in (('og:url', BASE + url), ('og:title', title), ('og:description', description),
-                 ('og:image', BASE + sizes['og'][0]), ('og:image:secure_url', BASE + sizes['og'][0]),
-                 ('og:image:width', str(sizes['og'][1][0])), ('og:image:height', str(sizes['og'][1][1])),
-                 ('og:image:alt', alt)):
-        t = meta(t, k, v)
-    for k, v in (('twitter:title', title), ('twitter:description', description), ('twitter:image', BASE + sizes['og'][0])):
-        t = meta(t, k, v, prop=False)
-    t = re.sub(r'<link rel="canonical" href="[^"]*"', '<link rel="canonical" href="%s"' % (BASE + url), t)
-
-    # ids and the page settings Elementor reads (share buttons use the title and image)
-    t = t.replace('postid-%d' % old_id, 'postid-%d' % new_id).replace('post-%d ' % old_id, 'post-%d ' % new_id)
-    t = re.sub(r'"post":\{"id":%d,"title":"[^"]*","excerpt":"[^"]*","featuredImage":"[^"]*"' % old_id,
-               lambda m: '"post":{"id":%d,"title":"%s","excerpt":"","featuredImage":"%s"}'[:-1] % (
-                   new_id, urllib.parse.quote(title), (BASE + sizes['large'][0]).replace('/', '\\/')), t)
-
-    # body widgets
-    span = widget_spans(t, 'theme-post-title.default')[0]
-    t = t[:span[0]] + re.sub(r'(<h1[^>]*>).*?(</h1>)', lambda m: m.group(1) + html.escape(title, quote=False) + m.group(2),
-                             t[span[0]:span[1]], count=1, flags=re.S) + t[span[1]:]
-    span = widget_spans(t, 'post-info.default')[0]
-    t = t[:span[0]] + re.sub(r'<time>.*?</time>', '<time>%s</time>' % he_date(date), t[span[0]:span[1]], count=1) + t[span[1]:]
-    span = widget_spans(t, 'theme-post-featured-image.default')[0]
-    ml = sizes['medium_large']
-    img = ('<img fetchpriority="high" width="%d" height="%d" src="%s" class="attachment-medium_large size-medium_large" '
-           'alt="%s" srcset="%s" sizes="(max-width: %dpx) 100vw, %dpx" />') % (ml[1][0], ml[1][1], ml[0], attr(alt), srcset(sizes), ml[1][0], ml[1][0])
-    t = replace_widget_inner(t, span, '\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t' + img + '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t')
-    span = widget_spans(t, 'theme-post-content.default')[0]
-    t = replace_widget_inner(t, span, '\n\t\t\t\t\t' + content + '\n\t\t\t\t')
-    t = set_nav(t, newest, None)
-    # comments: a new post starts with none
-    span = widget_spans(t, 'post-comments.theme_comments')[0]
-    seg = t[span[0]:span[1]]
-    seg = re.sub(r'<h3 class="comments-title">.*?</h3>', '', seg, flags=re.S)
-    seg = re.sub(r'<ol class="ast-comment-list">.*?</ol>|<ol class="comment-list">.*?</ol>', '', seg, flags=re.S)
-    seg = re.sub(r"(name=['\"]comment_post_ID['\"] value=['\"])\d+", lambda m: m.group(1) + str(new_id), seg)
-    seg = seg.replace(newest['url'] + '#respond', url + '#respond')
-    seg = re.sub(r'(name="page" value=")[^"]*', lambda m: m.group(1) + url, seg)
-    t = t[:span[0]] + seg + t[span[1]:]
-
-    out = page_file(url)
-    os.makedirs(os.path.dirname(out), exist_ok=True)
-    open(out, 'w', encoding='utf-8').write(t)
-
-    # previous newest post now gets a "next" link
-    pf = page_file(newest['url'])
-    pt = open(pf, encoding='utf-8').read()
-    prev_of_newest = posts[1] if len(posts) > 1 else None
-    open(pf, 'w', encoding='utf-8').write(set_nav(pt, prev_of_newest, {'url': url, 'title': title}))
-
-    medium = sizes['medium']
-    thumb = ('<img fetchpriority="high" decoding="async" width="%d" height="%d" src="%s" class="attachment-medium size-medium" '
-             'alt="%s" srcset="%s" sizes="(max-width: %dpx) 100vw, %dpx" />') % (
-        medium[1][0], medium[1][1], medium[0], attr(alt), srcset(sizes), medium[1][0], medium[1][0])
-    posts.insert(0, {'id': new_id, 'url': url, 'title': title, 'excerpt': excerpt,
-                     'excerpt_html': para(excerpt), 'excerpt_short_html': para(words(plain, SIDEBAR_WORDS)),
-                     'cls': ARTICLE_CLASS % new_id, 'thumb': thumb,
-                     'author': spec.get('author') or newest.get('author') or 'יוחי דנחי',
-                     'date': date.isoformat()})
-    json.dump(posts, open(DATA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    seo = seo_part(read_part(newest_dir, 'seo.html'), url, title, description, alt, sizes)
+    write_new_post(folder, newest_dir, newest, url, title, date, content, seo, alt, sizes, new_id)
+    # the post before it now gets a "next" link
+    write_part(newest_dir, 'navigation.html', navigation(read_part(newest_dir, 'navigation.html'),
+                                                         posts[1] if len(posts) > 1 else None, {'url': url, 'title': title}))
+    posts.insert(0, post_entry(new_id, url, title, plain, alt, sizes,
+                               spec.get('author') or newest.get('author') or 'יוחי דנחי', date))
+    json.dump(posts, open(DATA, 'w', encoding='utf-8', newline='\n'), ensure_ascii=False, indent=1)
     cmd_lists()
     subprocess.run([sys.executable, os.path.join(os.path.dirname(__file__), 'sitemap.py'), ROOT], check=True)
     print('added', url)

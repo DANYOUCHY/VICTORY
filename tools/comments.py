@@ -6,6 +6,8 @@
 approved.json is a list of comments from the monthly digest, as the digest's DATA block
 holds them: {"page": "/post-slug/", "name", "email", "url", "text", "time", "parent"}.
 Published comments use the same markup WordPress produced, so they look the same.
+A post built from src/ gets them in src/pages/posts/<slug>/comments.html, and the pages
+are rebuilt; a page not built from src/ gets them straight in its HTML.
 """
 import datetime
 import hashlib
@@ -91,34 +93,55 @@ def comment_li(c, cid, page, post_id, depth):
          when.isoformat(timespec='seconds'), when.strftime('%d/%m/%Y ב %H:%M'), body,
          page, cid, cid, post_id, cid, reply_to, reply_to)
 
+def add_comments(seg, cs, page, post_id, title):
+    """The comments part of a post with these comments added (oldest first) and its count heading updated."""
+    for c in sorted(cs, key=lambda c: c['time']):
+        cid = max([int(x) for x in re.findall(r'id="comment-(\d+)"', seg)] + [1000]) + 1
+        li = comment_li(c, cid, page, post_id, 1)
+        if '<ol class="ast-comment-list">' not in seg:
+            seg = seg.replace('<div id="respond"', '<ol class="ast-comment-list">\n</ol><!-- .ast-comment-list -->\n<div id="respond"', 1)
+        seg = seg.replace('</ol><!-- .ast-comment-list -->', li + '</ol><!-- .ast-comment-list -->', 1)
+    n = len(re.findall(r'<li class="comment', seg))
+    heading = '%s על &ldquo;%s&rdquo;' % ('1 מחשבה' if n == 1 else '%d מחשבות' % n, html.escape(title, quote=False))
+    if '<h3 class="comments-title">' in seg:
+        return re.sub(r'(<h3 class="comments-title">).*?(</h3>)', lambda m: m.group(1) + '\n\t\t\t' + heading + '\t\t' + m.group(2), seg, count=1, flags=re.S)
+    return seg.replace('<ol class="ast-comment-list">',
+                       '<div class="comments-count-wrapper">\n\t\t<h3 class="comments-title">\n\t\t\t%s\t\t</h3>\n\t</div>\n<ol class="ast-comment-list">' % heading, 1)
+
+def title_of(fragment):
+    return html.unescape(re.search(r'<h1[^>]*>(.*?)</h1>', fragment, re.S).group(1)).strip()
+
+def publish_in_src(folder, page, cs):
+    """A post built from src/: the comments go into its own comments.html."""
+    post_id = int(P.read_page_json(folder)['params']['post_id'])
+    title = title_of(P.read_part(folder, 'title.html'))
+    P.write_part(folder, 'comments.html', add_comments(P.read_part(folder, 'comments.html'), cs, page, post_id, title))
+
+def publish_in_site(page, cs):
+    """A page not built from src/: the comments go straight into its HTML."""
+    f = P.page_file(page)
+    t = open(f, encoding='utf-8').read()
+    post_id = int(re.search(r'\bpostid-(\d+)\b', t).group(1))
+    span = P.widget_spans(t, 'post-comments.theme_comments')[0]
+    t = t[:span[0]] + add_comments(t[span[0]:span[1]], cs, page, post_id, title_of(t)) + t[span[1]:]
+    open(f, 'w', encoding='utf-8', newline='\n').write(t)
+
 def cmd_publish(spec):
     items = json.load(open(spec, encoding='utf-8'))
     by_page = {}
     for c in items:
         by_page.setdefault(c['page'], []).append(c)
+    rebuild = False
     for page, cs in by_page.items():
-        f = P.page_file(page)
-        t = open(f, encoding='utf-8').read()
-        post_id = int(re.search(r'\bpostid-(\d+)\b', t).group(1))
-        title = html.unescape(re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S).group(1)).strip()
-        span = P.widget_spans(t, 'post-comments.theme_comments')[0]
-        seg = t[span[0]:span[1]]
-        for c in sorted(cs, key=lambda c: c['time']):
-            cid = max([int(x) for x in re.findall(r'id="comment-(\d+)"', seg)] + [1000]) + 1
-            li = comment_li(c, cid, page, post_id, 1)
-            if '<ol class="ast-comment-list">' not in seg:
-                seg = seg.replace('<div id="respond"', '<ol class="ast-comment-list">\n</ol><!-- .ast-comment-list -->\n<div id="respond"', 1)
-            seg = seg.replace('</ol><!-- .ast-comment-list -->', li + '</ol><!-- .ast-comment-list -->', 1)
-        n = len(re.findall(r'<li class="comment', seg))
-        heading = '%s על &ldquo;%s&rdquo;' % ('1 מחשבה' if n == 1 else '%d מחשבות' % n, html.escape(title, quote=False))
-        if '<h3 class="comments-title">' in seg:
-            seg = re.sub(r'(<h3 class="comments-title">).*?(</h3>)', lambda m: m.group(1) + '\n\t\t\t' + heading + '\t\t' + m.group(2), seg, count=1, flags=re.S)
+        folder = P.post_folder(page)
+        if os.path.exists(os.path.join(folder, 'page.json')):
+            publish_in_src(folder, page, cs)
+            rebuild = True
         else:
-            seg = seg.replace('<ol class="ast-comment-list">',
-                              '<div class="comments-count-wrapper">\n\t\t<h3 class="comments-title">\n\t\t\t%s\t\t</h3>\n\t</div>\n<ol class="ast-comment-list">' % heading, 1)
-        t = t[:span[0]] + seg + t[span[1]:]
-        open(f, 'w', encoding='utf-8').write(t)
+            publish_in_site(page, cs)
         print('published %d on %s' % (len(cs), urllib.parse.unquote(page)))
+    if rebuild:
+        P.build_all()
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == 'form':

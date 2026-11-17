@@ -38,7 +38,7 @@ def _article_class(post: dict) -> str:
     return post.get('cls') or ARTICLE_CLASS % post['id']
 
 
-def _paragraph(s: str) -> str:
+def paragraph(s: str) -> str:
     return '<p>%s</p>' % _text(s) if s else ''
 
 
@@ -92,7 +92,7 @@ def blog_article(post: dict, first_image: bool) -> str:
         '\t\t\n\t\t<a class="elementor-post__read-more" href="%s" aria-label="קרא עוד אודות %s" tabindex="-1" >\n'
         '\t\t\tקראו עוד »\t\t</a>\n\n\t\t\t\t</div>\n\t\t\t\t</article>\n'
     ) % (_article_class(post), thumb_link, post['url'], _text(post['title']),
-         _text(post['author'] or DEFAULT_AUTHOR), post.get('excerpt_html', _paragraph(post['excerpt'])),
+         _text(post['author'] or DEFAULT_AUTHOR), post.get('excerpt_html', paragraph(post['excerpt'])),
          post['url'], _attr(post['title']))
 
 

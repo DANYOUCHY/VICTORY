@@ -1,4 +1,5 @@
 """Checks for the build tool.  Run:  python -m unittest tools.build.test_build"""
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -7,6 +8,7 @@ from .__main__ import SITE, SRC
 from .menu import render_item
 from .output import current_text
 from .pages import find_pages
+from .post_lists import blog_list, blog_page_count, recent_posts
 from .render import build_page
 from .template import TemplateError, render
 
@@ -56,6 +58,21 @@ class MenuTests(unittest.TestCase):
     def test_home_link_is_relative(self):
         item = dict(self.ITEM, href='@home')
         self.assertIn('href="../"', render_item(item, False, '../', False))
+
+
+class PostListTests(unittest.TestCase):
+    POSTS = tuple({'id': i, 'url': f'/p{i}/', 'title': f'פוסט {i}', 'excerpt': '', 'thumb': '', 'author': ''}
+                  for i in range(20, 0, -1))
+
+    def test_recent_posts_skip_the_post_itself(self):
+        html = recent_posts(self.POSTS, own_id=19)
+        self.assertEqual(re.findall(r'href="(/p\d+/)" >', html), ['/p20/', '/p18/', '/p17/'])
+
+    def test_blog_page_count_and_last_page(self):
+        self.assertEqual(blog_page_count(self.POSTS), 3)
+        last = blog_list(self.POSTS, 3)
+        self.assertEqual(len(re.findall(r'<article ', last)), 4)
+        self.assertIn('<span class="page-numbers next">', last)
 
 
 class SiteTests(unittest.TestCase):
