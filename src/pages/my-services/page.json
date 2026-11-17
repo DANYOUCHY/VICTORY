@@ -1,0 +1,11 @@
+{
+  "output": "my-services/index.html",
+  "params": {
+    "home_url": "../",
+    "active_menu": "my-services",
+    "schema_type": "WebPage",
+    "body_class": "rtl wp-singular page-template page-template-elementor_header_footer page page-id-459 wp-custom-logo wp-embed-responsive wp-theme-astra wp-child-theme-astra-child ally-default ast-desktop ast-page-builder-template ast-no-sidebar astra-4.14.1 ast-header-custom-item-inside ast-single-post ast-inherit-site-logo-transparent elementor-page-3319 elementor-default elementor-template-full-width elementor-kit-2548 elementor-page elementor-page-459",
+    "skip_href": "/my-services/#content",
+    "contact_href": "/my-services/#contact"
+  }
+}
