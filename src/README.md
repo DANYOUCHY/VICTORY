@@ -5,16 +5,21 @@
 כלי ההרכבה `tools/build` מחבר אותם לדף שלם ושומר אותו ב־`site/`.
 
 **דף שנבנה מכאן לא עורכים ב־`site/`.** משנים כאן ומריצים את הכלי, אחרת השינוי יימחק בהרכבה הבאה.
-הדפים שכבר עברו לשיטה הזו: דף הבית (`pages/home`), אודות (`pages/about-me`), כיצד אני יכול לעזור (`pages/my-services`), צור קשר (`pages/connect`). שאר הדפים עדיין נערכים ישירות ב־`site/` עד שיעברו.
+(עדכון הסרטונים האוטומטי בודק את זה: אם דף בנוי שונה ב־`site/`, הוא נעצר עם הודעה ולא דורס.)
+
+הדפים שכבר עברו לשיטה הזו (129):
+דף הבית (`pages/home`), אודות (`pages/about-me`), כיצד אני יכול לעזור (`pages/my-services`), צור קשר (`pages/connect`),
+כל 110 הפוסטים (`pages/posts/<כתובת>`), 14 דפי הבלוג (`pages/blog/<מספר>`), והעותק הישן `blog.html` (`pages/blog-old-copy`).
+שאר הדפים (תמונות כח, דף התודה, 404, מפתח המקורות) עדיין נבנים בכלים שלהם או נערכים ישירות ב־`site/`.
 
 ## הפקודות
 
 מהתיקייה הראשית של המאגר:
 
 ```
-python -m tools.build              # בונה את כל הדפים שב־src/pages
-python -m tools.build home         # רק דף אחד
-python -m tools.build --check      # לא כותב כלום; מראה אילו דפים שונים ממה שיש ב־site/
+python -m tools.build                    # בונה את כל הדפים שב־src/pages
+python -m tools.build home               # רק דף אחד (השם = התיקייה מתחת ל־pages, למשל posts/hermit-crab)
+python -m tools.build --check            # לא כותב כלום; מראה אילו דפים שונים ממה שיש ב־site/
 python -m unittest tools.build.test_build   # הבדיקות של הכלי
 ```
 
@@ -25,7 +30,10 @@ python -m unittest tools.build.test_build   # הבדיקות של הכלי
 ```
 src/
   components/                     רכיבים משותפים
+    defaults.json                 ערכי ברירת מחדל לכל דף (דף יכול לשנות אותם ב־page.json שלו)
     head/                         בלוקי עיצוב שבראש כל דף
+      astra-theme-styles.html     העיצוב הכללי; שלושה חלקים בו נדלקים ונכבים (ראו "מתגים")
+      astra/                      החלקים האלה
     header/header.html            הכותרת העליונה (לוגו, תפריט, חיפוש)
     header/menu.json              פריטי התפריט העליון — כאן מוסיפים, מוחקים או משנים פריט
     body-start.html               תחילת גוף הדף (קישור "דלג לתוכן" וכו')
@@ -33,6 +41,14 @@ src/
     popup.html                    החלונית הקופצת של צור קשר
     divider.html                  קו ההפרדה בין קטעים בדף הבית
     scripts/                      סקריפטים שבסוף כל דף
+    youtube/items.html            רשימת הסרטונים בסרגל הצד — קובץ אחד לכל האתר; tools/youtube_feed.py כותב אותו
+    comments/                     העיצוב והסקריפטים של התגובות (on = פתוחות, off = סגורות)
+    post/                         מה שמשותף לכל הפוסטים
+      page.html                   סדר החלקים בפוסט
+      head.html, tail.html        ראש וסוף הדף
+      single.html                 גוף הפוסט: כותרת, תאריך, תמונה, תוכן, ניווט, תגובות, סרגל הצד
+      featured-image/on.html      התמונה הראשית (off.html = פוסט בלי תמונה)
+    blog/                         מה שמשותף לכל דפי הבלוג (סדר, ראש, סוף, כותרת, רשת הפוסטים והסרטונים)
   pages/
     home/
       page.json                   הערכים של הדף: לאן הוא נשמר, איזה פריט מודגש בתפריט, ועוד
@@ -41,21 +57,53 @@ src/
       sections/01-hero.html ...   קטעי התוכן, לפי הסדר שבו הם מופיעים בדף
       tail.html                   סוף הדף: סקריפטים של הדף
     about-me/, my-services/, connect/   אותו מבנה; הקטעים ממוספרים, ו־SECTIONS.md בכל תיקייה אומר מה יש בכל קטע
+    posts/<כתובת הפוסט>/          פוסט אחד — רק מה שלו:
+      page.json                   הערכים (מספר הפוסט, מתגים וכו') ו־"layout" שמצביע על components/post/page.html
+      title.html                  הכותרת
+      date.html                   התאריך
+      image.html                  התמונה הראשית
+      content.html                התוכן — כאן עורכים את הטקסט של הפוסט
+      navigation.html             הקישורים "קודם / הבא"
+      comments.html               התגובות וטופס התגובה
+      seo.html                    הכותרת לגוגל, התיאור, התמונה לשיתוף ברשתות
+    blog/<מספר>/page.json         דף בלוג אחד — רק המספר והכתובת; הרשת עצמה נבנית מ־data/posts.json
 ```
 
 ## שפת התבניות (שלוש צורות, לא יותר)
 
 | כתיבה | משמעות |
 |---|---|
-| `{{name}}` | ערך. מגיע מ־`params` שב־`page.json`, או מההכללה (שורה אחרונה) |
+| `{{name}}` | ערך. מגיע מ־`params` שב־`page.json`, מ־`defaults.json`, מהכלי, או מההכללה (שורה אחרונה) |
 | `{{> components/footer.html}}` | כאן נכנס התוכן של קובץ אחר (הנתיב מתוך `src/`) |
 | `{{> components/divider.html section=7e315a9}}` | אותו דבר, עם ערכים לקובץ הזה בלבד |
 
 ערך שחסר עוצר את ההרכבה עם הודעה ברורה; הכלי לא כותב ריק במקומו.
 שורה ריקה אחת בסוף כל קובץ אינה חלק מהתוכן (עורכים מוסיפים אותה).
+ערכים נכנסים לפני ההכללות, ולכן ערך יכול להיות חלק מנתיב: `{{> {{page_dir}}/content.html}}`.
+
+**ערכים שהכלי מוסיף לבד:**
+- `page_dir` — התיקייה של הדף (למשל `pages/posts/hermit-crab`), כדי שרכיב משותף יכניס קבצים של הדף עצמו.
+- `menu`, `menu_dropdown` — התפריט, מ־`menu.json`.
+- `recent_posts` — סרגל "פוסטים אחרונים", לדף שיש לו `post_id` (שלושת החדשים, בלי הפוסט עצמו).
+- `blog_list` — רשת הפוסטים ומספרי העמודים, לדף שיש לו `blog_page`.
+שני האחרונים נבנים מ־`data/posts.json` (`tools/build/post_lists.py`).
+
+**מתגים (on / off):** חלק שיש בדפים מסוימים ואין באחרים יושב בתיקייה עם `on.html` ו־`off.html` (ריק),
+והרכיב בוחר לפי ערך: `{{> components/comments/styles/{{comments}}.html}}`.
+המתגים: `comments` (תגובות פתוחות), `featured_image` (תמונה ראשית בפוסט),
+`astra_single_post_nav` ו־`astra_elementor_fixes` (חלקים בעיצוב הכללי). ברירות המחדל ב־`defaults.json`.
+
+**תבנית משותפת:** `"layout": "components/post/page.html"` ב־`page.json` אומר שהדף משתמש בשלד משותף
+ואין לו `page.html` משלו. כך כל הפוסטים וכל דפי הבלוג.
 
 ## איך עושים דברים נפוצים
 
+- **לפרסם פוסט חדש:** `python3 tools/posts.py add post.json` (הפירוט בראש `tools/posts.py`). הכלי יוצר את התיקייה של הפוסט
+  מהתיקייה של הפוסט החדש ביותר, מעדכן את "הבא" בפוסט הקודם ואת `data/posts.json`, מוסיף דף בלוג אם צריך, ובונה הכל.
+- **לתקן טקסט בפוסט:** `pages/posts/<כתובת>/content.html` (הכותרת ב־`title.html`), ואז `python -m tools.build`.
+  אם השתנו הכותרת או התקציר, לעדכן גם את השורה של הפוסט ב־`data/posts.json` (משם נבנים הבלוג והסרגל).
+- **לסגור תגובות בפוסט:** `"comments": "off"` ב־`page.json` שלו.
+- **לפרסם תגובות שאושרו:** `python3 tools/comments.py publish approved.json` — נכתב ל־`comments.html` של הפוסט, ואז נבנה.
 - **לשנות פריט בתפריט:** עורכים את `components/header/menu.json` ומריצים `python -m tools.build`.
   `@home` בכתובת פירושו דף הבית, יחסית לדף הנוכחי.
 - **לשנות טקסט בדף הבית:** מוצאים את הקטע ב־`pages/home/sections/` (השמות לפי הסדר בדף) ועורכים בו.
@@ -71,8 +119,9 @@ src/
 |---|---|
 | `template.py` | שפת התבניות: ערכים והכללות |
 | `menu.py` | מצייר את התפריט מ־`menu.json`, עם הפריט המודגש של הדף |
+| `post_lists.py` | מצייר את סרגל הפוסטים האחרונים ואת דפי הבלוג מ־`data/posts.json` |
 | `pages.py` | מוצא את הדפים ב־`src/pages` וקורא את `page.json` |
-| `render.py` | מרכיב דף אחד |
+| `render.py` | מרכיב דף אחד: ברירות מחדל, ערכי הדף, תפריט ורשימות |
 | `output.py` | כותב ל־`site/` או משווה מולו |
 | `__main__.py` | שורת הפקודה |
 | `test_build.py` | הבדיקות |
@@ -81,5 +130,14 @@ src/
 
 ## כלים אחרים שכותבים לדפים
 
-`tools/youtube_feed.py` (סרטונים בסרגל הצד) ו־`tools/posts.py lists` (פוסטים אחרונים) כותבים ישירות ל־`site/`.
-נכון להיום הם לא נוגעים בדף הבית. כשדף שהם כותבים אליו יעבור לשיטה, צריך להעביר אותם לכתוב לרכיב ב־`src/`.
+כולם כותבים ל־`src/` ואז בונים מחדש. דף שלא עבר לשיטה מעודכן אצלם ישירות ב־`site/`, כמו קודם.
+
+| כלי | מה הוא עושה |
+|---|---|
+| `tools/youtube_feed.py` | כותב את `components/youtube/items.html` ובונה. רץ כל 6 שעות (`.github/workflows/youtube-feed.yml`), ונעצר אם דף בנוי שונה ידנית ב־`site/` |
+| `tools/posts.py add` / `lists` | פוסט חדש כתיקייה ב־`pages/posts/`; `lists` מוסיף דף בלוג אם צריך ובונה |
+| `tools/comments.py publish` | תגובות ל־`comments.html` של הפוסט, ובונה |
+| `tools/life_pictures.py menu` | שם וכתובת "תמונות כח" ב־`menu.json` ובתחתית, ובונה |
+
+הכלים שרצים רק בייבוא מחדש מוורדפרס (`rebuild.yml`: `forms.py`, `comments.py form`, `thanks.py`, `cleanup.py` ועוד)
+כותבים ישירות ל־`site/` ולא מכירים את `src/`. אסור להריץ את `rebuild.yml`; אם יידרש פעם, צריך קודם להתאים אותם.
