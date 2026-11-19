@@ -201,6 +201,45 @@ color: white;
 width: 20em !important;
 }
 </style>
+<style id="cookie-notice-styles">
+/* חלונית העוגיות (scb-banner): כפתורים בצבעי האתר.
+   בלי זה התבנית צובעת כל כפתור בכיתוב לבן, והכפתורים המשניים יוצאים לבן על אפור בהיר.
+   הכל תחת המזהה scb-banner כדי לגבור על עיצוב הכפתורים הכללי של התבנית ולא לגעת בשום כפתור אחר באתר. */
+#scb-banner{--cn-teal:#0b8fae;--cn-teal-dark:#08728b;--cn-teal-light:#e8f7fb;}
+
+/* כפתור הסגירה: איקס קטן ועגול בפינה, במקום פס כחול על כל הרוחב */
+#scb-banner .scb-header{display:flex;justify-content:flex-start;margin:-6px -8px 2px;}
+#scb-banner .scb-close{width:32px;height:32px;min-height:0;padding:0;border:0;border-radius:50%;background:transparent;color:#666;font-size:22px;line-height:32px;font-weight:400;cursor:pointer;}
+#scb-banner .scb-close:hover,#scb-banner .scb-close:focus{background:#f0f0f0;color:#222;}
+
+/* כל הכפתורים: מעוגלים כמו כפתור "צור קשר" בראש האתר, וגבוהים מספיק ללחיצה באצבע */
+#scb-banner .scb-btn{min-height:44px;padding:8px 18px;border-radius:50px;font-size:15px;font-weight:600;line-height:1.3;}
+
+/* "קבל הכל" ו"שמור את הבחירה": טורקיז מלא */
+#scb-banner .scb-btn-primary{background:var(--cn-teal);border:2px solid var(--cn-teal);color:#fff;}
+#scb-banner .scb-btn-primary:hover,#scb-banner .scb-btn-primary:focus{background:var(--cn-teal-dark);border-color:var(--cn-teal-dark);color:#fff;}
+
+/* "הסר לא הכרחיות" ו"בטל": לבן עם מסגרת וכיתוב טורקיז */
+#scb-banner .scb-btn-secondary{background:#fff;border:2px solid var(--cn-teal);color:var(--cn-teal-dark);}
+#scb-banner .scb-btn-secondary:hover,#scb-banner .scb-btn-secondary:focus{background:var(--cn-teal-light);border-color:var(--cn-teal-dark);color:var(--cn-teal-dark);}
+
+/* "העדפות": כפתור שקט, כיתוב טורקיז עם קו תחתון */
+#scb-banner .scb-btn-link{background:transparent;border:2px solid transparent;color:var(--cn-teal-dark);text-decoration:underline;text-underline-offset:3px;}
+#scb-banner .scb-btn-link:hover,#scb-banner .scb-btn-link:focus{background:var(--cn-teal-light);color:var(--cn-teal-dark);}
+
+#scb-banner .scb-btn:focus-visible{outline:3px solid #14aed0;outline-offset:2px;}
+
+/* חלון ההעדפות: בלי המסגרת האפורה של הטופס, ושורות מרווחות */
+#scb-banner .scb-settings fieldset{border:0;margin:0;padding:0;}
+#scb-banner .scb-settings legend{font-weight:600;margin-bottom:6px;padding:0;}
+#scb-banner .scb-settings label{display:inline-block;padding:3px 0;}
+
+/* טלפון: הכפתורים אחד מתחת לשני, ברוחב מלא */
+@media (max-width:480px){
+#scb-banner .scb-btn{width:100%;padding:10px 12px;font-size:16px;}
+#scb-banner .scb-actions{gap:8px;}
+}
+</style>
 </head>
 <body itemtype='https://schema.org/Blog' itemscope='itemscope' class="rtl wp-singular post-template-default single single-post postid-4163 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-astra wp-child-theme-astra-child ally-default ast-desktop ast-page-builder-template ast-no-sidebar astra-4.14.1 ast-header-custom-item-inside ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent elementor-page-255 ast-normal-title-enabled elementor-default elementor-kit-2548">
 <script data-cfasync="false">
