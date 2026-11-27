@@ -1,0 +1,11 @@
+{
+  "output": "privacy/index.html",
+  "params": {
+    "home_url": "../",
+    "active_menu": "",
+    "schema_type": "WebPage",
+    "body_class": "rtl wp-singular page-template-default page wp-custom-logo wp-embed-responsive wp-theme-astra wp-child-theme-astra-child ally-default ast-desktop ast-page-builder-template ast-no-sidebar astra-4.14.1 ast-header-custom-item-inside ast-single-post ast-inherit-site-logo-transparent elementor-default elementor-kit-2548",
+    "skip_href": "/privacy/#content",
+    "contact_href": "/connect/#contact"
+  }
+}
